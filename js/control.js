@@ -46,6 +46,7 @@ function loadQuestions ( currentQuestionId ){
             ans.appendChild(listgot);
             var selectedOne = json[i];
 
+
             listgot.addEventListener("click",function(evt) {
                     console.log(selectedOne);
                     console.log(evt.target);
@@ -53,7 +54,7 @@ function loadQuestions ( currentQuestionId ){
                     var img = s.style.background;
                 console.log(img);
                     var js = JSON.parse(data);
-                    document.getElementById("right").style.background = "url("+img+") center center no-repeat";     // to the right answer
+                    document.getElementById("right").style.background = img;     // to the right answer
                     console.log(  document.getElementById("right") );
 
                     //right show yes.  else show no/
