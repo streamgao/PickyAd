@@ -52,9 +52,9 @@ function loadQuestions ( currentQuestionId ){
                     var s = evt.target;
                     var img = s.style.background;
                     var js = JSON.parse(data);
-                    document.getElementById("right").style.background = "url("+img+")";     // to the right answer
+                    document.getElementById("right").style.background = "url("+img+") center center no-repeat";     // to the right answer
                     console.log(  document.getElementById("right") );
-                    evt.target.style.background = "#ffffff";
+
                     //right show yes.  else show no/
                     if ( selectedOne['answer_right']== 1) {
                         if (confirm("Right Answer. Click to Next.")) {
@@ -65,6 +65,7 @@ function loadQuestions ( currentQuestionId ){
                     }else {
                         $("#right").className = "rightAnswerOutline"; //change the style if it is wrong
                     }//else
+                    evt.target.style.background = "#ffffff";
 
             }); //click listgot
 
