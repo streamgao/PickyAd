@@ -16,7 +16,7 @@ $(document).ready(function(){
     jsonObjArray.push(j1);
     console.log(j1.answer_id);
     console.log(j1);
-    console.log(jsonObjArray);
+    console.log(jsonObjArray+"kk");
     loadVideo(currentQuestionId );
     loadQuestions( currentQuestionId );
 
@@ -39,7 +39,6 @@ function loadVideo ( currentQuestionId ) {
     );//get
 }
 
-function dd(s){}
 
 function loadQuestions ( currentQuestionId ){
     console.log(jsonObjArray+"hdjf");
@@ -59,15 +58,15 @@ function loadQuestions ( currentQuestionId ){
             listgot.style.backgroundSize = "100%, 100%";
             var ans = document.getElementById("list");
             ans.appendChild(listgot);
-            var selectedOne = json[i];
-
+            var selectedOne = function(i) {
+                return i;}
 
 
             listgot.addEventListener("click",function(evt) {
                 console.log(currentQuestionId+"hdjf");
                // console.log(jsonObjArray+"hdjf"+j1);
 
-                console.log(selectedOne);
+                console.log(selectedOne+"selected one");
                 console.log(evt.target);
                 var s = evt.target;
                 var img = s.style.background;
