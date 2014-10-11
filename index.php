@@ -34,7 +34,7 @@
                     <div class="list" id="5"></div>
                     <div class="list" id="6"></div>
                     <div class="list" id="7"></div>
-                    <div class="list" id="'8"></div>
+                    <div class="list" id="8"></div>
 
                 </div>
             </div>
