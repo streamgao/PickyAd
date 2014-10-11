@@ -47,9 +47,12 @@ function loadQuestions ( currentQuestionId ){
             var selectedOne = json[i];
 
             listgot.addEventListener("click",function(evt) {
-
+                    console.log(selectedOne);
+                    console.log(evt.target);
+                    var s = evt.target;
+                    var img = s.style.background;
                     var js = JSON.parse(data);
-                    document.getElementById("right").style.background = "url("+selectedOne['answer_logo']+") center center no-repeat";     // to the right answer
+                    document.getElementById("right").style.background = "url("+img+")";     // to the right answer
                     console.log(  document.getElementById("right") );
                     evt.target.style.background = "#ffffff";
                     //right show yes.  else show no/
@@ -72,12 +75,6 @@ function loadQuestions ( currentQuestionId ){
         console.log(rightanswer);
         rightanswer.addEventListener("click", function(){
             clickAnswer( rightanswer ) } ,false );
-//    var rightanswer=$("#right")[0];
-//    console.log("rightanswer");
-//    console.log(rightanswer);
-//    rightanswer.click(
-//        clickAnswer( rightanswer )
-//    );
 
     });//get
 }
