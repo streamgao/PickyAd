@@ -5,8 +5,6 @@ window.addEventListener("load", function(){
     currentQuestionId=1;
     loadVideo(currentQuestionId );
     loadQuestions( currentQuestionId );
-
-
 });
 
 

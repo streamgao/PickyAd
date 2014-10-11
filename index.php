@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>WEEK5 DEMO BY STREAM</title>
-    <link rel="stylesheet" href="css/week4.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/control.js"> </script>
 </head>
