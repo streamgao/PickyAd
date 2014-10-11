@@ -1,4 +1,5 @@
 var currentQuestionId=0;
+var jsonObjArray = [];
 
 function jsonObj(id,title, logo, right){
     var answer_id= answer_id;
@@ -7,15 +8,12 @@ function jsonObj(id,title, logo, right){
     var answer_right =right;
 }
 
-
-
 //$(document).ready(function(){
 window.addEventListener("load", function(){
     currentQuestionId=1;
 
-    var jsonObjArray = [];
-//    var j1= new jsonObj(1,"milk", "http1", false);
-//    jsonObjArray.push(j1);
+    var j1= new jsonObj(1,"milk", "http1", false);
+    jsonObjArray.push(j1);
     console.log(j1);
     console.log(jsonObjArray);
     loadVideo(currentQuestionId );
