@@ -19,6 +19,7 @@ $(document).ready(function(){
     console.log(jsonObjArray);
     loadVideo(currentQuestionId );
     loadQuestions( currentQuestionId );
+
 });
 
 
@@ -38,6 +39,7 @@ function loadVideo ( currentQuestionId ) {
     );//get
 }
 
+function dd(s){}
 
 function loadQuestions ( currentQuestionId ){
     $.get("request.php?op=returnAnswerList&question_id="+currentQuestionId, function (data) {  //request data
@@ -57,7 +59,7 @@ function loadQuestions ( currentQuestionId ){
             var ans = document.getElementById("list");
             ans.appendChild(listgot);
             var selectedOne = json[i];
-
+            console.log(jsonObjArray+"hdjf"+j1);
 
 
             listgot.addEventListener("click",function(evt) {
