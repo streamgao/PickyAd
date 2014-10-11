@@ -3,6 +3,13 @@ var currentQuestionId=0;
 //$(document).ready(function(){
 window.addEventListener("load", function(){
     currentQuestionId=1;
+
+    var jsonObjArray = [];
+    console.log(jsonObjArray);
+    var j1= new jsonObj(1,"milk", "http1", false);
+    jsonObjArray.push();
+
+    console.log(jsonObjArray);
     loadVideo(currentQuestionId );
     loadQuestions( currentQuestionId );
 });
