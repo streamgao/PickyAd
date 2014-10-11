@@ -8,12 +8,13 @@ function jsonObj(id,title, logo, right){
     var answer_right =right;
 }
 
-//$(document).ready(function(){
-window.addEventListener("load", function(){
+$(document).ready(function(){
+//window.addEventListener("load", function(){
     currentQuestionId=1;
 
     var j1= new jsonObj(1,"milk", "http1", false);
     jsonObjArray.push(j1);
+    console.log(j1.answer_id);
     console.log(j1);
     console.log(jsonObjArray);
     loadVideo(currentQuestionId );
@@ -57,15 +58,18 @@ function loadQuestions ( currentQuestionId ){
             ans.appendChild(listgot);
             var selectedOne = json[i];
 
+
+
             listgot.addEventListener("click",function(evt) {
-                    console.log(selectedOne);
-                    console.log(evt.target);
-                    var s = evt.target;
-                    var img = s.style.background;
+                console.log(currentQuestionId+"hdjf");
+                console.log(selectedOne);
+                console.log(evt.target);
+                var s = evt.target;
+                var img = s.style.background;
                 console.log(img);
-                    var js = JSON.parse(data);
-                    document.getElementById("right").style.background = img;     // to the right answer
-                    console.log(  document.getElementById("right") );
+                var js = JSON.parse(data);
+                document.getElementById("right").style.background = img;     // to the right answer
+                console.log(  document.getElementById("right") );
 
                     //right show yes.  else show no/
                     if ( selectedOne['answer_right']== 1) {
