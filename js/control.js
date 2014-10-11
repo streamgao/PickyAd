@@ -62,6 +62,8 @@ function loadQuestions ( currentQuestionId ){
 
             listgot.addEventListener("click",function(evt) {
                 console.log(currentQuestionId+"hdjf");
+                console.log(jsonObjArray+"hdjf"+j1);
+
                 console.log(selectedOne);
                 console.log(evt.target);
                 var s = evt.target;
