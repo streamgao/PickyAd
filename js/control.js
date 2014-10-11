@@ -42,6 +42,7 @@ function loadVideo ( currentQuestionId ) {
 function dd(s){}
 
 function loadQuestions ( currentQuestionId ){
+    console.log(jsonObjArray+"hdjf");
     $.get("request.php?op=returnAnswerList&question_id="+currentQuestionId, function (data) {  //request data
         var json = JSON.parse(data);
 
@@ -59,7 +60,7 @@ function loadQuestions ( currentQuestionId ){
             var ans = document.getElementById("list");
             ans.appendChild(listgot);
             var selectedOne = json[i];
-            console.log(jsonObjArray+"hdjf"+j1);
+
 
 
             listgot.addEventListener("click",function(evt) {
