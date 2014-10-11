@@ -2,7 +2,7 @@ var currentQuestionId=0;
 var jsonObjArray = [];
 
 function jsonObj(id,title, logo, right){
-    this.answer_id= answer_id;
+    this.answer_id= id;
     this.answer_title = title;
     this.answer_logo =logo;
     this.answer_right =right;
