@@ -51,6 +51,7 @@ function loadQuestions ( currentQuestionId ){
                     console.log(evt.target);
                     var s = evt.target;
                     var img = s.style.background;
+                console.log(img);
                     var js = JSON.parse(data);
                     document.getElementById("right").style.background = "url("+img+") center center no-repeat";     // to the right answer
                     console.log(  document.getElementById("right") );
