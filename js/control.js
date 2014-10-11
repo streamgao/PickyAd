@@ -45,13 +45,13 @@ function loadQuestions ( currentQuestionId ){
 
         for (var i = 0; i < 9; i++) {  // load the answers
             var listgot = null;
-            if( currentQuestionId ==1 ){
-                listgot = document.createElement("DIV");
-                listgot.setAttribute("class", "list");
-                listgot.setAttribute("id", i);
-            }else{
+//            if( currentQuestionId ==1 ){
+//                listgot = document.createElement("DIV");
+//                listgot.setAttribute("class", "list");
+//                listgot.setAttribute("id", i);
+//            }else{
                 listgot = document.getElementById(i);
-            }
+           // }
             listgot.style.background = "#ffffff url(" + json[i]['answer_logo'] + ") center center no-repeat";
             listgot.style.backgroundSize = "100%, 100%";
             var ans = document.getElementById("list");
@@ -62,7 +62,7 @@ function loadQuestions ( currentQuestionId ){
 
             listgot.addEventListener("click",function(evt) {
                 console.log(currentQuestionId+"hdjf");
-                console.log(jsonObjArray+"hdjf"+j1);
+               // console.log(jsonObjArray+"hdjf"+j1);
 
                 console.log(selectedOne);
                 console.log(evt.target);

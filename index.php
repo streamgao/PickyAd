@@ -26,7 +26,6 @@
                 </div>
                 <div class="line"> </div>
                 <div id="list">
-                    <!--div class="list"></div>
                     <div class="list"></div>
                     <div class="list"></div>
                     <div class="list"></div>
@@ -34,7 +33,8 @@
                     <div class="list"></div>
                     <div class="list"></div>
                     <div class="list"></div>
-                    <div class="list"></div-->
+                    <div class="list"></div>
+                    <div class="list"></div>
                 </div>
             </div>
         </div>   <!--question-->
