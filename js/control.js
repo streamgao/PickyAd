@@ -16,7 +16,7 @@ window.addEventListener("load", function(){
     var jsonObjArray = [];
     console.log(jsonObjArray);
     var j1= new jsonObj(1,"milk", "http1", false);
-    jsonObjArray.push();
+    jsonObjArray.push(j1);
 
     console.log(jsonObjArray);
     loadVideo(currentQuestionId );
