@@ -18,6 +18,7 @@ $(document).ready(function(){
     console.log(j1.answer_id);
     console.log(j1);
     console.log(jsonObjArray+"kk");
+    console.log(jsonObjArray[0]);
     loadVideo(currentQuestionId );
     loadQuestions( currentQuestionId );
 
