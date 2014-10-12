@@ -60,8 +60,7 @@ function loadQuestions ( currentQuestionId ){
             var selectedOne = json[i];
 
 
-            listgot.click = function (evt){
-
+            listgot.click( function (evt){
 
         //    listgot.addEventListener("click",function(evt) {
                 console.log(currentQuestionId+"hdjf");
@@ -90,7 +89,7 @@ function loadQuestions ( currentQuestionId ){
 
             }
 
-           // ); //click listgot
+            ); //click listgot
 
         }//for
 
