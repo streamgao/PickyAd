@@ -20,7 +20,6 @@ $(document).ready(function(){
 
 
 function loadVideo ( currentQuestionId ) {
-    console.log(jsonObjArray+"kk");
 
     $.get("request.php?op=returnVideo&question_id="+currentQuestionId, function (data) {   //  or use this.currentQuestionId
 
@@ -39,10 +38,19 @@ function loadVideo ( currentQuestionId ) {
 
 
 function loadQuestions ( currentQuestionId ){
-    console.log(jsonObjArray+"jsonarray");
-    $.get("request.php?op=returnAnswerList&question_id="+currentQuestionId, function (data) {  //request data
-        var json = JSON.parse(data);
+    console.log(jsonObjArray+"jsonarray  get out");
+    var j1 = new jsonObj(1,"title", "http", false);
+    jsonObjArray.push(j1);
+    console.log(jsonObj[0]+"js1 out ");
 
+    $.get("request.php?op=returnAnswerList&question_id="+currentQuestionId, function (data) {  //request data
+        console.log(jsonObjArray+"kk1 get in");
+        var j2 = new jsonObj(2,"title", "http", false);
+        jsonObjArray.push(j2);
+        console.log(jsonObj[1]+"js1");
+        console.log(jsonObjArray+"kk1 get in after push");
+
+        var json = JSON.parse(data);
         for (var i = 0; i < 9; i++) {  // load the answers
             var listgot = null;
 //            if( currentQuestionId ==1 ){
