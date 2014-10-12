@@ -11,8 +11,6 @@ function jsonObj(id,title, logo, right){
 $(document).ready(function(){
 //window.addEventListener("load", function(){
     currentQuestionId=1;
-
-    var j1= new jsonObj(1,"milk", "http1", false);
     jsonObjArray.push(j1);
     console.log(j1.answer_id);
     console.log(j1);
@@ -61,7 +59,10 @@ function loadQuestions ( currentQuestionId ){
             var selectedOne = json[i];
 
 
-            listgot.addEventListener("click",function(evt) {
+            listgot.click = function (evt){
+
+
+        //    listgot.addEventListener("click",function(evt) {
                 console.log(currentQuestionId+"hdjf");
                // console.log(jsonObjArray+"hdjf"+j1);
 
@@ -88,7 +89,7 @@ function loadQuestions ( currentQuestionId ){
 
             }
 
-            ); //click listgot
+           // ); //click listgot
 
         }//for
 
