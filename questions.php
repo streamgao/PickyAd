@@ -38,6 +38,7 @@
             font-size: 12px;
             width: 120px;
             overflow: hidden;
+            line-height: 2px;
         }
 
         #menu, #menu ul {
