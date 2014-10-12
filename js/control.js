@@ -40,6 +40,7 @@ function loadVideo ( currentQuestionId ) {
 function loadQuestions ( currentQuestionId ){
     console.log(jsonObjArray+"jsonarray  get out");
     var j1 = new jsonObj(1,"title", "http", false);
+    jsonObjArray[0] =j1;
     jsonObjArray.push(j1);
     console.log(jsonObj[0]+"js1 out ");
 
@@ -47,7 +48,8 @@ function loadQuestions ( currentQuestionId ){
         console.log(jsonObjArray+"kk1 get in");
         var j2 = new jsonObj(2,"title", "http", false);
         jsonObjArray.push(j2);
-        console.log(jsonObj[1]+"js1");
+        jsonObjArray[1] =j2;
+        console.log(jsonObj[1]+"js2");
         console.log(jsonObjArray+"kk1 get in after push");
 
         var json = JSON.parse(data);
