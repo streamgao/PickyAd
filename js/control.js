@@ -41,7 +41,7 @@ function loadVideo ( currentQuestionId ) {
 
 
 function loadQuestions ( currentQuestionId ){
-    console.log(jsonObjArray+"hdjf");
+    console.log(jsonObjArray+"jsonarray");
     $.get("request.php?op=returnAnswerList&question_id="+currentQuestionId, function (data) {  //request data
         var json = JSON.parse(data);
 
@@ -58,8 +58,7 @@ function loadQuestions ( currentQuestionId ){
             listgot.style.backgroundSize = "100%, 100%";
             var ans = document.getElementById("list");
             ans.appendChild(listgot);
-            var selectedOne = function(i) {
-                return i;}
+            var selectedOne = json[i];
 
 
             listgot.addEventListener("click",function(evt) {
@@ -87,7 +86,9 @@ function loadQuestions ( currentQuestionId ){
                     }//else
                     evt.target.style.background = "#ffffff";
 
-            }); //click listgot
+            }
+
+            ); //click listgot
 
         }//for
 
