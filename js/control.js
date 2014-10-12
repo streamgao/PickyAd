@@ -62,34 +62,7 @@ function loadQuestions ( currentQuestionId ){
             var selectedOne = json[i];
 
 
-            listgot.addEventListener("click",function(evt) {
-                console.log(currentQuestionId+"hdjf");
-               // console.log(jsonObjArray+"hdjf"+j1);
-
-                console.log(selectedOne+"selected one");
-                console.log(evt.target);
-                var s = evt.target;
-                var img = s.style.background;
-                console.log(img);
-                var js = JSON.parse(data);
-                document.getElementById("right").style.background = img;     // to the right answer
-                console.log(  document.getElementById("right") );
-
-                    //right show yes.  else show no/
-                    if ( selectedOne['answer_right']== 1) {
-                        if (confirm("Right Answer. Click to Next.")) {
-                            currentQuestionId++;
-                            loadVideo(currentQuestionId);
-                            loadQuestions(currentQuestionId);
-                        }else{}
-                    }else {
-                        $("#right").className = "rightAnswerOutline"; //change the style if it is wrong
-                    }//else
-                    evt.target.style.background = "#ffffff";
-
-            }
-
-            ); //click listgot
+            listgot.addEventListener("click",clickcall ); //click listgot
 
         }//for
 
@@ -116,53 +89,31 @@ function clickAnswer( answer ){
 }
 
 
-/*$(document).ready( function() {
- var control = new Controller(1,0,false);
- control.currentQuestionId = 1;
- control.isFinish = false;
- console.log(control);
+function clickcall(evt){
+    console.log(currentQuestionId+"hdjf");
+    // console.log(jsonObjArray+"hdjf"+j1);
 
- $.get("request.php?op=returnVideo&question_id=1", function (data) {
+    console.log(selectedOne+"selected one");
+    console.log(evt.target);
+    var s = evt.target;
+    var img = s.style.background;
+    console.log(img);
+    var js = JSON.parse(data);
+    document.getElementById("right").style.background = img;     // to the right answer
+    console.log(  document.getElementById("right") );
 
- var obj = JSON.parse(data);
- console.log(obj);
- var title = document.getElementById("title");
- title.innerHTML = obj['video_title'];    //set title
- console.log(title.innerHTML);
- console.log(title);
+    //right show yes.  else show no/
+    if ( selectedOne['answer_right']== 1) {
+        if (confirm("Right Answer. Click to Next.")) {
+            currentQuestionId++;
+            loadVideo(currentQuestionId);
+            loadQuestions(currentQuestionId);
+        }else{}
+    }else {
+        $("#right").className = "rightAnswerOutline"; //change the style if it is wrong
+    }//else
+    evt.target.style.background = "#ffffff";
 
- var video = document.getElementById("video");
- console.log(video);
- var source = document.getElementById("source");
- console.log(source);
- source.attr("src", obj['video_add'] );
- document.getElementById("video").load();
- }
- );//get
+}
 
-
- $.get("request.php?op=returnAnswerList&question_id=1", function (data) {
- var json = JSON.parse(data);
- console.log(json);
-
- for (var i = 0; i < 9; i++) {
- var listgot = document.createElement("DIV");
- listgot.setAttribute("class", "list");
- listgot.setAttribute("id", i);
- console.log(json[i]);
- listgot.style.background = "#ffffff url(" + json[i]['answer_logo'] + ") center center no-repeat";
- listgot.style.backgroundSize = "100%, 100%";
- //listgot.addEventListener("click", control.clickAnswer( listgot,json[i] );
- //listgot.innerHTML = json[i]['answer_title'];
-
- var ans = document.getElementById("list");
- var answerList= $("#list");
- ans.appendChild(listgot);
- }
- }
- );//get
-
- $(".rightAnswer").addEventListener("click", function()}{});
-
- }  );   //document.ready
- */
+}
