@@ -1,5 +1,5 @@
 var currentQuestionId=0;
-var jsonObjArray = new Array();
+var jsonObjArray = [];
 
 function jsonObj(id,title, logo, right){
     this.answer_id= id;
@@ -11,7 +11,8 @@ function jsonObj(id,title, logo, right){
 $(document).ready(function(){
 //window.addEventListener("load", function(){
     currentQuestionId=1;
-    var j1= new jsonObj(1,"title", "htp" ,false);
+
+    var j1= new jsonObj(1,"milk", "http1", false);
     jsonObjArray.push(j1);
     console.log(j1.answer_id);
     console.log(j1);
@@ -112,3 +113,55 @@ function clickAnswer( answer ){
     }else{ //do nothing
     }
 }
+
+
+/*$(document).ready( function() {
+ var control = new Controller(1,0,false);
+ control.currentQuestionId = 1;
+ control.isFinish = false;
+ console.log(control);
+
+ $.get("request.php?op=returnVideo&question_id=1", function (data) {
+
+ var obj = JSON.parse(data);
+ console.log(obj);
+ var title = document.getElementById("title");
+ title.innerHTML = obj['video_title'];    //set title
+ console.log(title.innerHTML);
+ console.log(title);
+
+ var video = document.getElementById("video");
+ console.log(video);
+ var source = document.getElementById("source");
+ console.log(source);
+ source.attr("src", obj['video_add'] );
+ document.getElementById("video").load();
+ }
+ );//get
+
+
+ $.get("request.php?op=returnAnswerList&question_id=1", function (data) {
+ var json = JSON.parse(data);
+ console.log(json);
+
+ for (var i = 0; i < 9; i++) {
+ var listgot = document.createElement("DIV");
+ listgot.setAttribute("class", "list");
+ listgot.setAttribute("id", i);
+ console.log(json[i]);
+ listgot.style.background = "#ffffff url(" + json[i]['answer_logo'] + ") center center no-repeat";
+ listgot.style.backgroundSize = "100%, 100%";
+ //listgot.addEventListener("click", control.clickAnswer( listgot,json[i] );
+ //listgot.innerHTML = json[i]['answer_title'];
+
+ var ans = document.getElementById("list");
+ var answerList= $("#list");
+ ans.appendChild(listgot);
+ }
+ }
+ );//get
+
+ $(".rightAnswer").addEventListener("click", function()}{});
+
+ }  );   //document.ready
+ */
