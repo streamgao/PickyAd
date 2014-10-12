@@ -20,6 +20,8 @@ $(document).ready(function(){
 
 
 function loadVideo ( currentQuestionId ) {
+    console.log(jsonObjArray+"kk");
+
     $.get("request.php?op=returnVideo&question_id="+currentQuestionId, function (data) {   //  or use this.currentQuestionId
 
             var obj = JSON.parse(data);
