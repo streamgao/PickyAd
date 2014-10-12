@@ -60,9 +60,7 @@ function loadQuestions ( currentQuestionId ){
             var selectedOne = json[i];
 
 
-            listgot.click( function (evt){
-
-        //    listgot.addEventListener("click",function(evt) {
+            listgot.addEventListener("click",function(evt) {
                 console.log(currentQuestionId+"hdjf");
                // console.log(jsonObjArray+"hdjf"+j1);
 
