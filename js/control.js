@@ -89,21 +89,18 @@ function clickAnswer( answer ){
 }
 
 
-function clickcall(){
+function clickcall(evt){
     console.log(currentQuestionId+"hdjf");
     // console.log(jsonObjArray+"hdjf"+j1);
 
-    console.log(selectedOne+"selected one");
     console.log(evt.target);
     var s = evt.target;
     var img = s.style.background;
     console.log(img);
-    var js = JSON.parse(data);
     document.getElementById("right").style.background = img;     // to the right answer
-    console.log(  document.getElementById("right") );
 
     //right show yes.  else show no/
-    if ( selectedOne['answer_right']== 1) {
+    if ( evt.target['answer_right']== 1) {
         if (confirm("Right Answer. Click to Next.")) {
             currentQuestionId++;
             loadVideo(currentQuestionId);
