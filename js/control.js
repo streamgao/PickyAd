@@ -91,7 +91,7 @@ function clickAnswer( answer ){
 
 function clickcall(evt){
     console.log(currentQuestionId+"hdjf");
-    // console.log(jsonObjArray+"hdjf"+j1);
+    console.log(jsonObjArray+"hdjf"+j1);
 
     console.log(evt.target);
     var s = evt.target;
