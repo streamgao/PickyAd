@@ -14,6 +14,7 @@ $(document).ready(function(){
 
     var j1= new jsonObj(1,"milk", "http1", false);
     jsonObjArray.push(j1);
+    jsonObjArray[0] = j1;
     console.log(j1.answer_id);
     console.log(j1);
     console.log(jsonObjArray+"kk");
