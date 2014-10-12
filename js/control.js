@@ -11,6 +11,7 @@ function jsonObj(id,title, logo, right){
 $(document).ready(function(){
 //window.addEventListener("load", function(){
     currentQuestionId=1;
+    var j1= new jsonObj(1,"title", "htp" ,false);
     jsonObjArray.push(j1);
     console.log(j1.answer_id);
     console.log(j1);
