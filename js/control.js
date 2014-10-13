@@ -79,7 +79,7 @@ function clickAnswer( evt ){
 
         var lastClicked = document.getElementById(clickedOne);
         lastClicked.style.background = temp;
-        clickedOne = -1;  // after clicked, set the last clicked one to -1. ensure no one in the history of clicked
+       // clickedOne = -1;  // after clicked, set the last clicked one to -1. ensure no one in the history of clicked
 
     }else{ //do nothing
     }
