@@ -53,19 +53,15 @@ function loadQuestions ( currentQuestionId ){
            // }
             listgot.style.background = "#ffffff url(" + json[i]['answer_logo'] + ") center center no-repeat";
             listgot.style.backgroundSize = "100%, 100%";
-           // listgot.tagName =
             var ans = document.getElementById("list");
             ans.appendChild(listgot);
             var selectedOne = json[i];
 
-
-            listgot.addEventListener("click",clickcall ); //click listgot
+            listgot.addEventListener("click",clickList ); //click listgot
         }//for
 
         var rightanswer= document.getElementById("right");
-        rightanswer.addEventListener("click", function(){   //click answer to cancel.
-            clickAnswer( rightanswer );
-        });
+        rightanswer.addEventListener("click", clickAnswer);
 
     });//get
 }
@@ -73,29 +69,32 @@ function loadQuestions ( currentQuestionId ){
 
 
 //Controller.prototype.clickAnswer = function ( ) {    it failed
-function clickAnswer( answer ){
-    var thisRight = answer;
+function clickAnswer( evt ){
+    var thisRight =  evt.target;
     if (thisRight.style.background != "#d9dcdf" && thisRight.style.background != " ") {     //if it is chosen,return back
         var temp = thisRight.style.background;
         thisRight.style.background = "#d9dcdf";
+        if( clickedOne !=-1 ){
+            var lastClicked = document.getElementById(clickedOne);
+            lastClicked.style.background = temp;
+            clickedOne = -1;  // after clicked, set the last clicked one to -1. ensure no one in the history of clicked
+        }
 
     }else{ //do nothing
     }
 }
 
 
-function clickcall(evt){
-    console.log(jsonObjArray[0]);
-    console.log(jsonObjArray[0]['answer_title']);
-    console.log(jsonObjArray[0].answer_title);
+function clickList(evt){
 
     var targetOne = evt.target;
-    var clickedOne = s.getAttribute("id");
-    console.log(img);
+    var clickedOne = targetOne.getAttribute("id");
     document.getElementById("right").style.background = targetOne.style.background;     // to the right answer
+    evt.target.style.background = "#ffffff";
+
 
     //right show yes.  else show no/
-    if ( evt.target['answer_right']== 1) {
+    if ( jsonObjArray[clickedOne]['answer_right']== 1) {
         if (confirm("Right Answer. Click to Next.")) {
             currentQuestionId++;
             loadVideo(currentQuestionId);
@@ -104,7 +103,6 @@ function clickcall(evt){
     }else {
         $("#right").className = "rightAnswerOutline"; //change the style if it is wrong
     }//else
-    evt.target.style.background = "#ffffff";
 
 }
 
