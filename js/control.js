@@ -27,16 +27,14 @@ function loadVideo ( currentQuestionId ) {
             var obj = JSON.parse(data);
             var title = document.getElementById("title");
             title.innerHTML = obj['video_title'];    //set title
-
             var video = document.getElementById("video");
             var source = document.getElementById("source");
-            //source.attr("src", obj['video_add'] );
             source.src=obj['video_add'];
             document.getElementById("video").load();
+            document.getElementById("video").play();
         }
     );//get
 }
-
 
 function loadQuestions ( currentQuestionId ){
     document.getElementById("right").style.background = "#d9dcdf";
@@ -46,13 +44,7 @@ function loadQuestions ( currentQuestionId ){
         jsonObjArray = json;
         for (var i = 0; i < 9; i++) {  // load the answers
             var listgot = null;
-//            if( currentQuestionId ==1 ){
-//                listgot = document.createElement("DIV");
-//                listgot.setAttribute("class", "list");
-//                listgot.setAttribute("id", i);
-//            }else{
-                listgot = document.getElementById(i);
-           // }
+            listgot = document.getElementById(i);
             listgot.style.background = "#ffffff url(" + json[i]['answer_logo'] + ") center center no-repeat";
             listgot.style.backgroundSize = "100%, 100%";
             var ans = document.getElementById("list");
@@ -97,8 +89,12 @@ function clickList(evt){
         //right show yes.  else show no/
         if ( jsonObjArray[clickedOne]['answer_right']== 1) {   // go to the next question
             $.Dialog.Alert({ Width: 400, Height: 300, Title: "Right Answer!",
-                Content: jsonObjArray[clickedOne]['answer_title']+ '\n' +' Next!',
-                ConfirmFun:goNext  });
+                Content: jsonObjArray[clickedOne]['answer_title']+ '&nbsp' +'Next!',
+                ConfirmFun:function(){
+                    currentQuestionId++;
+                    loadVideo(currentQuestionId);
+                    loadQuestions(currentQuestionId);
+                } });
         }else {
             document.getElementById("right").style.outline= "red solid"; //change the style if it is wrong
         }//else
@@ -111,3 +107,13 @@ function goNext(){
     loadVideo(currentQuestionId);
     loadQuestions(currentQuestionId);
 }
+
+
+
+
+
+//            if( currentQuestionId ==1 ){
+//                listgot = document.createElement("DIV");
+//                listgot.setAttribute("class", "list");
+//                listgot.setAttribute("id", i);
+//            }else{
