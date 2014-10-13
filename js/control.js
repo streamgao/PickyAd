@@ -96,11 +96,10 @@ function clickList(evt){
     //right show yes.  else show no/
     if ( jsonObjArray[clickedOne]['answer_right']== 1) {
         $.Dialog.Alert({ Width: 400, Height: 300, Title: "Right Answer!",
-            Content: '你好，这是弹出提示，即JS中的alert',
+            Content: jsonObjArray[clickedOne]['answer_title']+ '\n' +' Next!',
             ConfirmFun:goNext  });
     }else {
         document.getElementById("right").style.outline= "red solid"; //change the style if it is wrong
-        console.log("wronganswer");
     }//else
 }
 
