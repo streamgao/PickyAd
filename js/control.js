@@ -90,9 +90,6 @@ function clickList(evt){
 
     var targetOne = evt.target;
     clickedOne = targetOne.getAttribute("id");
-
-    console.log(targetOne);
-    console.log(targetOne.getAttribute("id"));
     console.log(clickedOne);
 
     document.getElementById("right").style.background = targetOne.style.background;     // to the right answer
