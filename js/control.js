@@ -12,7 +12,6 @@ function jsonObj(id,title, logo, right){
 $(document).ready(function(){
 //window.addEventListener("load", function(){
     currentQuestionId=1;
-    console.log(jsonObjArray+"kk");
     loadVideo(currentQuestionId );
     loadQuestions( currentQuestionId );
 });
@@ -91,6 +90,8 @@ function clickList(evt){
 
     var targetOne = evt.target;
     var clickedOne = targetOne.getAttribute("id");
+
+    console.log(targetOne);
     console.log(targetOne.getAttribute("id"));
     console.log(clickedOne);
     document.getElementById("right").style.background = targetOne.style.background;     // to the right answer
