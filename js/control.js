@@ -36,7 +36,7 @@ function loadVideo ( currentQuestionId ) {
 
 
 function loadQuestions ( currentQuestionId ){
-
+    document.getElementById("right").style.background = "#d9dcdf";
     $.get("request.php?op=returnAnswerList&question_id="+currentQuestionId, function (data) {  //request data
 
         var json = JSON.parse(data);
@@ -78,7 +78,6 @@ function clickAnswer( evt ){
         var lastClicked = document.getElementById(clickedOne);
         lastClicked.style.background = temp;
         clickedOne = -1;  // after clicked, set the last clicked one to -1. ensure no one in the history of clicked
-
     }else{ //do nothing
     }
 }
