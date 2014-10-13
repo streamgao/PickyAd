@@ -72,7 +72,8 @@ function loadQuestions ( currentQuestionId ){
 function clickAnswer( evt ){
     var thisRight =  evt.target;
     console.log(thisRight);
-    if (thisRight.style.background != "#d9dcdf" && thisRight.style.background!= " ") {     //if it is chosen,return back
+    if (thisRight.style.background != "rgb(217, 220, 223)" && thisRight.style.background!= " ") {     //if it is chosen,return back
+        alert("stylr");
         var temp = thisRight.style.background;
         thisRight.style.background = "#d9dcdf";
         if( clickedOne !=-1 ){
