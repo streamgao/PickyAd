@@ -71,7 +71,8 @@ function loadQuestions ( currentQuestionId ){
 //Controller.prototype.clickAnswer = function ( ) {    it failed
 function clickAnswer( evt ){
     var thisRight =  evt.target;
-    if (thisRight.style.background != "#d9dcdf" && thisRight.style.background != " ") {     //if it is chosen,return back
+    console.log(thisRight);
+    if (thisRight.style.background != "#d9dcdf" && thisRight.style.background!= " ") {     //if it is chosen,return back
         var temp = thisRight.style.background;
         thisRight.style.background = "#d9dcdf";
         if( clickedOne !=-1 ){
@@ -91,7 +92,6 @@ function clickList(evt){
     var clickedOne = targetOne.getAttribute("id");
     document.getElementById("right").style.background = targetOne.style.background;     // to the right answer
     evt.target.style.background = "#ffffff";
-
 
     //right show yes.  else show no/
     if ( jsonObjArray[clickedOne]['answer_right']== 1) {
