@@ -52,7 +52,7 @@ function loadQuestions ( currentQuestionId ){
         jsonObjArray.push(j2.key);
         console.log(jsonObjArray[1]+"js2");
         jsonObjArray[1] =j2.key;
-        console.log(jsonObjArray[1]+"js2");
+        console.log(jsonObjArray[1]);
         console.log(jsonObjArray+"kk1 get in after push");
 
         var json = JSON.parse(data);
