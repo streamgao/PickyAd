@@ -88,19 +88,22 @@ function clickAnswer( evt ){
 
 function clickList(evt){
 
-    var targetOne = evt.target;
-    clickedOne = targetOne.getAttribute("id");
-    document.getElementById("right").style.background = targetOne.style.background;     // to the right answer
-    evt.target.style.background = "#ffffff";
+    if( clickedOne!=-1 ){  // if there is no previous selection
+        var targetOne = evt.target;
+        clickedOne = targetOne.getAttribute("id");
+        document.getElementById("right").style.background = targetOne.style.background;     // to the right answer
+        evt.target.style.background = "#ffffff";
 
-    //right show yes.  else show no/
-    if ( jsonObjArray[clickedOne]['answer_right']== 1) {
-        $.Dialog.Alert({ Width: 400, Height: 300, Title: "Right Answer!",
-            Content: jsonObjArray[clickedOne]['answer_title']+ '\n' +' Next!',
-            ConfirmFun:goNext  });
-    }else {
-        document.getElementById("right").style.outline= "red solid"; //change the style if it is wrong
-    }//else
+        //right show yes.  else show no/
+        if ( jsonObjArray[clickedOne]['answer_right']== 1) {   // go to the next question
+            $.Dialog.Alert({ Width: 400, Height: 300, Title: "Right Answer!",
+                Content: jsonObjArray[clickedOne]['answer_title']+ '\n' +' Next!',
+                ConfirmFun:goNext  });
+        }else {
+            document.getElementById("right").style.outline= "red solid"; //change the style if it is wrong
+        }//else
+    }else{ }     // otherwise do nothing
+
 }
 
 function goNext(){
