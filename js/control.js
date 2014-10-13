@@ -102,7 +102,7 @@ function clickList(evt){
             loadQuestions(currentQuestionId);
         }else{}
     }else {
-        $("#right").style.outline= "red solid thick"; //change the style if it is wrong
+        document.getElementById("right").style.outline= "red solid thick"; //change the style if it is wrong
         console.log("wronganswer");
     }//else
 
