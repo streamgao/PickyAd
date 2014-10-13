@@ -73,13 +73,12 @@ function clickAnswer( evt ){
     console.log(clickedOne);
 
     if ( clickedOne !=-1 ) {     //if it is chosen,return back
-        alert(clickedOne);
         var temp = thisRight.style.background;
         thisRight.style.background = "#d9dcdf";
 
         var lastClicked = document.getElementById(clickedOne);
         lastClicked.style.background = temp;
-       // clickedOne = -1;  // after clicked, set the last clicked one to -1. ensure no one in the history of clicked
+        clickedOne = -1;  // after clicked, set the last clicked one to -1. ensure no one in the history of clicked
 
     }else{ //do nothing
     }
@@ -104,6 +103,7 @@ function clickList(evt){
         }else{}
     }else {
         $("#right").className = "rightAnswerOutline"; //change the style if it is wrong
+        console.log("wronganswer");
     }//else
 
 }
