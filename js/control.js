@@ -99,21 +99,17 @@ function clickList(evt){
 //            currentQuestionId++;
 //            loadVideo(currentQuestionId);
 //            loadQuestions(currentQuestionId);
-
-            reset();
-            alertify.confirm("Right Answer!  Click to Next", function (e) {
-                if (e) {
-                    alertify.success("You've clicked OK");
-                    currentQuestionId++;
-                    loadVideo(currentQuestionId);
-                    loadQuestions(currentQuestionId);
-                }
-            });//alertify.confirm
+        $.DialogBySHF.Alert({ Width: 400, Height: 300, Title: "提示信息", Content: '你好，这是弹出提示，即JS中的alert',
+            ConfirmFun:goNext  });
        // }
     }else {
         document.getElementById("right").style.outline= "red solid"; //change the style if it is wrong
         console.log("wronganswer");
     }//else
-
 }
 
+function goNext(){
+    currentQuestionId++;
+    loadVideo(currentQuestionId);
+    loadQuestions(currentQuestionId);
+}
