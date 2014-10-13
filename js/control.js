@@ -107,8 +107,6 @@ function clickList(evt){
                     currentQuestionId++;
                     loadVideo(currentQuestionId);
                     loadQuestions(currentQuestionId);
-                } else {
-                    alertify.error("You've clicked Cancel");
                 }
             });//alertify.confirm
        // }

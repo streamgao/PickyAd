@@ -10,11 +10,12 @@
  * @version 0.3.11
  */
 function reset () {
+    console.log("reset");
     $("#toggleCSS").attr("href", "../css/alertify.bootstrap.css");
     alertify.set({
         labels : {
             ok     : "OK",
-           // cancel : "Cancel"
+            cancel : "Cancel"
         },
         delay : 5000,
         buttonReverse : false,
