@@ -43,7 +43,7 @@ function loadQuestions ( currentQuestionId ){
     var j1 = new jsonObj(1,"title", "http", false);
     console.log(j1);
     jsonObjArray[0] =j1;
-    jsonObjArray.push(j1);
+    jsonObjArray.push(j1.key);
     console.log(jsonObjArray[0]+"jsonObjArray out ");
 
     $.get("request.php?op=returnAnswerList&question_id="+currentQuestionId, function (data) {  //request data
