@@ -15,7 +15,6 @@ $(document).ready(function(){
     console.log(jsonObjArray+"kk");
     loadVideo(currentQuestionId );
     loadQuestions( currentQuestionId );
-
 });
 
 
@@ -42,9 +41,8 @@ function loadQuestions ( currentQuestionId ){
     console.log(jsonObjArray);
     var j1 = new jsonObj(1,"title", "http", false);
     console.log(j1);
-    jsonObjArray[0] =j1;
-    jsonObjArray.push(j1.key);
-    console.log(jsonObjArray[0]+"jsonObjArray out ");
+    jsonObjArray.push(j1);
+    console.log(jsonObjArray[0].answer_logo+"jsonObjArray out ");
 
     $.get("request.php?op=returnAnswerList&question_id="+currentQuestionId, function (data) {  //request data
         console.log(jsonObjArray+"kk1 get in");
