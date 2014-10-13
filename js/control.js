@@ -1,5 +1,6 @@
 var currentQuestionId=0;
-var jsonObjArray = null;
+var jsonObjArray = [];
+var clickedOne = -1;     // the last list clicked
 
 function jsonObj(id,title, logo, right){
     this.answer_id= id;
@@ -11,7 +12,6 @@ function jsonObj(id,title, logo, right){
 $(document).ready(function(){
 //window.addEventListener("load", function(){
     currentQuestionId=1;
-    jsonObjArray =[];
     console.log(jsonObjArray+"kk");
     loadVideo(currentQuestionId );
     loadQuestions( currentQuestionId );
@@ -41,6 +41,7 @@ function loadQuestions ( currentQuestionId ){
     $.get("request.php?op=returnAnswerList&question_id="+currentQuestionId, function (data) {  //request data
 
         var json = JSON.parse(data);
+        jsonObjArray = json;
         for (var i = 0; i < 9; i++) {  // load the answers
             var listgot = null;
 //            if( currentQuestionId ==1 ){
@@ -52,20 +53,17 @@ function loadQuestions ( currentQuestionId ){
            // }
             listgot.style.background = "#ffffff url(" + json[i]['answer_logo'] + ") center center no-repeat";
             listgot.style.backgroundSize = "100%, 100%";
+            listgot.tagName =
             var ans = document.getElementById("list");
             ans.appendChild(listgot);
             var selectedOne = json[i];
 
 
             listgot.addEventListener("click",clickcall ); //click listgot
-
         }//for
 
         var rightanswer= document.getElementById("right");
-        console.log("rightanswer");
-        console.log(rightanswer);
-
-        rightanswer.addEventListener("click", function(){
+        rightanswer.addEventListener("click", function(){   //click answer to cancel.
             clickAnswer( rightanswer );
         });
 
@@ -76,7 +74,6 @@ function loadQuestions ( currentQuestionId ){
 
 //Controller.prototype.clickAnswer = function ( ) {    it failed
 function clickAnswer( answer ){
-    alert("answer");
     var thisRight = answer;
     if (thisRight.style.background != "#d9dcdf" && thisRight.style.background != " ") {     //if it is chosen,return back
         var temp = thisRight.style.background;
@@ -88,12 +85,14 @@ function clickAnswer( answer ){
 
 
 function clickcall(evt){
+console.log(jsonObjArray[0]);
+    console.log(jsonObjArray[0]['answer_title']);
+    console.log(jsonObjArray[0].answer_title);
 
-    console.log(evt.target);
-    var s = evt.target;
-    var img = s.style.background;
+    var targetOne = evt.target;
+    var clickedOne = s.getAttribute("id");
     console.log(img);
-    document.getElementById("right").style.background = img;     // to the right answer
+    document.getElementById("right").style.background = targetOne.style.background;     // to the right answer
 
     //right show yes.  else show no/
     if ( evt.target['answer_right']== 1) {
