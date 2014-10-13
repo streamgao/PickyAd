@@ -36,18 +36,18 @@
       <file leaf-file-name="popup.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/popup.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1290">
-              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3023" max-vertical-offset="3510">
+              <caret line="202" column="20" selection-start-line="202" selection-start-column="20" selection-end-line="202" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="control.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="control.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/control.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.85037404" vertical-offset="1279" max-vertical-offset="1905">
-              <caret line="108" column="53" selection-start-line="108" selection-start-column="53" selection-end-line="108" selection-end-column="53" />
+            <state vertical-scroll-proportion="-5.0384617" vertical-offset="1414" max-vertical-offset="1920">
+              <caret line="103" column="73" selection-start-line="103" selection-start-column="73" selection-end-line="103" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -56,18 +56,18 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.2083333" vertical-offset="377" max-vertical-offset="780">
-              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+            <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="810">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alertify.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="alertify.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/alertify.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7365" max-vertical-offset="9840">
-              <caret line="505" column="18" selection-start-line="505" selection-start-column="18" selection-end-line="505" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.4347826" vertical-offset="0" max-vertical-offset="9825">
+              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -88,10 +88,10 @@
         <option value="$PROJECT_DIR$/js/modernizer.js" />
         <option value="$PROJECT_DIR$/js/json.js" />
         <option value="$PROJECT_DIR$/css/reset.css" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/popup.css" />
-        <option value="$PROJECT_DIR$/js/alertify.js" />
         <option value="$PROJECT_DIR$/js/control.js" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/js/alertify.js" />
       </list>
     </option>
   </component>
@@ -447,12 +447,12 @@
       <workItem from="1413064598550" duration="7343000" />
       <workItem from="1413088704611" duration="614000" />
       <workItem from="1413137933456" duration="2084000" />
-      <workItem from="1413207862187" duration="11282000" />
+      <workItem from="1413207862187" duration="12832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32342000" />
+    <option name="totallyTimeSpent" value="33892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="119" y="22" width="1280" height="705" extended-state="6" />
@@ -706,34 +706,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.2083333" vertical-offset="377" max-vertical-offset="780">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/popup.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1290">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/alertify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7365" max-vertical-offset="9840">
-          <caret line="505" column="18" selection-start-line="505" selection-start-column="18" selection-end-line="505" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3023" max-vertical-offset="3510">
+          <caret line="202" column="20" selection-start-line="202" selection-start-column="20" selection-end-line="202" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/control.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85037404" vertical-offset="1279" max-vertical-offset="1905">
-          <caret line="108" column="53" selection-start-line="108" selection-start-column="53" selection-end-line="108" selection-end-column="53" />
+        <state vertical-scroll-proportion="-5.0384617" vertical-offset="1414" max-vertical-offset="1920">
+          <caret line="103" column="73" selection-start-line="103" selection-start-column="73" selection-end-line="103" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="810">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/alertify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4347826" vertical-offset="0" max-vertical-offset="9825">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
           <folding />
         </state>
       </provider>

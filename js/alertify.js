@@ -10,7 +10,7 @@
  * @version 0.3.11
  */
 function reset () {
-    $("#toggleCSS").attr("href", "../css/popup.css");
+    $("#toggleCSS").attr("href", "../css/alertify.bootstrap.css");
     alertify.set({
         labels : {
             ok     : "OK",
@@ -25,7 +25,6 @@ function reset () {
 
 (function (global, undefined) {
     "use strict";
-
     var document = global.document,
         Alertify;
 

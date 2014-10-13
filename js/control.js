@@ -101,6 +101,7 @@ function clickList(evt){
 //            loadQuestions(currentQuestionId);
 
             reset();
+        $("#toggleCSS").attr("href", "../themes/alertify.bootstrap.css");
             alertify.confirm("Right Answer!  Click to Next", function (e) {
                 if (e) {
                     alertify.success("You've clicked OK");
@@ -110,7 +111,7 @@ function clickList(evt){
                 } else {
                     alertify.error("You've clicked Cancel");
                 }
-            });
+            });//alertify.confirm
        // }
     }else {
         document.getElementById("right").style.outline= "red solid"; //change the style if it is wrong
