@@ -1,3 +1,7 @@
+/**
+ * Created by stream on 10/10/14.
+ */
+
 var currentQuestionId=0;
 var jsonObjArray = [];
 var clickedOne = -1;     // the last list clicked
@@ -20,7 +24,6 @@ $(document).ready(function(){
 function loadVideo ( currentQuestionId ) {
 
     $.get("request.php?op=returnVideo&question_id="+currentQuestionId, function (data) {   //  or use this.currentQuestionId
-
             var obj = JSON.parse(data);
             var title = document.getElementById("title");
             title.innerHTML = obj['video_title'];    //set title

@@ -2,16 +2,17 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>PickyAd</title>
+    <title>PickyAd--STREAM GAO</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/control.js"> </script>
+    <script src="js/modernizr.js"></script>
 </head>
 
 <body>
 
 <div id="container">
-    <div id="title" class="title" >123456</div>
+    <div id="title" class="title" >Unknown Name</div>
     <div class="subcontainer">
         <div class="questions">
 
