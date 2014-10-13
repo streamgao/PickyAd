@@ -53,7 +53,7 @@ function loadQuestions ( currentQuestionId ){
            // }
             listgot.style.background = "#ffffff url(" + json[i]['answer_logo'] + ") center center no-repeat";
             listgot.style.backgroundSize = "100%, 100%";
-            listgot.tagName =
+           // listgot.tagName =
             var ans = document.getElementById("list");
             ans.appendChild(listgot);
             var selectedOne = json[i];
@@ -85,7 +85,7 @@ function clickAnswer( answer ){
 
 
 function clickcall(evt){
-console.log(jsonObjArray[0]);
+    console.log(jsonObjArray[0]);
     console.log(jsonObjArray[0]['answer_title']);
     console.log(jsonObjArray[0].answer_title);
 
