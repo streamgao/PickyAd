@@ -76,8 +76,10 @@ function loadQuestions ( currentQuestionId ){
         var rightanswer= document.getElementById("right");
         console.log("rightanswer");
         console.log(rightanswer);
+
         rightanswer.addEventListener("click", function(){
-            clickAnswer( rightanswer ) } ,false );
+            clickAnswer( rightanswer );
+        });
 
     });//get
 }
