@@ -102,10 +102,13 @@ function clickList(evt){
 //                    loadVideo(currentQuestionId);
 //                    loadQuestions(currentQuestionId);
 //                } });
-            confirm("next"){
+            var r = confirm("Press a button!");
+            if (r == true) {
                 currentQuestionId++;
                 loadVideo(currentQuestionId);
-                    loadQuestions(currentQuestionId);
+                loadQuestions(currentQuestionId);
+            } else {
+                txt = "You pressed Cancel!";
             }
         }else {
             document.getElementById("right").style.outline= "red solid"; //change the style if it is wrong
