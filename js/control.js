@@ -49,8 +49,9 @@ function loadQuestions ( currentQuestionId ){
     $.get("request.php?op=returnAnswerList&question_id="+currentQuestionId, function (data) {  //request data
         console.log(jsonObjArray+"kk1 get in");
         var j2 = new jsonObj(2,"title", "http", false);
-        jsonObjArray.push(j2);
-        jsonObjArray[1] =j2;
+        jsonObjArray.push(j2.key);
+        console.log(jsonObj[1]+"js2");
+        jsonObjArray[1] =j2.key;
         console.log(jsonObj[1]+"js2");
         console.log(jsonObjArray+"kk1 get in after push");
 
