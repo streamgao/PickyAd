@@ -1,6 +1,6 @@
 ﻿/*
 * Changed by Stream on 10/10/14.
-* DialogBySHF Library v1.0.0
+* Dialog Library v1.0.0
 * http://cnblogs.com/iamshf
 * author:SHF
 * Date: 2013-06-14
@@ -14,7 +14,7 @@
     };
     var ContentWidth = 0;
     var ContentHeight = 0;
-    $.DialogBySHF = {
+    $.Dialog = {
         //弹出提示框
         Alert: function (params) {
             Show(params, "Alert");
@@ -25,7 +25,7 @@
         Dialog: function (params) { Show(params, "Dialog") },
         //关闭弹出框
         Close: function () {
-            $("#DialogBySHFLayer,#DialogBySHF").remove();
+            $("#DialogLayer,#Dialog").remove();
         }
     };
     //初始化参数
@@ -45,8 +45,8 @@
         var positionLeft = (screenWidth - PARAMS.Width) / 2 + $(document).scrollLeft();
         var positionTop = (screenHeight - PARAMS.Height) / 2 + $(document).scrollTop();
         var Content = [];
-        Content.push("<div id=\"DialogBySHFLayer\" style=\"width:" + $(document).width() + "px;height:" + $(document).height() + "px;\"></div>");
-        Content.push("<div id=\"DialogBySHF\" style=\"width:" + PARAMS.Width + "px;height:" + PARAMS.Height + "px;left:" + positionLeft + "px;top:" + positionTop + "px;\">");
+        Content.push("<div id=\"DialogLayer\" style=\"width:" + $(document).width() + "px;height:" + $(document).height() + "px;\"></div>");
+        Content.push("<div id=\"Dialog\" style=\"width:" + PARAMS.Width + "px;height:" + PARAMS.Height + "px;left:" + positionLeft + "px;top:" + positionTop + "px;\">");
         Content.push("    <div id=\"Title\"><span>" + PARAMS.Title + "</span>  </div>");
         Content.push("    <div id=\"Container\" style=\"width:" + ContentWidth + "px;height:" + ContentHeight + "px;\">");
         if (caller == "Dialog") {
@@ -58,9 +58,9 @@
             Content.push("            <tr><td id=\"TipLine\" style=\"height:" + TipLineHeight + "px;\">" + PARAMS.Content + "</td></tr>");
             Content.push("            <tr>");
             Content.push("                <td id=\"BtnLine\">");
-            Content.push("                    <input type=\"button\" id=\"btnDialogBySHFConfirm\" value=\"确定\" />");
+            Content.push("                    <input type=\"button\" id=\"btnDialogConfirm\" value=\"确定\" />");
             if (caller == "Confirm") {
-                Content.push("                    <input type=\"button\" id=\"btnDialogBySHFCancel\" value=\"取消\" />");
+                Content.push("                    <input type=\"button\" id=\"btnDialogCancel\" value=\"取消\" />");
             }
             Content.push("                </td>");
             Content.push("            </tr>");
@@ -73,19 +73,19 @@
     }
     //设置弹窗事件
     function SetDialogEvent(caller) {
-        //$("#DialogBySHF #Close").click(function () { $.DialogBySHF.Close(); });
-        $("#DialogBySHF #Title").DragBySHF($("#DialogBySHF"));
+        //$("#Dialog #Close").click(function () { $.Dialog.Close(); });
+        $("#Dialog #Title").Drag($("#Dialog"));
         if (caller != "Dialog") {
-            $("#DialogBySHF #btnDialogBySHFConfirm").click(function () {
-                $.DialogBySHF.Close();
+            $("#Dialog #btnDialogConfirm").click(function () {
+                $.Dialog.Close();
                 if ($.isFunction(PARAMS.ConfirmFun)) {
                     PARAMS.ConfirmFun();
                 }
             })
         }
         if (caller == "Confirm") {
-            $("#DialogBySHF #btnDialogBySHFCancel").click(function () {
-                $.DialogBySHF.Close();
+            $("#Dialog #btnDialogCancel").click(function () {
+                $.Dialog.Close();
                 if ($.isFunction(PARAMS.CancelFun)) {
                     PARAMS.CancelFun();
                 }
@@ -97,7 +97,7 @@
 //拖动层
 (function ($) {
     $.fn.extend({
-        DragBySHF: function (objMoved) {
+        Drag: function (objMoved) {
             return this.each(function () {
                 //鼠标按下时的位置
                 var mouseDownPosiX;

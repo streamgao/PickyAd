@@ -1,5 +1,4 @@
-﻿/*弹出来的遮罩层*/
-#DialogBySHFLayer
+﻿#DialogLayer
 {
     position:absolute;
     /*width:100%;
@@ -13,7 +12,7 @@
     opacity: 0.4;
 }
 /*弹出的提示框*/
-#DialogBySHF
+#Dialog
 {
     position:absolute;
     /*left:50%;
@@ -25,7 +24,7 @@
     background-color:#f2f2f2;
     z-index:600;
 }
-#DialogBySHF #Title
+#Dialog #Title
 {
     margin:0;
     width:100%;
@@ -40,45 +39,32 @@
     line-height:35px;
     border-radius:10px 10px 0 0;
 }
-#DialogBySHF #Close
-{
-    position:absolute;
-    right:7px;
-    top:7px;
-    height:21px;
-    line-height:21px;
-    width:21px;
-    cursor:pointer;
-    display:block;
-    border:1px solid #da8e02;
-    box-shadow:0 0 4px rgba(255, 255, 255, .9);
-    border-radius:5px;
-}
-#DialogBySHF #Container
+
+#Dialog #Container
 {
     padding:0px 5px 5px 5px;
     /*width:390px;
     height:355px;*/
 }
-#DialogBySHF #Container table,#DialogBySHF #Container iframe
+#Dialog #Container table,#Dialog #Container iframe
 {
     width:100%;
     height:100%;
 }
-#DialogBySHF #Container table td
+#Dialog #Container table td
 {
     vertical-align:middle;
 }
-#DialogBySHF #Container table #TipLine
+#Dialog #Container table #TipLine
 {
     padding:0 30px;
 }
-#DialogBySHF #Container table #BtnLine
+#Dialog #Container table #BtnLine
 {
     height:60px;
     text-align:center;
 }
-#DialogBySHF #Container table #BtnLine input
+#Dialog #Container table #BtnLine input
 {
     margin:6px 11px;
     -moz-user-select: none;
@@ -101,7 +87,7 @@
     padding:0 8px;
     text-align:center;
 }
-#DialogBySHF #Container table #BtnLine input:hover
+#Dialog #Container table #BtnLine input:hover
 {
     background-color: #F8F8F8;
     background-image: -moz-linear-gradient(center top , #F8F8F8, #F1F1F1);
@@ -109,8 +95,25 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     color: #333333;
 }
-#DialogBySHF #Container table #BtnLine input:focus
+#Dialog #Container table #BtnLine input:focus
 {
     border: 1px solid #4D90FE;
     outline: medium none;
+}
+
+
+
+#Dialog #Close
+{
+    position:absolute;
+    right:7px;
+    top:7px;
+    height:21px;
+    line-height:21px;
+    width:21px;
+    cursor:pointer;
+    display:block;
+    border:1px solid #da8e02;
+    box-shadow:0 0 4px rgba(255, 255, 255, .9);
+    border-radius:5px;
 }
