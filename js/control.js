@@ -71,7 +71,8 @@ function loadQuestions ( currentQuestionId ){
 //Controller.prototype.clickAnswer = function ( ) {    it failed
 function clickAnswer( evt ){
     var thisRight =  evt.target;
-    console.log(thisRight);
+    console.log(clickedOne);
+
     if ( clickedOne !=-1 ) {     //if it is chosen,return back
         alert(clickedOne);
         var temp = thisRight.style.background;
@@ -90,6 +91,8 @@ function clickList(evt){
 
     var targetOne = evt.target;
     var clickedOne = targetOne.getAttribute("id");
+    console.log(targetOne.getAttribute("id"));
+    console.log(clickedOne);
     document.getElementById("right").style.background = targetOne.style.background;     // to the right answer
     evt.target.style.background = "#ffffff";
 
