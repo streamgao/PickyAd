@@ -70,9 +70,8 @@ function loadQuestions ( currentQuestionId ){
 //Controller.prototype.clickAnswer = function ( ) {    it failed
 function clickAnswer( evt ){
     var thisRight =  evt.target;
-    console.log(clickedOne);
-
     if ( clickedOne !=-1 ) {     //if it is chosen,return back
+        thisRight.style.outline= "none";
         var temp = thisRight.style.background;
         thisRight.style.background = "#d9dcdf";
 
@@ -89,8 +88,6 @@ function clickList(evt){
 
     var targetOne = evt.target;
     clickedOne = targetOne.getAttribute("id");
-    console.log(clickedOne);
-
     document.getElementById("right").style.background = targetOne.style.background;     // to the right answer
     evt.target.style.background = "#ffffff";
 
@@ -102,7 +99,7 @@ function clickList(evt){
             loadQuestions(currentQuestionId);
         }else{}
     }else {
-        document.getElementById("right").style.outline= "red solid thick"; //change the style if it is wrong
+        document.getElementById("right").style.outline= "red solid"; //change the style if it is wrong
         console.log("wronganswer");
     }//else
 
