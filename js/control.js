@@ -73,7 +73,7 @@ function clickAnswer( evt ){
     var thisRight =  evt.target;
     console.log(thisRight);
     if ( clickedOne !=-1 ) {     //if it is chosen,return back
-        alert("stylr");
+        alert(clickedOne);
         var temp = thisRight.style.background;
         thisRight.style.background = "#d9dcdf";
 
