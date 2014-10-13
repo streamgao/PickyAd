@@ -38,7 +38,8 @@ function loadVideo ( currentQuestionId ) {
 
 
 function loadQuestions ( currentQuestionId ){
-    console.log(jsonObjArray+"jsonarray  get out");
+    console.log("jsonarray  get out");
+    console.log(jsonObjArray);
     var j1 = new jsonObj(1,"title", "http", false);
     jsonObjArray[0] =j1;
     jsonObjArray.push(j1);
@@ -83,6 +84,7 @@ function loadQuestions ( currentQuestionId ){
 
     });//get
 }
+
 
 
 //Controller.prototype.clickAnswer = function ( ) {    it failed
