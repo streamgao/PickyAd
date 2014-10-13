@@ -23,7 +23,9 @@ $(document).ready(function(){
     rightanswer.addEventListener("click", clickAnswer);
 
     var list =document.getElementsByClassName("list");
-    list.addEventListener("click",clickList); //click listgot
+    console.log(list);
+    console.log(list[0]);
+    list[0].addEventListener("click",clickList); //click listgot
 });
 
 
@@ -57,11 +59,11 @@ function loadQuestions ( currentQuestionId ){
             ans.appendChild(listgot);
             var selectedOne = json[i];
 
-//            listgot.addEventListener("click",clickList ); //click listgot
+            listgot.addEventListener("click",clickList ); //click listgot
         }//for
 
-//        var rightanswer= document.getElementById("right");
-//        rightanswer.addEventListener("click", clickAnswer);
+        var rightanswer= document.getElementById("right");
+        rightanswer.addEventListener("click", clickAnswer);
 
     });//get
 }
