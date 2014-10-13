@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/control.js"> </script>
-    <script src="js/modernizr.js"></script>
+    <script src="js/alertify.js"></script>
 </head>
 
 <body>
@@ -36,7 +36,6 @@
                     <div class="list" id="6"></div>
                     <div class="list" id="7"></div>
                     <div class="list" id="8"></div>
-
                 </div>
             </div>
         </div>   <!--question-->

@@ -95,11 +95,23 @@ function clickList(evt){
 
     //right show yes.  else show no/
     if ( jsonObjArray[clickedOne]['answer_right']== 1) {
-        if (confirm("Right Answer. Click to Next.")) {
-            currentQuestionId++;
-            loadVideo(currentQuestionId);
-            loadQuestions(currentQuestionId);
-        }else{}
+       // if (confirm("Right Answer. Click to Next.")) {
+//            currentQuestionId++;
+//            loadVideo(currentQuestionId);
+//            loadQuestions(currentQuestionId);
+
+            reset();
+            alertify.confirm("Right Answer!  Click to Next", function (e) {
+                if (e) {
+                    alertify.success("You've clicked OK");
+                    currentQuestionId++;
+                    loadVideo(currentQuestionId);
+                    loadQuestions(currentQuestionId);
+                } else {
+                    alertify.error("You've clicked Cancel");
+                }
+            });
+       // }
     }else {
         document.getElementById("right").style.outline= "red solid"; //change the style if it is wrong
         console.log("wronganswer");
