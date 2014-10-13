@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>PickyAd--STREAM GAO</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/DialogBySHF.css" />
+    <link rel="stylesheet" href="css/Dialog.css" />
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
@@ -43,6 +43,6 @@
     <div class="footer"> @2014 by Stream Gao. ITP</div>
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="js/DialogBySHF.js"></script>
+<script src="js/Dialog.js"></script>
 <script type="text/javascript" src="js/control.js"> </script>
 </html>

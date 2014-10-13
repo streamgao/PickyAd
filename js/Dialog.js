@@ -1,14 +1,17 @@
-﻿/**
+﻿/*
+* Changed by Stream on 10/10/14.
 * DialogBySHF Library v1.0.0
 * http://cnblogs.com/iamshf
-*
-* author:盛浩峰
+* author:SHF
 * Date: 2013-06-14
 */
 (function ($) {
     //默认参数
     var PARAMS;
-    var DEFAULTPARAMS = { Title: "Windows弹出消息", Content: "", Width: 400, Height: 300, URL: "", ConfirmFun: new Object, CancelFun: new Object };
+    var DEFAULTPARAMS = {
+        Title: "Windows弹出消息", Content: "", Width: 400, Height: 300, URL: "",
+        ConfirmFun: new Object, CancelFun: new Object
+    };
     var ContentWidth = 0;
     var ContentHeight = 0;
     $.DialogBySHF = {
@@ -44,7 +47,7 @@
         var Content = [];
         Content.push("<div id=\"DialogBySHFLayer\" style=\"width:" + $(document).width() + "px;height:" + $(document).height() + "px;\"></div>");
         Content.push("<div id=\"DialogBySHF\" style=\"width:" + PARAMS.Width + "px;height:" + PARAMS.Height + "px;left:" + positionLeft + "px;top:" + positionTop + "px;\">");
-        Content.push("    <div id=\"Title\"><span>" + PARAMS.Title + "</span><span id=\"Close\">&#10005;</span></div>");
+        Content.push("    <div id=\"Title\"><span>" + PARAMS.Title + "</span>  </div>");
         Content.push("    <div id=\"Container\" style=\"width:" + ContentWidth + "px;height:" + ContentHeight + "px;\">");
         if (caller == "Dialog") {
             Content.push("        <iframe src=\"" + PARAMS.URL + "\"></iframe>");
@@ -70,7 +73,7 @@
     }
     //设置弹窗事件
     function SetDialogEvent(caller) {
-        $("#DialogBySHF #Close").click(function () { $.DialogBySHF.Close(); });
+        //$("#DialogBySHF #Close").click(function () { $.DialogBySHF.Close(); });
         $("#DialogBySHF #Title").DragBySHF($("#DialogBySHF"));
         if (caller != "Dialog") {
             $("#DialogBySHF #btnDialogBySHFConfirm").click(function () {
