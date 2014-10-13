@@ -22,7 +22,8 @@ $(document).ready(function(){
     var rightanswer= document.getElementById("right");
     rightanswer.addEventListener("click", clickAnswer);
 
-    document.getElementsByClassName("list").addEventListener("click",clickList); //click listgot
+    var list =document.getElementsByClassName("list");
+    list.addEventListener("click",clickList); //click listgot
 });
 
 
