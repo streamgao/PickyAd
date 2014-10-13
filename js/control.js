@@ -51,7 +51,7 @@ function loadQuestions ( currentQuestionId ){
         console.log(jsonObjArray[1]+"js2");
         jsonObjArray[1] =j2;
         console.log(jsonObjArray[1].answer_id);
-        console.log(jsonObjArray+"kk1 get in after push");
+        console.log(jsonObjArray[0].answer_logo+"  kk1 get in after push");
 
         var json = JSON.parse(data);
         for (var i = 0; i < 9; i++) {  // load the answers
