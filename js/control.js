@@ -101,7 +101,6 @@ function clickList(evt){
 //            loadQuestions(currentQuestionId);
 
             reset();
-        $("#toggleCSS").attr("href", "../css/alertify.bootstrap.css");
             alertify.confirm("Right Answer!  Click to Next", function (e) {
                 if (e) {
                     alertify.success("You've clicked OK");
