@@ -37,21 +37,8 @@ function loadVideo ( currentQuestionId ) {
 
 
 function loadQuestions ( currentQuestionId ){
-    console.log("jsonarray  get out");
-    console.log(jsonObjArray);
-    var j1 = new jsonObj(1,"title", "http", false);
-    console.log(j1);
-    jsonObjArray.push(j1);
-    console.log(jsonObjArray[0].answer_logo+"jsonObjArray out ");
 
     $.get("request.php?op=returnAnswerList&question_id="+currentQuestionId, function (data) {  //request data
-        console.log(jsonObjArray+"kk1 get in");
-        var j2 = new jsonObj(2,"title", "http", false);
-        jsonObjArray.push(j2.key);
-        console.log(jsonObjArray[1]+"js2");
-        jsonObjArray[1] =j2;
-        console.log(jsonObjArray[1].answer_id);
-        console.log(jsonObjArray[0].answer_logo+"  kk1 get in after push");
 
         var json = JSON.parse(data);
         for (var i = 0; i < 9; i++) {  // load the answers
@@ -101,8 +88,6 @@ function clickAnswer( answer ){
 
 
 function clickcall(evt){
-    console.log(currentQuestionId+"hdjf");
-    console.log(jsonObjArray+"hdjf"+j1);
 
     console.log(evt.target);
     var s = evt.target;
