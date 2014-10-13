@@ -18,6 +18,11 @@ $(document).ready(function(){
     currentQuestionId=1;
     loadVideo(currentQuestionId );
     loadQuestions( currentQuestionId );
+
+    var rightanswer= document.getElementById("right");
+    rightanswer.addEventListener("click", clickAnswer);
+
+    $(".list").addEventListener("click",clickList ); //click listgot
 });
 
 
@@ -51,11 +56,11 @@ function loadQuestions ( currentQuestionId ){
             ans.appendChild(listgot);
             var selectedOne = json[i];
 
-            listgot.addEventListener("click",clickList ); //click listgot
+//            listgot.addEventListener("click",clickList ); //click listgot
         }//for
 
-        var rightanswer= document.getElementById("right");
-        rightanswer.addEventListener("click", clickAnswer);
+//        var rightanswer= document.getElementById("right");
+//        rightanswer.addEventListener("click", clickAnswer);
 
     });//get
 }
