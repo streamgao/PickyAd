@@ -627,7 +627,11 @@ function reset () {
 
         return {
             alert   : function (message, fn, cssClass) { _alertify.dialog(message, "alert", fn, "", cssClass); return this; },
-            confirm : function (message, fn, cssClass) { _alertify.dialog(message, "confirm", fn, "", cssClass); return this; },
+            confirm : function (message, fn, cssClass) {
+                _alertify.dialog(message, "confirm", fn, "", cssClass);
+                console.log("confirm");
+                return this;
+            },
             extend  : _alertify.extend,
             init    : _alertify.init,
             log     : function (message, type, wait) { _alertify.log(message, type, wait); return this; },
