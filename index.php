@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>PickyAd--STREAM GAO</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/alertify.bootstrap.css" id="toggleCSS" />
+    <link rel="stylesheet" href="css/DialogBySHF.css" />
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
