@@ -18,14 +18,6 @@ $(document).ready(function(){
     currentQuestionId=1;
     loadVideo(currentQuestionId );
     loadQuestions( currentQuestionId );
-
-//    var rightanswer= document.getElementById("right");
-//    rightanswer.addEventListener("click", clickAnswer);
-//
-//    var list =document.getElementsByClassName("list");
-//    console.log(list);
-//    console.log(list[0]);
-//    jquery.each( list, addEventListener("click",clickList) );//click listgot)
 });
 
 
@@ -45,6 +37,7 @@ function loadVideo ( currentQuestionId ) {
 }
 
 function loadQuestions ( currentQuestionId ){
+    clickedOne = -1;
     document.getElementById("right").style.background = "#d9dcdf";
     $.get("request.php?op=returnAnswerList&question_id="+currentQuestionId, function (data) {  //request data
 
@@ -77,7 +70,6 @@ function clickAnswer( evt ){
         thisRight.style.outline= "none";
         var temp = thisRight.style.background;
         thisRight.style.background = "#d9dcdf";
-
         var lastClicked = document.getElementById(clickedOne);
         lastClicked.style.background = temp;
         clickedOne = -1;  // after clicked, set the last clicked one to -1. ensure no one in the history of clicked
@@ -95,21 +87,13 @@ function clickList(evt){
 
         //right show yes.  else show no/
         if ( jsonObjArray[clickedOne]['answer_right']== 1) {   // go to the next question
-//            $.Dialog.Alert({ Width: 400, Height: 300, Title: "Right Answer!",
-//                Content: jsonObjArray[clickedOne]['answer_title']+ '&nbsp' +'Next!',
-//                ConfirmFun:function(){
-//                    currentQuestionId++;
-//                    loadVideo(currentQuestionId);
-//                    loadQuestions(currentQuestionId);
-//                } });
-            var r = confirm("Press a button!");
-            if (r == true) {
-                currentQuestionId++;
-                loadVideo(currentQuestionId);
-                loadQuestions(currentQuestionId);
-            } else {
-                txt = "You pressed Cancel!";
-            }
+            $.Dialog.Alert({ Width: 400, Height: 300, Title: "Right Answer!",
+                Content: jsonObjArray[clickedOne]['answer_title']+ '&nbsp' +'Next!',
+                ConfirmFun:function(){
+                    currentQuestionId++;
+                    loadVideo(currentQuestionId);
+                    loadQuestions(currentQuestionId);
+                } });
         }else {
             document.getElementById("right").style.outline= "red solid"; //change the style if it is wrong
         }//else
