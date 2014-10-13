@@ -50,9 +50,9 @@ function loadQuestions ( currentQuestionId ){
         console.log(jsonObjArray+"kk1 get in");
         var j2 = new jsonObj(2,"title", "http", false);
         jsonObjArray.push(j2.key);
-        console.log(jsonObj[1]+"js2");
+        console.log(jsonObjArray[1]+"js2");
         jsonObjArray[1] =j2.key;
-        console.log(jsonObj[1]+"js2");
+        console.log(jsonObjArray[1]+"js2");
         console.log(jsonObjArray+"kk1 get in after push");
 
         var json = JSON.parse(data);
