@@ -22,7 +22,7 @@ $(document).ready(function(){
     var rightanswer= document.getElementById("right");
     rightanswer.addEventListener("click", clickAnswer);
 
-    document.getElementsByClassName(list).addEventListener("click",clickList ); //click listgot
+    document.getElementsByClassName("list").addEventListener("click",clickList); //click listgot
 });
 
 
@@ -84,7 +84,6 @@ function clickAnswer( evt ){
 
 
 function clickList(evt){
-
     if( clickedOne==-1 ){  // if there is no previous selection
         var targetOne = evt.target;
         clickedOne = targetOne.getAttribute("id");
