@@ -88,7 +88,7 @@ function clickAnswer( evt ){
 
 function clickList(evt){
 
-    if( clickedOne!=-1 ){  // if there is no previous selection
+    if( clickedOne==-1 ){  // if there is no previous selection
         var targetOne = evt.target;
         clickedOne = targetOne.getAttribute("id");
         document.getElementById("right").style.background = targetOne.style.background;     // to the right answer
