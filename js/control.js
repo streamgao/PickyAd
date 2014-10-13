@@ -41,6 +41,7 @@ function loadQuestions ( currentQuestionId ){
     console.log("jsonarray  get out");
     console.log(jsonObjArray);
     var j1 = new jsonObj(1,"title", "http", false);
+    console.log(j1);
     jsonObjArray[0] =j1;
     jsonObjArray.push(j1);
     console.log(jsonObj[0]+"js1 out ");
