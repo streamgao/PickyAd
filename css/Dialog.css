@@ -47,7 +47,9 @@
     vertical-align:middle;
     color: #FFFFFF;
     font-family: gill sans, helvetica;
-    font-size: 40px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 10px;
 }
 
 #Dialog #Container table #BtnLine
