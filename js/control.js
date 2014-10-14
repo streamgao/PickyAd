@@ -100,10 +100,10 @@ function clickList(evt){
 function goNext(){
     currentQuestionId++;
     loadVideo(currentQuestionId);
-    loadQuestions(currentQuestionId);
+    loadQuestions(currentQuestionId);/*
     document.getElementById("subcontainer").style.left="120%";
     $("#subcontainer").animate({
         left:"0px",
         }, 1000    );
-
+*/
 }
