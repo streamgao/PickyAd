@@ -36,8 +36,8 @@
       <file leaf-file-name="control.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/control.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5081967" vertical-offset="1088" max-vertical-offset="1620">
-              <caret line="87" column="51" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.6487119" vertical-offset="1088" max-vertical-offset="1620">
+              <caret line="91" column="61" selection-start-line="91" selection-start-column="61" selection-end-line="91" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -56,8 +56,8 @@
       <file leaf-file-name="request.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/request.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0" vertical-offset="60" max-vertical-offset="1710">
-              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="1710">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding>
                 <marker date="1413252678000" expanded="true" signature="1108:1163" placeholder="SELECT video..video..." />
                 <marker date="1413252678000" expanded="true" signature="1839:1896" placeholder="SELECT answe..answer..." />
@@ -79,10 +79,10 @@
       <file leaf-file-name="Dialog.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/Dialog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="681" max-vertical-offset="2100">
-              <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="2115">
+              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding>
-                <marker date="1413314816000" expanded="false" signature="2243:2250" placeholder="..." />
+                <marker date="1413315031000" expanded="false" signature="2243:2250" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -471,12 +471,12 @@
       <workItem from="1413137933456" duration="2084000" />
       <workItem from="1413207862187" duration="19443000" />
       <workItem from="1413250962200" duration="2871000" />
-      <workItem from="1413294306341" duration="4999000" />
+      <workItem from="1413294306341" duration="5331000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48373000" />
+    <option name="totallyTimeSpent" value="48705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="705" extended-state="6" />
@@ -581,7 +581,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="2190">
           <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
           <folding>
-            <marker date="1413314816000" expanded="false" signature="2243:2250" placeholder="..." />
+            <marker date="1413315031000" expanded="false" signature="2243:2250" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -623,7 +623,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2190">
           <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
           <folding>
-            <marker date="1413314816000" expanded="false" signature="2243:2250" placeholder="..." />
+            <marker date="1413315031000" expanded="false" signature="2243:2250" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -798,40 +798,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/Dialog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.192307" vertical-offset="0" max-vertical-offset="1710">
-          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2595">
           <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="60" max-vertical-offset="1710">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding>
-            <marker date="1413252678000" expanded="true" signature="1108:1163" placeholder="SELECT video..video..." />
-            <marker date="1413252678000" expanded="true" signature="1839:1896" placeholder="SELECT answe..answer..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Dialog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="681" max-vertical-offset="2100">
-          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-          <folding>
-            <marker date="1413314816000" expanded="false" signature="2243:2250" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -843,10 +814,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="1710">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <marker date="1413252678000" expanded="true" signature="1108:1163" placeholder="SELECT video..video..." />
+            <marker date="1413252678000" expanded="true" signature="1839:1896" placeholder="SELECT answe..answer..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/Dialog.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-35.192307" vertical-offset="0" max-vertical-offset="1710">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Dialog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="2115">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <marker date="1413315031000" expanded="false" signature="2243:2250" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/control.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5081967" vertical-offset="1088" max-vertical-offset="1620">
-          <caret line="87" column="51" selection-start-line="87" selection-start-column="51" selection-end-line="87" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.6487119" vertical-offset="1088" max-vertical-offset="1620">
+          <caret line="91" column="61" selection-start-line="91" selection-start-column="61" selection-end-line="91" selection-end-column="61" />
           <folding />
         </state>
       </provider>

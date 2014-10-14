@@ -58,7 +58,7 @@
             Content.push("            <tr><td id=\"TipLine\" style=\"height:" + TipLineHeight + "px;\">" + PARAMS.Content + "</td></tr>");
             Content.push("            <tr>");
             Content.push("                <td id=\"BtnLine\">");
-            Content.push("                    <input type=\"button\" id=\"btnDialogConfirm\" value=\"NEXT\" />");
+            Content.push("                    <input type=\"button\" id=\"btnDialogConfirm\" value=\"Next\" />");
             if (caller == "Confirm") {
                 Content.push("                    <input type=\"button\" id=\"btnDialogCancel\" value=\"CANCEL\" />");
             }
@@ -68,6 +68,7 @@
         }
         Content.push("    </div>");
         Content.push("</div>");
+
         $("body").append(Content.join("\n"));
         SetDialogEvent(caller);
     }
