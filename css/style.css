@@ -92,9 +92,8 @@ button{
 }
 
 /*   Answers    */
-
 .answerList{
-    top: 15px;
+    top: 0px;
     float: right;
     width: 45%;
     height: 12em;
