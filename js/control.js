@@ -87,13 +87,9 @@ function clickList(evt){
         if ( jsonObjArray[clickedOne]['answer_right']== 1) {   // go to the next question
             $.Dialog.Alert({ Width: 400, Height: 300, Title: "Right Answer!",
                 Content: jsonObjArray[clickedOne]['answer_title']+ '&nbsp' +'Next!',
-                ConfirmFun:function(){
-                    currentQuestionId++;
-                    loadVideo(currentQuestionId);
-                    loadQuestions(currentQuestionId);
-                } });
+                ConfirmFun:goNext  });
         }else {
-            document.getElementById("right").style.outline= "red solid"; //change the style if it is wrong
+            document.getElementById("right").style.outline = "red solid"; //change the style if it is wrong
         }//else
     }else{ }     // otherwise do nothing
 
@@ -104,13 +100,3 @@ function goNext(){
     loadVideo(currentQuestionId);
     loadQuestions(currentQuestionId);
 }
-
-
-
-
-
-//            if( currentQuestionId ==1 ){
-//                listgot = document.createElement("DIV");
-//                listgot.setAttribute("class", "list");
-//                listgot.setAttribute("id", i);
-//            }else{

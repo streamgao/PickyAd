@@ -58,9 +58,9 @@
             Content.push("            <tr><td id=\"TipLine\" style=\"height:" + TipLineHeight + "px;\">" + PARAMS.Content + "</td></tr>");
             Content.push("            <tr>");
             Content.push("                <td id=\"BtnLine\">");
-            Content.push("                    <input type=\"button\" id=\"btnDialogConfirm\" value=\"确定\" />");
+            Content.push("                    <input type=\"button\" id=\"btnDialogConfirm\" value=\"OK\" />");
             if (caller == "Confirm") {
-                Content.push("                    <input type=\"button\" id=\"btnDialogCancel\" value=\"取消\" />");
+                Content.push("                    <input type=\"button\" id=\"btnDialogCancel\" value=\"CANCEL\" />");
             }
             Content.push("                </td>");
             Content.push("            </tr>");
