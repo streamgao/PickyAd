@@ -203,7 +203,7 @@ a:hover{
     bottom: 1px;
     left: 40%;
     color: white;
-    text-align: center center;
+    text-align: center !important;
     position: relative;
     font: 14px century gothic;
 }
