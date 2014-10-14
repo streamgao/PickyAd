@@ -65,7 +65,7 @@ function loadQuestions ( currentQuestionId ){
 function clickAnswer( evt ){
     var thisRight =  evt.target;
     if ( clickedOne !=-1 ) {     //if it is chosen,return back
-        thisRight.style.outline= "none";
+        thisRight.style.border= "none";
         var temp = thisRight.style.background;
         thisRight.style.background = "#d9dcdf";
         var lastClicked = document.getElementById(clickedOne);
