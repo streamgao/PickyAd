@@ -2,9 +2,11 @@ html,
 button,
 input,
 select,
-textarea {
+textarea,
+tabe{
     color: #222;
-    font-family: helvetica, gill sans mt;
+    font-family:  gill sans mt,helvetica;
+    border: none;
 }
 
 body {
