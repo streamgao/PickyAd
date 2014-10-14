@@ -44,7 +44,7 @@ button{
     height: 120%;
     margin: 0;
     overflow: scroll;
-    background: #7db7c9;
+    background: #007095;
 }
 
 .title{
@@ -57,7 +57,7 @@ button{
     text-align: center;
     font: 1.2em helvetica;
     line-height: 4em;
-    box-shadow: 0em .1em 0.2em #888888;
+    box-shadow: 0em .1em 0.2em #000000;
 }
 
 
@@ -131,7 +131,7 @@ button{
 .list{
     font-size: 1.2em;
     /*border-radius: 10px;*/
-    box-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,1);
+    box-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.3);
     top: 7em;
 }
 
