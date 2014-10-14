@@ -85,7 +85,7 @@ function clickList(evt){
 
         //right show yes.  else show no/
         if ( jsonObjArray[clickedOne]['answer_right']== 1) {   // go to the next question
-            $.Dialog.Alert({ Width: 400, Height: 300, Title: "Right Answer!",
+            $.Dialog.Alert({ Width: 400, Height: 350, Title: "Right Answer!",
                 Content: jsonObjArray[clickedOne]['answer_title'],
                 ConfirmFun:goNext  });
         }else {
