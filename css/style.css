@@ -86,6 +86,8 @@ button{
     border-right: 0.2em, #c3c1a7;
     width: 45%;
     height:auto;
+    margin: 3em;
+    margin-right: 0em !important;
     position: absolute;
 }
 
