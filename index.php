@@ -5,8 +5,7 @@
     <title>PickyAd--STREAM GAO</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/Dialog.css" />
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
 </head>
 
 <body>

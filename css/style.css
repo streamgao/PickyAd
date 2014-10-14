@@ -52,12 +52,12 @@ button{
 .title{
     position: relative;
     width: 100%;
-    height: 5em;
+    height: 4.2em;
     background: #007095;
     background-size: auto 100%;
     color: white;
     text-align: center;
-    font: 2em helvetica;
+    font: 1.5em helvetica;
     line-height: 4em;
     box-shadow: 0em .1em 0.2em #000000;
 }
