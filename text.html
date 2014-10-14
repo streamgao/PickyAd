@@ -11,7 +11,7 @@
 <body>
 
 <div id="container">
-    <div id="title" class="title" >Unknown Name</div>
+    <div id="title" class="title">Unknown Name</div>
     <div class="subcontainer">
         <div class="questions">
 
@@ -26,7 +26,7 @@
                 </div>
                 <div class="line"> </div>
                 <div id="list">
-                    <div class="list" id="0"></div>
+                    <div class="list" id="0" onclick="haha();"></div>
                     <div class="list" id="1"></div>
                     <div class="list" id="2"></div>
                     <div class="list" id="3"></div>
@@ -45,5 +45,26 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/Dialog.js"></script>
-<script type="text/javascript" src="js/control.js"> </script>
+<!--script type="text/javascript" src="js/control.js"> </script-->
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+//console.log("akdshfkj;a ");
+
+});
+
+function haha(){
+    //alert("hahaha");
+        document.getElementById("video").style.width= 0 + "px";
+         $("#video").animate({
+             width:"45%",
+                }, 'slow'    );
+     }
+</script>
+
+
+
+
+
 </html>
