@@ -44,7 +44,7 @@
 #Dialog #Container table td
 {
     vertical-align:middle;
-    margin-top: -30px;
+    top: -30px;
     color: #FFFFFF;
     font-family: gill sans, helvetica;
     font-size: 30px;
