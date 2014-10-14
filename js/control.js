@@ -101,4 +101,9 @@ function goNext(){
     currentQuestionId++;
     loadVideo(currentQuestionId);
     loadQuestions(currentQuestionId);
+
+
+
+
+
 }
