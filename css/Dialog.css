@@ -63,6 +63,8 @@
     -moz-user-select: none;
     background-color:#d0a15a;
     margin-top: -60px;
+    top: -30px;
+    z-index: 1;
     font-family: gill sans,helvetica;
     color:#FFFFFF;
     cursor:default;
