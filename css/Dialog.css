@@ -9,7 +9,7 @@
     -moz-opacity:0.6;
     opacity: 0.6;
 }
-/*弹出的提示框*/
+
 #Dialog
 {
     position:absolute;
@@ -22,7 +22,6 @@
     margin:0;
     width:100%;
     height:80px;
-   /* background-color:#c9bf7d;*/
     color:#FFFFFF;
     font-family:gill sans,helvetica;
     font-size:60px;
@@ -45,11 +44,12 @@
 #Dialog #Container table td
 {
     vertical-align:middle;
+    margin-top: -30px;
     color: #FFFFFF;
     font-family: gill sans, helvetica;
     font-size: 30px;
     text-align: center;
-    line-height: 10px;
+    line-height: 0px;
 }
 
 #Dialog #Container table #BtnLine
@@ -103,7 +103,6 @@
     width:21px;
     cursor:pointer;
     display:block;
-    border:1px solid #da8e02;
     box-shadow:0 0 4px rgba(255, 255, 255, .9);
     border-radius:5px;
 }
