@@ -4,6 +4,7 @@ input,
 select,
 textarea {
     color: #222;
+    font-family: helvetica, gill sans mt;
 }
 
 body {
@@ -54,7 +55,7 @@ button{
     background-size: auto 100%;
     color: white;
     text-align: center;
-    font: 1.2em verdana;
+    font: 1.2em helvetica;
     line-height: 4em;
     box-shadow: 0em .1em 0.2em #888888;
 }
