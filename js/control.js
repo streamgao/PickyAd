@@ -107,9 +107,4 @@ function goNext(){
         left: "0",
     }, 'slow'    );
 
-//    document.getElementById("video").style.width= 0 + "px";
-//    $("#video").animate({
-//        width:"45%",
-//    }, 'slow'    );
-
 }
