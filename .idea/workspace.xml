@@ -56,11 +56,11 @@
       <file leaf-file-name="request.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/request.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66997516" vertical-offset="0" max-vertical-offset="1710">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.6327543" vertical-offset="0" max-vertical-offset="1710">
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
               <folding>
-                <marker date="1413252527000" expanded="true" signature="1108:1163" placeholder="SELECT video..video..." />
-                <marker date="1413252527000" expanded="true" signature="1839:1896" placeholder="SELECT answe..answer..." />
+                <marker date="1413252678000" expanded="true" signature="1108:1163" placeholder="SELECT video..video..." />
+                <marker date="1413252678000" expanded="true" signature="1839:1896" placeholder="SELECT answe..answer..." />
               </folding>
             </state>
           </provider>
@@ -116,7 +116,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="x" value="7" />
+    <option name="y" value="104" />
     <option name="width" value="1280" />
     <option name="height" value="705" />
   </component>
@@ -470,15 +471,15 @@
       <workItem from="1413088704611" duration="614000" />
       <workItem from="1413137933456" duration="2084000" />
       <workItem from="1413207862187" duration="19443000" />
-      <workItem from="1413250962200" duration="1063000" />
+      <workItem from="1413250962200" duration="1177000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41566000" />
+    <option name="totallyTimeSpent" value="41680000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="705" extended-state="6" />
+    <frame x="7" y="104" width="1280" height="705" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -615,8 +616,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1710">
           <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
           <folding>
-            <marker date="1413252527000" expanded="true" signature="1108:1163" placeholder="SELECT video..video..." />
-            <marker date="1413252527000" expanded="true" signature="1839:1896" placeholder="SELECT answe..answer..." />
+            <marker date="1413252678000" expanded="true" signature="1108:1163" placeholder="SELECT video..video..." />
+            <marker date="1413252678000" expanded="true" signature="1839:1896" placeholder="SELECT answe..answer..." />
           </folding>
         </state>
       </provider>
@@ -669,8 +670,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1710">
           <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
           <folding>
-            <marker date="1413252527000" expanded="true" signature="1108:1163" placeholder="SELECT video..video..." />
-            <marker date="1413252527000" expanded="true" signature="1839:1896" placeholder="SELECT answe..answer..." />
+            <marker date="1413252678000" expanded="true" signature="1108:1163" placeholder="SELECT video..video..." />
+            <marker date="1413252678000" expanded="true" signature="1839:1896" placeholder="SELECT answe..answer..." />
           </folding>
         </state>
       </provider>
@@ -788,11 +789,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66997516" vertical-offset="0" max-vertical-offset="1710">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.6327543" vertical-offset="0" max-vertical-offset="1710">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
           <folding>
-            <marker date="1413252527000" expanded="true" signature="1108:1163" placeholder="SELECT video..video..." />
-            <marker date="1413252527000" expanded="true" signature="1839:1896" placeholder="SELECT answe..answer..." />
+            <marker date="1413252678000" expanded="true" signature="1108:1163" placeholder="SELECT video..video..." />
+            <marker date="1413252678000" expanded="true" signature="1839:1896" placeholder="SELECT answe..answer..." />
           </folding>
         </state>
       </provider>
