@@ -25,11 +25,10 @@
    /* background-color:#c9bf7d;*/
     color:#FFFFFF;
     font-family:gill sans,helvetica;
-    font-weight:bold;
-    font-size:40px;
+    font-size:60px;
     text-align:center;
     cursor:move;
-    line-height:100px;
+    line-height:180px;
 }
 
 #Dialog #Container
@@ -47,10 +46,7 @@
 {
     vertical-align:middle;
 }
-#Dialog #Container table #TipLine
-{
-    padding:0 30px;
-}
+
 #Dialog #Container table #BtnLine
 {
     height:40px;
@@ -64,18 +60,12 @@
     margin:6px 11px;
     -moz-user-select: none;
     background-color:#d0a15a;
-    /*background-image: -moz-linear-gradient(center top , #F5F5F5, #F1F1F1);
-    background-image:-ms-linear-gradient(rgb(245, 245, 245), rgb(241, 241, 241));
-    background-image:-webkit-linear-gradient(top,#f8f8f8,#f1f1f1);*/
-    border:1px solid rgba(0,0,0,0.1);
-    *border:1px solid #DDDDDD;
-    border:1px solid #DDDDDD;
+    margin-top: -40px;
     border-radius:2px;
     font-family: gill sans,helvetica;
     color:#FFFFFF;
     cursor:default;
     font-size:50px;
-    font-weight:bold;
     height:49px;
     line-height:27px;
     min-width:300px;
@@ -97,6 +87,10 @@
     border: 1px solid #4D90FE;
     outline: medium none;
 }
+
+
+
+
 
 
 
