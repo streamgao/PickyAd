@@ -58,7 +58,7 @@
             Content.push("            <tr><td id=\"TipLine\" style=\"height:" + TipLineHeight + "px;\">" + PARAMS.Content + "</td></tr>");
             Content.push("            <tr>");
             Content.push("                <td id=\"BtnLine\">");
-            Content.push("                    <input type=\"button\" id=\"btnDialogConfirm\" value=\"OK\" />");
+            Content.push("                    <input type=\"button\" id=\"btnDialogConfirm\" value=\"NEXT\" />");
             if (caller == "Confirm") {
                 Content.push("                    <input type=\"button\" id=\"btnDialogCancel\" value=\"CANCEL\" />");
             }

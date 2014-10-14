@@ -86,7 +86,7 @@ function clickList(evt){
         //right show yes.  else show no/
         if ( jsonObjArray[clickedOne]['answer_right']== 1) {   // go to the next question
             $.Dialog.Alert({ Width: 400, Height: 300, Title: "Right Answer!",
-                Content: jsonObjArray[clickedOne]['answer_title']+ '&nbsp' +'Next!',
+                Content: jsonObjArray[clickedOne]['answer_title'],
                 ConfirmFun:goNext  });
         }else {
             document.getElementById("right").style.outline = "red solid"; //change the style if it is wrong
