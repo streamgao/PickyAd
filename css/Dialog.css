@@ -45,6 +45,9 @@
 #Dialog #Container table td
 {
     vertical-align:middle;
+    color: #FFFFFF;
+    font-family: gill sans, helvetica;
+    font-size: 40px;
 }
 
 #Dialog #Container table #BtnLine
