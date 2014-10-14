@@ -63,7 +63,8 @@
     -moz-user-select: none;
     background-color:#d0a15a;
     margin-top: -60px;
-    top: -30px;
+    border: none !important;
+    top: -50px;
     z-index: 1;
     font-family: gill sans,helvetica;
     color:#FFFFFF;
@@ -105,6 +106,4 @@
     width:21px;
     cursor:pointer;
     display:block;
-    box-shadow:0 0 4px rgba(255, 255, 255, .9);
-    border-radius:5px;
 }
