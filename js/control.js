@@ -5,6 +5,7 @@
 var currentQuestionId=0;
 var jsonObjArray = [];
 var clickedOne = -1;     // the last list clicked
+var credit = 0;
 
 function jsonObj(id,title, logo, right){
     this.answer_id= id;
@@ -88,6 +89,7 @@ function clickList(evt){
             $.Dialog.Alert({ Width: 400, Height: 300, Title: "Right Answer!",
                 Content: jsonObjArray[clickedOne]['answer_title'],
                 ConfirmFun:goNext  });
+            credit += 5;
         }else {
             document.getElementById("right").style.border= "3px solid red"; //change the style if it is wrong
         }//else
