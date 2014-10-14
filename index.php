@@ -43,6 +43,7 @@
     <div class="footer"> @2014 by Stream Gao. ITP</div>
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
 <script src="js/Dialog.js"></script>
 <script type="text/javascript" src="js/control.js"> </script>
 </html>
