@@ -91,16 +91,14 @@ form{
 }
 
 
-#subcontainer{
+.subcontainer{
     width: 100%;
     height: 90%;
     position: relative;
     color: #4f4e45;
     top: 2%;
     bottom: 8%;
-    left:0px;
 }
-
 .questions{
     position: relative;
     width: 100%;
@@ -190,7 +188,7 @@ form{
 .footer{
     bottom: 1px;
     color: white;
-    text-align: center !important;
+    text-align: center center !important;
     position: relative;
     font: 14px century gothic;
 }
