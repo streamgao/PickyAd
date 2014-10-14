@@ -60,19 +60,17 @@
 
 #Dialog #Container table #BtnLine input
 {
-    margin:6px 11px;
     -moz-user-select: none;
     background-color:#d0a15a;
-    margin-top: -40px;
+    margin-top: -60px;
     border-radius:2px;
     font-family: gill sans,helvetica;
     color:#FFFFFF;
     cursor:default;
     font-size:50px;
-    height:49px;
+    height:70px;
     line-height:27px;
     min-width:300px;
-    padding:0 8px;
     text-align:center;
 }
 
