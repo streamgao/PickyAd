@@ -102,7 +102,7 @@ function goNext(){
     loadVideo(currentQuestionId);
     loadQuestions(currentQuestionId);
 
-    document.getElementById("questions").style.left=  "150%";
+    document.getElementById("questions").style.left=  150%;
     $("#questions").animate({
         left: "0"
     }, 3000   );
