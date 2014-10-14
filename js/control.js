@@ -102,9 +102,9 @@ function goNext(){
     loadVideo(currentQuestionId);
     loadQuestions(currentQuestionId);
 
-    document.getElementById("subcontainer").style.left=  "100%";
+    document.getElementById("subcontainer").style.left=  "150%";
     $("#subcontainer").animate({
         left: "0",
-    }, 'slow'    );
+    }, 3000   );
 
 }
