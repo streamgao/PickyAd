@@ -2,7 +2,7 @@
 
 $user_name="stream";
 $password="gaoxi123";
-$database="gaoxi123";
+$database="PickyAd";
 $hostname="aaglnrhc6ky1th.ch5sjbwjm96s.us-west-2.rds.amazonaws.com";
 
 $connect_db = mysql_connect($hostname, $user_name , $password);

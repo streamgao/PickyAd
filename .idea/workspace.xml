@@ -56,11 +56,11 @@
       <file leaf-file-name="request.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/request.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9305211" vertical-offset="0" max-vertical-offset="1710">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.37220845" vertical-offset="585" max-vertical-offset="1710">
+              <caret line="49" column="24" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="24" />
               <folding>
-                <marker date="1413031581000" expanded="true" signature="1109:1164" placeholder="SELECT video..video..." />
-                <marker date="1413031581000" expanded="true" signature="1840:1897" placeholder="SELECT answe..answer..." />
+                <marker date="1413252411000" expanded="true" signature="1109:1164" placeholder="SELECT video..video..." />
+                <marker date="1413252411000" expanded="true" signature="1840:1897" placeholder="SELECT answe..answer..." />
               </folding>
             </state>
           </provider>
@@ -110,6 +110,7 @@
         <option value="$PROJECT_DIR$/js/Dialog.js" />
         <option value="$PROJECT_DIR$/css/Dialog.css" />
         <option value="$PROJECT_DIR$/js/control.js" />
+        <option value="$PROJECT_DIR$/request.php" />
       </list>
     </option>
   </component>
@@ -469,12 +470,12 @@
       <workItem from="1413088704611" duration="614000" />
       <workItem from="1413137933456" duration="2084000" />
       <workItem from="1413207862187" duration="19443000" />
-      <workItem from="1413250962200" duration="864000" />
+      <workItem from="1413250962200" duration="981000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41367000" />
+    <option name="totallyTimeSpent" value="41484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="705" extended-state="6" />
@@ -498,7 +499,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -614,8 +615,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1710">
           <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
           <folding>
-            <marker date="1413031581000" expanded="true" signature="1109:1164" placeholder="SELECT video..video..." />
-            <marker date="1413031581000" expanded="true" signature="1840:1897" placeholder="SELECT answe..answer..." />
+            <marker date="1413252411000" expanded="true" signature="1109:1164" placeholder="SELECT video..video..." />
+            <marker date="1413252411000" expanded="true" signature="1840:1897" placeholder="SELECT answe..answer..." />
           </folding>
         </state>
       </provider>
@@ -668,8 +669,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1710">
           <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
           <folding>
-            <marker date="1413031581000" expanded="true" signature="1109:1164" placeholder="SELECT video..video..." />
-            <marker date="1413031581000" expanded="true" signature="1840:1897" placeholder="SELECT answe..answer..." />
+            <marker date="1413252411000" expanded="true" signature="1109:1164" placeholder="SELECT video..video..." />
+            <marker date="1413252411000" expanded="true" signature="1840:1897" placeholder="SELECT answe..answer..." />
           </folding>
         </state>
       </provider>
@@ -787,11 +788,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9305211" vertical-offset="0" max-vertical-offset="1710">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.37220845" vertical-offset="585" max-vertical-offset="1710">
+          <caret line="49" column="24" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="24" />
           <folding>
-            <marker date="1413031581000" expanded="true" signature="1109:1164" placeholder="SELECT video..video..." />
-            <marker date="1413031581000" expanded="true" signature="1840:1897" placeholder="SELECT answe..answer..." />
+            <marker date="1413252411000" expanded="true" signature="1109:1164" placeholder="SELECT video..video..." />
+            <marker date="1413252411000" expanded="true" signature="1840:1897" placeholder="SELECT answe..answer..." />
           </folding>
         </state>
       </provider>
