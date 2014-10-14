@@ -30,7 +30,7 @@
     font-size:40px;
     text-align:center;
     cursor:move;
-    line-height:40px;
+    line-height:100px;
     border-radius:10px 10px 0 0;
 }
 
@@ -43,7 +43,7 @@
 #Dialog #Container table,#Dialog #Container iframe
 {
     width:100%;
-    height:50%;
+    height:30%;
 }
 #Dialog #Container table td
 {
@@ -55,7 +55,7 @@
 }
 #Dialog #Container table #BtnLine
 {
-    height:60px;
+    height:50px;
     text-align:center;
 }
 #Dialog #Container table #BtnLine input
@@ -70,10 +70,10 @@
     *border:1px solid #DDDDDD;
     border:1px solid #DDDDDD\0;
     border-radius:2px;
-    font-family:新宋体;
+    font-family:verdanda;
     color:#666666;
     cursor:default;
-    font-size:12px;
+    font-size:30px;
     font-weight:bold;
     height:29px;
     line-height:27px;

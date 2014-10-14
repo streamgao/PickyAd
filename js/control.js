@@ -54,10 +54,8 @@ function loadQuestions ( currentQuestionId ){
 
             listgot.addEventListener("click",clickList ); //click listgot
         }//for
-
         var rightanswer= document.getElementById("right");
         rightanswer.addEventListener("click", clickAnswer);
-
     });//get
 }
 
