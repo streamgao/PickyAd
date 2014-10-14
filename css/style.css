@@ -43,6 +43,10 @@ form{
 }
 
 a{
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+    line-height: 20px;
     text-decoration: none;
     color: #ffffff;
 }
@@ -72,7 +76,7 @@ a:hover{
     line-height: 0px;
     font-size: 20px;
     color: white !important;
-    background: #fc7247;
+    background: #fb6030;
     border-bottom: 10px solid red;
     border-radius: 20px;
     cursor:pointer;
