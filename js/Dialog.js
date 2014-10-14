@@ -37,6 +37,7 @@
         ContentHeight = PARAMS.Height - 45;
     };
     //显示弹出框
+
     function Show(params, caller) {
         Init(params);
         var screenWidth = $(window).width();
@@ -71,6 +72,8 @@
 
         $("body").append(Content.join("\n"));
         SetDialogEvent(caller);
+
+        $()
     }
     //设置弹窗事件
     function SetDialogEvent(caller) {

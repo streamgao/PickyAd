@@ -9,10 +9,21 @@ table{
     border: none;
 }
 
+h3{
+    font-size: 40px;
+    line-height: 50px;
+}
+
+h2{
+    color: #fc7247;
+    font-size: 50px;
+}
+
 body {
     font-size: 1em;
     line-height: 1.4;
     background: #007095;
+    text-align: center;
 }
 
 video {
@@ -31,6 +42,20 @@ form{
     margin: 1em;
 }
 
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:link {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ffffff;
+}
+
 #logo{
     background: url(../imgs/logoB.png) center center no-repeat;
     background-size: 100%,100%;
@@ -40,6 +65,22 @@ form{
     left: 20%;
     top: 20%;
     position: absolute;
+}
+#startGame{
+    height: 3.2em;
+    width: 6.6em;
+    line-height: 0px;
+    font-size: 20px;
+    color: white !important;
+    background: #fc7247;
+    border-bottom: 10px solid red;
+    border-radius: 20px;
+    cursor:pointer;
+}
+#startGame:hover{
+    background: #70efce;
+    color: white !important;
+    border-bottom: 10px solid #46bc9d;
 }
 
 #container{
