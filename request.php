@@ -1,9 +1,9 @@
 <?php
 
-$user_name="root";
-$password="streamgao";
-$database="streamgao";
-$hostname="aaq6nuqdimvo68.ch5sjbwjm96s.us-west-2.rds.amazonaws.com";
+$user_name="stream";
+$password="gaoxi123";
+$database="gaoxi123";
+$hostname="aaglnrhc6ky1th.ch5sjbwjm96s.us-west-2.rds.amazonaws.com";
 
 $connect_db = mysql_connect($hostname, $user_name , $password);
 $find_db = mysql_select_db($database);
