@@ -24,7 +24,7 @@
     height:80px;
    /* background-color:#c9bf7d;*/
     color:#FFFFFF;
-    font-family:helvetica;
+    font-family:gill sans,helvetica;
     font-weight:bold;
     font-size:40px;
     text-align:center;
@@ -63,22 +63,22 @@
 {
     margin:6px 11px;
     -moz-user-select: none;
-   /* background-color:#F5F5F5;
-    background-image: -moz-linear-gradient(center top , #F5F5F5, #F1F1F1);
+    background-color:#d0a15a;
+    /*background-image: -moz-linear-gradient(center top , #F5F5F5, #F1F1F1);
     background-image:-ms-linear-gradient(rgb(245, 245, 245), rgb(241, 241, 241));
     background-image:-webkit-linear-gradient(top,#f8f8f8,#f1f1f1);*/
     border:1px solid rgba(0,0,0,0.1);
     *border:1px solid #DDDDDD;
     border:1px solid #DDDDDD;
     border-radius:2px;
-    font-family: helvetica, gill sans;
-    color:#666666;
+    font-family: gill sans,helvetica;
+    color:#FFFFFF;
     cursor:default;
     font-size:50px;
     font-weight:bold;
     height:49px;
     line-height:27px;
-    min-width:54px;
+    min-width:300px;
     padding:0 8px;
     text-align:center;
 }
