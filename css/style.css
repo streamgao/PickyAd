@@ -98,7 +98,9 @@ form{
     color: #4f4e45;
     top: 2%;
     bottom: 8%;
+    left:0px;
 }
+
 .questions{
     position: relative;
     width: 100%;
