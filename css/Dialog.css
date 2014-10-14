@@ -79,7 +79,7 @@
     background-image: -moz-linear-gradient(center top , #f5dab2, #F1F1F1);
     border: 1px solid #C6C6C6;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    color: #333333;
+    color: #d38b1f;
     cursor: pointer;
 }
 #Dialog #Container table #BtnLine input:focus
