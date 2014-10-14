@@ -102,10 +102,14 @@ function goNext(){
     loadVideo(currentQuestionId);
     loadQuestions(currentQuestionId);
 
-    document.getElementById("video").style.width= 0 + "px";
-    $("#video").animate({
-        width:"45%",
+    document.getElementById("subcontainer").style.width= 0 + "px";
+    $("#subcontainer").animate({
+        width:"100%",
     }, 'slow'    );
 
+//    document.getElementById("video").style.width= 0 + "px";
+//    $("#video").animate({
+//        width:"45%",
+//    }, 'slow'    );
 
 }
