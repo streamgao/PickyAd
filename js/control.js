@@ -105,6 +105,6 @@ function goNext(){
     document.getElementById("subcontainer").style.left="120%";
     $("#subcontainer").animate({
         left:"0px",
-        }, 1000    );
+        }, 'slow'    );
 
 }
