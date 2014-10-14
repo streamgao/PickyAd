@@ -40,7 +40,7 @@
         </div>   <!--question-->
 
     </div>
-    <div class="footer"> @2014 by Stream Gao. ITP</div>
+    <footer class="footer"> @2014 by Stream Gao. ITP</footer>
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
