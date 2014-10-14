@@ -5,17 +5,17 @@
     top:0;
     z-index:500;
     background-color:#333333;
-    filter:alpha(Opacity=40);
-    -moz-opacity:0.4;
-    opacity: 0.4;
+    filter:alpha(Opacity=60);
+    -moz-opacity:0.6;
+    opacity: 0.6;
 }
 /*弹出的提示框*/
 #Dialog
 {
     position:absolute;
     border-radius:10px;
-    box-shadow:0 0 8px rgba(0, 0, 0, .8);
-    background-color:#f2f2f2;
+    box-shadow:8px 8px 8px rgba(6, 73, 94, .8);
+    background-color:#c9bf7d;
     z-index:600;
 }
 #Dialog #Title
@@ -70,7 +70,7 @@
     *border:1px solid #DDDDDD;
     border:1px solid #DDDDDD\0;
     border-radius:2px;
-    font-family:verdanda;
+    font-family: helvetica, gill sans;
     color:#666666;
     cursor:default;
     font-size:30px;
