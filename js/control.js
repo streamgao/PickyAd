@@ -107,9 +107,9 @@ function goNext(){
     document.getElementById("questions").style.top= -2000+"px";
     $("#questions").animate({
         top: "0px"
-    }, duration: "slow",
+    }, {duration: "slow",
         easing: "easeInBounce",
-        complete: function(){}
-);
+        complete: function(){}}
+    );
 
 }
