@@ -104,7 +104,7 @@ function goNext(){
 
     document.getElementById("questions").style.top= 150+"%";
     $("#questions").animate({
-        top: "0"
+        top: "0px"
     }, 'slow'   );
 
 }
