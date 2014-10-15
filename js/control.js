@@ -27,6 +27,10 @@ $(document).ready(function(){
 function loadVideo ( currentQuestionId ) {
 
     $.get("request.php?op=returnVideo&question_id="+currentQuestionId, function (data) {   //  or use this.currentQuestionId
+
+            var gold = document.getElementById("gold");
+            gold.innerHTML = (currentQuestionId-1) *20;
+
             var obj = JSON.parse(data);
             var title = document.getElementById("title");
             title.innerHTML = obj['video_title'];    //set title
@@ -44,7 +48,6 @@ function loadQuestions ( currentQuestionId ){
     document.getElementById("right").style.background = "#d9dcdf";
     $.get("request.php?op=returnAnswerList&question_id="+currentQuestionId, function (data) {  //request data
 
-        document.getElementById("gold").innerHTML = (currentQuestionId-1) *20;
         var json = JSON.parse(data);
         jsonObjArray = json;
         for (var i = 0; i < 9; i++) {  // load the answers

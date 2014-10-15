@@ -15,11 +15,9 @@
     var ContentWidth = 0;
     var ContentHeight = 0;
     $.Dialog = {
-        //弹出提示框
         Alert: function (params) {
             Show(params, "Alert");
         },
-        //弹出确认框
         Confirm: function (params) { Show(params, "Confirm"); },
         //弹出引用其他URL框
         Dialog: function (params) { Show(params, "Dialog") },
@@ -28,7 +26,7 @@
             $("#DialogLayer,#Dialog").remove();
         }
     };
-    //初始化参数
+    //initalize
     function Init(params) {
         if (params != undefined && params != null) {
             PARAMS = $.extend({},DEFAULTPARAMS, params);
@@ -36,13 +34,13 @@
         ContentWidth = PARAMS.Width - 10;
         ContentHeight = PARAMS.Height - 45;
     };
-    //显示弹出框
+    //show popup
 
     function Show(params, caller) {
         Init(params);
         var screenWidth = $(window).width();
         var screenHeight = $(window).height();
-        //在屏幕中显示的位置（正中间）
+        //be in the center
         var positionLeft = (screenWidth - PARAMS.Width) / 2 + $(document).scrollLeft();
         var positionTop = (screenHeight - PARAMS.Height) / 2 + $(document).scrollTop();
         var Content = [];
@@ -75,7 +73,7 @@
 
         $()
     }
-    //设置弹窗事件
+    //popup event
     function SetDialogEvent(caller) {
         //$("#Dialog #Close").click(function () { $.Dialog.Close(); });
         $("#Dialog #Title").Drag($("#Dialog"));
@@ -98,7 +96,7 @@
     }
 })(jQuery);
 
-//拖动层
+//drag
 (function ($) {
     $.fn.extend({
         Drag: function (objMoved) {
