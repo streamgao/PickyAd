@@ -107,8 +107,8 @@ class QuestionAction
 
     public function addComments(){
 
-        $name = $_POST['name'];
-        $comment = $_POST['comment'];
+        $name = $_GET['name'];
+        $comment = $_GET['comment'];
 
         if($find_db) {
             $query = "INSERT INTO suggestion (author, comments)
