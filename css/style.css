@@ -23,6 +23,7 @@ body {
     font-size: 1em;
     line-height: 1.4;
     background: url(../imgs/back.jpg) #007095;
+    background-size: 2%,2%;
     background-repeat:repeat;
     text-align: center;
 }

@@ -76,7 +76,6 @@ class QuestionAction
 
 
     public function returnAnswerList(){
-
         $question_id = $_GET['question_id'];
         global $connect_db;
         global $find_db;

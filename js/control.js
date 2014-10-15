@@ -71,7 +71,9 @@ function calCredit(){
     if( credit >=100 ){   //game over
         $.Dialog.Alert({ Width: 400, Height: 300, Title: "You Win!",
             Content: "Congratulations!",
-            ConfirmFun: function(){ } });
+            ConfirmFun: function(){
+                window.location = "saysomething.php";
+            } });
     }else{} //do nothing until win
 }
 
