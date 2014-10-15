@@ -5,7 +5,7 @@
 var currentQuestionId=0;
 var jsonObjArray = [];
 var clickedOne = -1;     // the last list clicked
-var credit = -20;
+var credit = 0;
 /*
 function jsonObj(id,title, logo, right){
     this.answer_id= id;
