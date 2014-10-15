@@ -17,6 +17,7 @@ h3{
 h2{
     color: #fc7247;
     font-size: 50px;
+    font-family:  gill sans mt,helvetica;
 }
 
 body {
@@ -217,4 +218,23 @@ form{
     text-align: center center !important;
     position: relative;
     font: 14px century gothic;
+}
+
+
+.buttonClass{
+    height: 3em;
+    width: 6em;
+    line-height: 0px;
+    font-size: 20px;
+    color: white !important;
+    background: #fb9570;
+    border-bottom: 10px solid #fb6030;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+#startGame:hover{
+    background: #70efce;
+    color: white !important;
+    border-bottom: 10px solid #46bc9d;
 }
