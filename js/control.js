@@ -102,6 +102,7 @@ function goNext(){
     loadVideo(currentQuestionId);
     loadQuestions(currentQuestionId);
 
+    console.log(  $("#questions") );
     document.getElementById("questions").style.top= 150+"%";
     $("#questions").animate({
         top: "0px"
