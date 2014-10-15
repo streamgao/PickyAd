@@ -224,11 +224,11 @@ form{
 .buttonClass{
     height: 2.1em;
     width: 5em;
-    line-height: 0px;
+    line-height: 10px;
     font-size: 1.5em;
     color: white !important;
     background: #fb9570;
-    border-bottom: 10px solid #fb6030;
+    border-bottom: 5px solid #fb6030;
     border-radius: 10px;
     cursor:pointer;
 }
