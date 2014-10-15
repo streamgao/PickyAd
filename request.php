@@ -113,7 +113,6 @@ class QuestionAction
         if($find_db) {
             $query = "INSERT INTO suggestion (author, comments)
                             VALUES ('$name','$comment') ";
-            $result = mysql_query($query);
 
             if($res = @mysql_query($query) ){
                 echo"Thanks for your comments!";
