@@ -7,13 +7,13 @@ var jsonObjArray = [];
 var clickedOne = -1;     // the last list clicked
 var credit = 0;
 /*
-function jsonObj(id,title, logo, right){
-    this.answer_id= id;
-    this.answer_title = title;
-    this.answer_logo =logo;
-    this.answer_right =right;
-}
-*/
+ function jsonObj(id,title, logo, right){
+ this.answer_id= id;
+ this.answer_title = title;
+ this.answer_logo =logo;
+ this.answer_right =right;
+ }
+ */
 
 $(document).ready(function(){
 //window.addEventListener("load", function(){
@@ -24,7 +24,6 @@ $(document).ready(function(){
 
 
 function loadVideo ( currentQuestionId ) {
-    //calCredit();
 
     $.get("request.php?op=returnVideo&question_id="+currentQuestionId, function (data) {   //  or use this.currentQuestionId
 
@@ -42,7 +41,6 @@ function loadVideo ( currentQuestionId ) {
 
 function loadQuestions ( currentQuestionId ){
     clickedOne = -1;
-
     document.getElementById("right").style.background = "#d9dcdf";   //previous chosen one should return back the state
 
     $.get("request.php?op=returnAnswerList&question_id="+currentQuestionId, function (data) {  //request data
@@ -68,9 +66,10 @@ function calCredit(){
     var gold = document.getElementById("goldNum");
     credit +=20 ;
     gold.innerHTML = credit;
-     // or credit+=20.
 
     if( credit >=100 ){   //game over
+        console.log(credit);
+        console.log("credit in cal");
         $.Dialog.Alert({ Width: 400, Height: 300, Title: "You Win!",
             Content: "Congratulations!",
             ConfirmFun: function(){
@@ -127,9 +126,10 @@ function goNext(){
     var questions =$("#questions");
     document.getElementById("questions").style.top= 3000+"px";
     $("#questions").animate({
-        top: "0px"
-    }, {duration: 1500,
-        easing: 'easeInBounce',
-        complete: function(){} }
+            top: "0px"
+        }, {duration: 1500,
+            easing: 'easeInBounce',
+            complete: function(){} }
     );
+
 }
