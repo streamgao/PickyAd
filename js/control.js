@@ -108,6 +108,14 @@ function clickList(evt){
 }
 
 function goNext(){
+    if(currentQuestionId == 7 && credit <100){
+        $.Dialog.Alert({ Width: 400, Height: 300, Title: "Sorry you lose",
+            Content: "<100 credit....  Say something about it!",
+            ConfirmFun: function(){
+                window.location = "saysomething.php";
+            } });
+    }
+
     currentQuestionId++;
     loadVideo(currentQuestionId);
     loadQuestions(currentQuestionId);
@@ -121,16 +129,14 @@ function goNext(){
             easing: 'easeInBounce',
             complete: function(){
 
-
                 if( credit >=100 ){   //game over
-                    console.log(credit);
-                    console.log("credit in cal");
                     $.Dialog.Alert({ Width: 400, Height: 300, Title: "You Win!",
                         Content: "Congratulations!",
                         ConfirmFun: function(){
                             window.location = "saysomething.php";
                         } });
                 }else{} //do nothing until win
+
             } }
     );
 
