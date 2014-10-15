@@ -66,14 +66,13 @@ function loadQuestions ( currentQuestionId ){
 function calCredit(){
     var gold = document.getElementById("goldNum");
     gold.innerHTML = (currentQuestionId-1) *20;
-    credit = currentQuestionId *20;      // or credit+=20.
+    credit = (currentQuestionId-1) *20;      // or credit+=20.
 
     if( credit >=100 ){   //game over
         $.Dialog.Alert({ Width: 400, Height: 300, Title: "You Win!",
             Content: "Congratulations!",
             ConfirmFun: function(){ } });
     }else{} //do nothing until win
-    return credit;
 }
 
 //Controller.prototype.clickAnswer = function ( ) {    it failed
