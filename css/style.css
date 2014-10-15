@@ -94,6 +94,12 @@ form{
     box-shadow: 0em .1em 0.2em #000000;
 }
 
+.gold{
+    background: url(../imgs/gold.png) center center no-repeat;
+    height: 3.6em;
+    width: 3.6em;
+    float: rigjt;
+}
 
 #subcontainer{
     width: 100%;

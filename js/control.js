@@ -6,13 +6,15 @@ var currentQuestionId=0;
 var jsonObjArray = [];
 var clickedOne = -1;     // the last list clicked
 var credit = 0;
-
+/*
 function jsonObj(id,title, logo, right){
     this.answer_id= id;
     this.answer_title = title;
     this.answer_logo =logo;
     this.answer_right =right;
 }
+*/
+
 
 $(document).ready(function(){
 //window.addEventListener("load", function(){
@@ -60,7 +62,17 @@ function loadQuestions ( currentQuestionId ){
     });//get
 }
 
+function calCredit(){
+    credit = currentQuestionId *20;      // or credit+=20.
 
+
+    if( credit >=100 ){   //game over
+        $.Dialog.Alert({ Width: 400, Height: 300, Title: "You Win!",
+            Content: "Congratulations!",
+            ConfirmFun: function(){ } });
+    }else{} //do nothing until win
+    return credit;
+}
 
 //Controller.prototype.clickAnswer = function ( ) {    it failed
 function clickAnswer( evt ){
@@ -89,7 +101,9 @@ function clickList(evt){
             $.Dialog.Alert({ Width: 400, Height: 300, Title: "Right Answer!",
                 Content: jsonObjArray[clickedOne]['answer_title'],
                 ConfirmFun:goNext  });
-            credit += 5;
+
+            calCredit();   //if enough credits, game over
+
         }else {
             document.getElementById("right").style.border= "3px solid red"; //change the style if it is wrong
         }//else
@@ -104,12 +118,11 @@ function goNext(){
 
     console.log( "cxv"+ $("#questions") );
     var questions =$("#questions");
-    document.getElementById("questions").style.top= -2000+"px";
+    document.getElementById("questions").style.top= 3000+"px";
     $("#questions").animate({
         top: "0px"
-    }, {duration: "slow",
-        easing: "easeInBounce",
-        complete: function(){}}
+    }, {duration: 2000,
+        easing: 'easeInBounce',
+        complete: function(){} }
     );
-
 }
