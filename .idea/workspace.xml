@@ -36,8 +36,8 @@
       <file leaf-file-name="control.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/control.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7619048" vertical-offset="402" max-vertical-offset="1980">
-              <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.56349206" vertical-offset="1602" max-vertical-offset="1980">
+              <caret line="121" column="20" selection-start-line="121" selection-start-column="20" selection-end-line="121" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -454,12 +454,12 @@
       <workItem from="1413332738030" duration="1174000" />
       <workItem from="1413334050357" duration="736000" />
       <workItem from="1413344589185" duration="41000" />
-      <workItem from="1413344709631" duration="4495000" />
+      <workItem from="1413344709631" duration="4505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64393000" />
+    <option name="totallyTimeSpent" value="64403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="705" extended-state="6" />
@@ -930,8 +930,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/control.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7619048" vertical-offset="402" max-vertical-offset="1980">
-          <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.56349206" vertical-offset="1602" max-vertical-offset="1980">
+          <caret line="121" column="20" selection-start-line="121" selection-start-column="20" selection-end-line="121" selection-end-column="20" />
           <folding />
         </state>
       </provider>

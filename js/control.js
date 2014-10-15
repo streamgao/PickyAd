@@ -119,7 +119,7 @@ function goNext(){
     document.getElementById("questions").style.top= 3000+"px";
     $("#questions").animate({
         top: "0px"
-    }, {duration: 2000,
+    }, {duration: 1500,
         easing: 'easeInBounce',
         complete: function(){} }
     );
