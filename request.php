@@ -118,6 +118,8 @@ class QuestionAction
             if($res = @mysql_query($query) ){
                 echo"Thanks for your comments!";
                 echo ' $name' + $name;
+                echo $query;
+
             }else{
                 echo"Sorry there is something wrong......";
             }

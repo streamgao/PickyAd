@@ -15,7 +15,7 @@
         Hi! say something about the game. What do you think of it? Any ideas to make it more interesting or useful?</h2>
     <br>
 
-    <form action="questions.php?op=addComments" method="get">
+    <form action="request.php?op=addComments" method="get">
         Name: <input type="text" name="name" value="name"><br> <br>
         <textarea rows="20" cols="90" name="comment" value="comment">
             Enter your comment here...</textarea>    <br>
