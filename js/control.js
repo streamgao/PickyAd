@@ -102,7 +102,7 @@ function goNext(){
     loadVideo(currentQuestionId);
     loadQuestions(currentQuestionId);
 
-    console.log(  $("#questions") );
+    console.log(  $("#questions") +"cxv");
     document.getElementById("questions").style.height= 0+"px";
     $("#questions").animate({
         height: "100%"
