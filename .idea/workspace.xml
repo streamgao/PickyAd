@@ -47,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/saysomething.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.5162242" vertical-offset="80" max-vertical-offset="675">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -56,8 +56,8 @@
       <file leaf-file-name="request.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/request.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.375" vertical-offset="1566" max-vertical-offset="2025">
-              <caret line="113" column="38" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
+            <state vertical-scroll-proportion="-12.25" vertical-offset="1581" max-vertical-offset="2025">
+              <caret line="125" column="9" selection-start-line="109" selection-start-column="8" selection-end-line="125" selection-end-column="9" />
               <folding>
                 <marker date="1413362549000" expanded="true" signature="1108:1163" placeholder="SELECT video..video..." />
                 <marker date="1413362549000" expanded="true" signature="1838:1895" placeholder="SELECT answe..answer..." />
@@ -70,9 +70,11 @@
       <file leaf-file-name="questions.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/questions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0" vertical-offset="171" max-vertical-offset="570">
-              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-              <folding />
+            <state vertical-scroll-proportion="-5.375" vertical-offset="186" max-vertical-offset="630">
+              <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+              <folding>
+                <marker date="1413362697000" expanded="true" signature="469:566" placeholder="INSERT INTO ..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,8 +124,8 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/control.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/questions.php" />
         <option value="$PROJECT_DIR$/request.php" />
+        <option value="$PROJECT_DIR$/questions.php" />
         <option value="$PROJECT_DIR$/saysomething.php" />
       </list>
     </option>
@@ -471,12 +473,12 @@
       <workItem from="1413332738030" duration="1174000" />
       <workItem from="1413334050357" duration="736000" />
       <workItem from="1413344589185" duration="41000" />
-      <workItem from="1413344709631" duration="10337000" />
+      <workItem from="1413344709631" duration="10566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70235000" />
+    <option name="totallyTimeSpent" value="70464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="40" width="1280" height="705" extended-state="0" />
@@ -934,10 +936,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/questions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.375" vertical-offset="186" max-vertical-offset="630">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <marker date="1413362697000" expanded="true" signature="469:566" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.375" vertical-offset="1566" max-vertical-offset="2025">
-          <caret line="113" column="38" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
+        <state vertical-scroll-proportion="-12.25" vertical-offset="1581" max-vertical-offset="2025">
+          <caret line="125" column="9" selection-start-line="109" selection-start-column="8" selection-end-line="125" selection-end-column="9" />
           <folding>
             <marker date="1413362549000" expanded="true" signature="1108:1163" placeholder="SELECT video..video..." />
             <marker date="1413362549000" expanded="true" signature="1838:1895" placeholder="SELECT answe..answer..." />
@@ -946,18 +958,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/questions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0" vertical-offset="171" max-vertical-offset="570">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/saysomething.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5162242" vertical-offset="80" max-vertical-offset="675">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
           <folding />
         </state>
       </provider>
