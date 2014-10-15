@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 
 function loadVideo ( currentQuestionId ) {
-    calCredit();
+    //calCredit();
 
     $.get("request.php?op=returnVideo&question_id="+currentQuestionId, function (data) {   //  or use this.currentQuestionId
 
