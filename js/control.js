@@ -107,8 +107,8 @@ function goNext(){
     document.getElementById("questions").style.top= -2000+"px";
     $("#questions").animate({
         top: "0px"
-    }, duration: 1500,
-        easing: 'easeInBounce',
+    }, duration: "slow",
+        easing: "easeInBounce",
         complete: function(){}
 );
 
