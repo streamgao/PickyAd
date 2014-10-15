@@ -102,10 +102,12 @@ function goNext(){
     loadVideo(currentQuestionId);
     loadQuestions(currentQuestionId);
 
-    console.log(  $("#questions") +"cxv");
-    document.getElementById("questions").style.height= 0+"px";
+    console.log( "cxv"+ $("#questions") );
+    var questions =$("#questions");
+    document.getElementById("questions").style.top= -2000+"px";
     $("#questions").animate({
-        height: "100%"
-    }, 'slow'   );
+        top: "0px"
+    }, duration: 1500,
+        easing: 'easeInBounce'  );
 
 }

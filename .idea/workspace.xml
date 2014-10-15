@@ -26,8 +26,8 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1313" max-vertical-offset="3000">
-              <caret line="102" column="10" selection-start-line="102" selection-start-column="1" selection-end-line="102" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1388" max-vertical-offset="3060">
+              <caret line="107" column="10" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -36,8 +36,8 @@
       <file leaf-file-name="control.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/control.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.4126985" vertical-offset="1377" max-vertical-offset="1755">
-              <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.6825397" vertical-offset="1377" max-vertical-offset="1785">
+              <caret line="109" column="19" selection-start-line="109" selection-start-column="19" selection-end-line="109" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -120,10 +120,10 @@
         <option value="$PROJECT_DIR$/request.php" />
         <option value="$PROJECT_DIR$/css/Dialog.css" />
         <option value="$PROJECT_DIR$/js/Dialog.js" />
-        <option value="$PROJECT_DIR$/js/control.js" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/control.js" />
       </list>
     </option>
   </component>
@@ -454,12 +454,12 @@
       <workItem from="1413332738030" duration="1174000" />
       <workItem from="1413334050357" duration="736000" />
       <workItem from="1413344589185" duration="41000" />
-      <workItem from="1413344709631" duration="555000" />
+      <workItem from="1413344709631" duration="1300000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60453000" />
+    <option name="totallyTimeSpent" value="61198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="705" extended-state="0" />
@@ -883,8 +883,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1313" max-vertical-offset="3000">
-          <caret line="102" column="10" selection-start-line="102" selection-start-column="1" selection-end-line="102" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1388" max-vertical-offset="3060">
+          <caret line="107" column="10" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -930,8 +930,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/control.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4126985" vertical-offset="1377" max-vertical-offset="1755">
-          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.6825397" vertical-offset="1377" max-vertical-offset="1785">
+          <caret line="109" column="19" selection-start-line="109" selection-start-column="19" selection-end-line="109" selection-end-column="19" />
           <folding />
         </state>
       </provider>
