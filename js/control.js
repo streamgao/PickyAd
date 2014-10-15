@@ -103,9 +103,9 @@ function goNext(){
     loadQuestions(currentQuestionId);
 
     console.log(  $("#questions") );
-    document.getElementById("questions").style.top= 150+"%";
+    document.getElementById("questions").style.height= 0+"px";
     $("#questions").animate({
-        top: "0px"
+        height: "100%"
     }, 'slow'   );
 
 }
