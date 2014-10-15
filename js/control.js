@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 
 function loadVideo ( currentQuestionId ) {
-    var gold = document.getElementById("gold");
+    var gold = document.getElementById("goldNum");
     gold.innerHTML = (currentQuestionId-1) *20;
 
     $.get("request.php?op=returnVideo&question_id="+currentQuestionId, function (data) {   //  or use this.currentQuestionId

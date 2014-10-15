@@ -13,7 +13,8 @@
 <div id="container">
     <div id="title" class="title" >Unknown Name
     </div>
-    <div id="gold">0</div>
+        <div id="gold"></div>
+        <div id="goldNum"></div>
     <div id="subcontainer">
         <div id="questions">
 
