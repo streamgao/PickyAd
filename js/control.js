@@ -108,6 +108,8 @@ function goNext(){
     $("#questions").animate({
         top: "0px"
     }, duration: 1500,
-        easing: 'easeInBounce'  );
+        easing: 'easeInBounce',
+        complete: function(){}
+);
 
 }
