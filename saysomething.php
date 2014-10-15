@@ -18,7 +18,7 @@
     <form action="questions.php" method="get">
         Name: <input type="text" name="name" value="name"><br> <br>
         <textarea rows="20" cols="90" name="comment" value="comment">
-            Enter your comment here...</textarea>    <br>
+            Enter your comment here...</textarea>    <br> <br>
         <input type="submit"  class="buttonClass" name="submit" value="submit">
     </form>
 
