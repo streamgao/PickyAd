@@ -94,11 +94,16 @@ form{
     box-shadow: 0em .1em 0.2em #000000;
 }
 
-.gold{
+#gold{
     background: url(../imgs/gold.png) center center no-repeat;
-    height: 3.6em;
-    width: 3.6em;
-    float: rigjt;
+    background-size: 100%,100%;
+    position: absolute;
+    top: 1em;
+    right: 1.8em;
+    height: 1.8em;
+    width: 1.8em;
+    float: right;
+    z-index: 2000;
 }
 
 #subcontainer{

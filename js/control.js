@@ -44,6 +44,7 @@ function loadQuestions ( currentQuestionId ){
     document.getElementById("right").style.background = "#d9dcdf";
     $.get("request.php?op=returnAnswerList&question_id="+currentQuestionId, function (data) {  //request data
 
+        document.getElementById("gold").innerHTML = (currentQuestionId-1) *20;
         var json = JSON.parse(data);
         jsonObjArray = json;
         for (var i = 0; i < 9; i++) {  // load the answers
@@ -64,8 +65,6 @@ function loadQuestions ( currentQuestionId ){
 
 function calCredit(){
     credit = currentQuestionId *20;      // or credit+=20.
-
-
     if( credit >=100 ){   //game over
         $.Dialog.Alert({ Width: 400, Height: 300, Title: "You Win!",
             Content: "Congratulations!",
@@ -98,12 +97,11 @@ function clickList(evt){
 
         //right show yes.  else show no/
         if ( jsonObjArray[clickedOne]['answer_right']== 1) {   // go to the next question
+            calCredit();   //if enough credits, game over
+
             $.Dialog.Alert({ Width: 400, Height: 300, Title: "Right Answer!",
                 Content: jsonObjArray[clickedOne]['answer_title'],
                 ConfirmFun:goNext  });
-
-            calCredit();   //if enough credits, game over
-
         }else {
             document.getElementById("right").style.border= "3px solid red"; //change the style if it is wrong
         }//else
