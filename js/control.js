@@ -66,16 +66,6 @@ function calCredit(){
     var gold = document.getElementById("goldNum");
     credit +=20 ;
     gold.innerHTML = credit;
-
-    if( credit >=100 ){   //game over
-        console.log(credit);
-        console.log("credit in cal");
-        $.Dialog.Alert({ Width: 400, Height: 300, Title: "You Win!",
-            Content: "Congratulations!",
-            ConfirmFun: function(){
-                window.location = "saysomething.php";
-            } });
-    }else{} //do nothing until win
 }
 
 //Controller.prototype.clickAnswer = function ( ) {    it failed
@@ -132,4 +122,13 @@ function goNext(){
             complete: function(){} }
     );
 
+    if( credit >=100 ){   //game over
+        console.log(credit);
+        console.log("credit in cal");
+        $.Dialog.Alert({ Width: 400, Height: 300, Title: "You Win!",
+            Content: "Congratulations!",
+            ConfirmFun: function(){
+                window.location = "saysomething.php";
+            } });
+    }else{} //do nothing until win
 }
