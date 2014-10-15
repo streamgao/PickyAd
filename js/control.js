@@ -5,7 +5,7 @@
 var currentQuestionId=0;
 var jsonObjArray = [];
 var clickedOne = -1;     // the last list clicked
-var credit = 0;
+var credit = -20;
 /*
 function jsonObj(id,title, logo, right){
     this.answer_id= id;
@@ -14,7 +14,6 @@ function jsonObj(id,title, logo, right){
     this.answer_right =right;
 }
 */
-
 
 $(document).ready(function(){
 //window.addEventListener("load", function(){
@@ -26,6 +25,7 @@ $(document).ready(function(){
 
 function loadVideo ( currentQuestionId ) {
     calCredit();
+
     $.get("request.php?op=returnVideo&question_id="+currentQuestionId, function (data) {   //  or use this.currentQuestionId
 
             var obj = JSON.parse(data);
@@ -42,6 +42,7 @@ function loadVideo ( currentQuestionId ) {
 
 function loadQuestions ( currentQuestionId ){
     clickedOne = -1;
+
     document.getElementById("right").style.background = "#d9dcdf";   //previous chosen one should return back the state
 
     $.get("request.php?op=returnAnswerList&question_id="+currentQuestionId, function (data) {  //request data
@@ -65,8 +66,9 @@ function loadQuestions ( currentQuestionId ){
 
 function calCredit(){
     var gold = document.getElementById("goldNum");
-    gold.innerHTML = (currentQuestionId-1) *20;
-    credit = (currentQuestionId-1) *20;      // or credit+=20.
+    credit +=20 ;
+    gold.innerHTML = credit;
+     // or credit+=20.
 
     if( credit >=100 ){   //game over
         $.Dialog.Alert({ Width: 400, Height: 300, Title: "You Win!",
@@ -106,7 +108,10 @@ function clickList(evt){
             $.Dialog.Alert({ Width: 400, Height: 300, Title: "Right Answer!",
                 Content: jsonObjArray[clickedOne]['answer_title'],
                 ConfirmFun:goNext  });
-        }else {
+        }else {     // if the wrong answer
+            credit -=5;
+            var gold = document.getElementById("goldNum");
+            gold.innerHTML = credit;
             document.getElementById("right").style.border= "3px solid red"; //change the style if it is wrong
         }//else
     }else{ }     // otherwise do nothing
