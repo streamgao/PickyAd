@@ -25,11 +25,10 @@ $(document).ready(function(){
 
 
 function loadVideo ( currentQuestionId ) {
+    var gold = document.getElementById("gold");
+    gold.innerHTML = (currentQuestionId-1) *20;
 
     $.get("request.php?op=returnVideo&question_id="+currentQuestionId, function (data) {   //  or use this.currentQuestionId
-
-            var gold = document.getElementById("gold");
-            gold.innerHTML = (currentQuestionId-1) *20;
 
             var obj = JSON.parse(data);
             var title = document.getElementById("title");
