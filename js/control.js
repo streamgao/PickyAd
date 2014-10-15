@@ -110,7 +110,7 @@ function clickList(evt){
 function goNext(){
     if(currentQuestionId == 7 && credit <100){
         $.Dialog.Alert({ Width: 400, Height: 300, Title: "Sorry you lose",    // when you lose
-            Content: "<100 credit....  Say something about it!",
+            Content: "Say something about it!",
             ConfirmFun: function(){
                 window.location = "saysomething.php";
             } });
@@ -128,7 +128,6 @@ function goNext(){
         }, {duration: 1500,
             easing: 'easeInBounce',
             complete: function(){
-
                 if( credit >=100 ){   //game over
                     $.Dialog.Alert({ Width: 400, Height: 300, Title: "You Win!",
                         Content: "Congratulations!",
@@ -136,8 +135,7 @@ function goNext(){
                             window.location = "saysomething.php";
                         } });
                 }else{} //do nothing until win
-
             } }
-    );
+    );   //animate
 
 }
