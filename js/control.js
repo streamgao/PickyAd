@@ -109,7 +109,7 @@ function clickList(evt){
 
 function goNext(){
     if(currentQuestionId == 7 && credit <100){
-        $.Dialog.Alert({ Width: 400, Height: 300, Title: "Sorry you lose",
+        $.Dialog.Alert({ Width: 400, Height: 300, Title: "Sorry you lose",    // when you lose
             Content: "<100 credit....  Say something about it!",
             ConfirmFun: function(){
                 window.location = "saysomething.php";
