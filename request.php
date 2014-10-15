@@ -105,10 +105,6 @@ class QuestionAction
     }
 
 
-
-
-
-
     public function addComments(){
 
         $name = $_POST['name'];

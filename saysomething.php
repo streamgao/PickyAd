@@ -16,8 +16,8 @@
     <br>
 
     <form action="questions.php?op=addComments" method="post">
-        Name: <input type="text" name="name"><br> <br>
-        <textarea rows="20" cols="90" name="comment">
+        Name: <input type="text" name="name" value="name"><br> <br>
+        <textarea rows="20" cols="90" name="comment" value="comment">
             Enter your comment here...</textarea>    <br>
         <input type="submit"  name="submit" value="submit">
     </form>
