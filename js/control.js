@@ -119,16 +119,19 @@ function goNext(){
             top: "0px"
         }, {duration: 1500,
             easing: 'easeInBounce',
-            complete: function(){} }
+            complete: function(){
+
+
+                if( credit >=100 ){   //game over
+                    console.log(credit);
+                    console.log("credit in cal");
+                    $.Dialog.Alert({ Width: 400, Height: 300, Title: "You Win!",
+                        Content: "Congratulations!",
+                        ConfirmFun: function(){
+                            window.location = "saysomething.php";
+                        } });
+                }else{} //do nothing until win
+            } }
     );
 
-    if( credit >=100 ){   //game over
-        console.log(credit);
-        console.log("credit in cal");
-        $.Dialog.Alert({ Width: 400, Height: 300, Title: "You Win!",
-            Content: "Congratulations!",
-            ConfirmFun: function(){
-                window.location = "saysomething.php";
-            } });
-    }else{} //do nothing until win
 }
