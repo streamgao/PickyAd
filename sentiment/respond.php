@@ -11,9 +11,13 @@
 	$response = $alchemyapi->sentiment('text',$demo_text, null);
 
 	if ($response['status'] == 'OK') {
+
 		if (array_key_exists('score', $response['docSentiment'])) {
 			echo json_encode($response['docSentiment']);
-		}
+		}else{
+            echo json_encode('type'=>'neutral','score'=>'0.5');
+        }
+
 	} else {
 		echo json_encode('Error in the targeted sentiment analysis call: ', $response['statusInfo']);
 	}
