@@ -15,7 +15,7 @@
 		if (array_key_exists('score', $response['docSentiment'])) {
 			echo json_encode($response['docSentiment']);
 		}else{
-            echo 'da';
+            echo 'neutral';
             //echo json_encode('type'=>'neutral','score'=>'0.5');
         }
 

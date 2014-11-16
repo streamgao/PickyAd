@@ -45,7 +45,7 @@
     cookie     : true,  // enable cookies to allow the server to access 
                         // the session
     xfbml      : true,  // parse social plugins on this page
-    version    : 'v2.1' // use version 2.1
+    version    : 'v2.2' // use version 2.1
   });
 
   // Now that we've initialized the JavaScript SDK, we call 
@@ -91,21 +91,7 @@
       });                                                           
 	};                                                               
                                                                      
-  
-	function findUserFriends( jsonD){
-		console.log('Searching for friend using app');
-		FB.api("/me/friends", function (response){
-	   	if( response && !response.error){
-				console.log("Got FriendList:");
-	
-				jsonD.friends = response.data;
-				jsonD = {data:JSON.stringify(jsonD)};
-				$.post("/post",jsonD);
-				console.log("SentData:", jsonD);
-			}	 
-		});
-  	}  
-                                                              
+
   function postJSON(url, data, callback){                             
         var request = new XMLHttpRequest();                           
         request.open("POST", url);                                    
