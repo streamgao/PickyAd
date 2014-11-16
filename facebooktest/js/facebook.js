@@ -19,7 +19,7 @@
       document.getElementById('status').innerHTML = 'Please log ' +
         'into Facebook.';
     }
-  }
+  }//statusChangeCallback
 
   // This function is called when someone finishes with the Login
   // Button.  See the onlogin handler attached to it in the sample
@@ -30,15 +30,6 @@
     });
   }
 
- /* window.fbAsyncInit = function() {
-  FB.init({
-    appId      : '800162793355577',
-    cookie     : true,  // enable cookies to allow the server to access 
-                        // the session
-    xfbml      : true,  // parse social plugins on this page
-    version    : 'v2.1' // use version 2.1
-  });
-*/
     window.fbAsyncInit = function() {
   FB.init({
     appId      : '770707736335720',
@@ -46,7 +37,7 @@
                         // the session
     xfbml      : true,  // parse social plugins on this page
     version    : 'v2.2' // use version 2.1
-  });
+  }); //init
 
   // Now that we've initialized the JavaScript SDK, we call 
   // FB.getLoginStatus().  This function gets the state of the
@@ -61,9 +52,7 @@
   // These three cases are handled in the callback function.
 
   FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-  });
-
+    statusChangeCallback(response);   });
   };
 
   // Load the SDK asynchronously
@@ -82,9 +71,8 @@
       document.getElementById('status').innerHTML =                   
         'Thanks for logging in, ' + response.name + '!';              
         //findUserFriends();
-		//var jsonD =  {data:JSON.stringify(response)};
+		var jsonD =  {data:JSON.stringify(response)};
 		console.log("jsonD:", response);
-		findUserFriends(response);
 			                               
    //     $.post("/post", {data: JSON.stringify(response)}, function(tmep){
    //             console.log("sent data to server with jQuery");       
@@ -105,10 +93,6 @@
                                                                       
   }
 
-  
-function hideLoginButton(){
-   document.getElementById('loginButton').style.display = 'none';
-}
 
 
 
