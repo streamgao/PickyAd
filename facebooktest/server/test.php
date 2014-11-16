@@ -28,11 +28,10 @@ use Facebook\GraphObject;
 // Initialize application by Application ID and Secret
 FacebookSession::setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
 
-// Login Healper with reditect URI
-$helper = new FacebookRedirectLoginHelper( 'http://www.pickme.cn' );
 
 try {
-    $session = $helper->getSessionFromRedirect();
+    $access_token = $_POST['access_token'];
+    $session = new FacebookSession( $access_token );
 }
 catch( FacebookRequestException $ex ) {
     // Exception
@@ -42,7 +41,7 @@ catch( Exception $ex ) {
 }
 
 // Checking Session
-if(isset($session))
+if( isset($session) )
 {
     // Request for user data
     $request = new FacebookRequest( $session, 'GET', '/me' );

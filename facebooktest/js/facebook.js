@@ -12,7 +12,9 @@
       // Logged into your app and Facebook.
       //or response.authResponse.accessToken
       var AccessToken=response['authResponse']['accessToken'];
-      publicFeed( AccessToken );
+      var uid = response.authResponse.userID;
+      var accessToken = response.authResponse.accessToken;
+      publicFeed( accessToken );
 
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
