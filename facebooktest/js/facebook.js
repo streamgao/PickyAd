@@ -3,13 +3,17 @@
     console.log('statusChangeCallback');
     console.log(response);
     console.log(response['authResponse']['accessToken']);
+
     // The response object is returned with a status field that lets the
     // app know the current login status of the person.
     // Full docs on the response object can be found in the documentation
     // for FB.getLoginStatus().
     if (response.status === 'connected') {
       // Logged into your app and Facebook.
-      testAPI();
+      //or response.authResponse.accessToken
+      var AccessToken=response['authResponse']['accessToken'];
+      publicFeed( AccessToken );
+
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
       document.getElementById('status').innerHTML = 'Please log ' +
@@ -65,7 +69,18 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 
-  function testAPI() {
+
+  function publicFeed( AccessToken ) {
+
+      $.post("server/publicFeed.php?op=getPublicFeed="+AccessToken, function (data) {   //  or use this.currentQuestionId
+
+              var obj = JSON.parse(data);
+              var title = obj['video_title'];    //set title
+
+          }
+      );//get
+
+
     console.log('Welcome!  Fetching your information.... ');          
     FB.api('/me', function(response) {                                
       console.log('Successful login for: ' + JSON.stringify(response));
@@ -74,9 +89,7 @@
         //findUserFriends();
 		var jsonD =  {data:JSON.stringify(response)};
 		console.log("jsonD:", response);
-			                               
-   //     $.post("/post", {data: JSON.stringify(response)}, function(tmep){
-   //             console.log("sent data to server with jQuery");       
+
       });                                                           
 	};                                                               
                                                                      
