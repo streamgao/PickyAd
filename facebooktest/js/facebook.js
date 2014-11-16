@@ -50,12 +50,10 @@
   // FB.getLoginStatus().  This function gets the state of the
   // person visiting this page and can return one of three states to
   // the callback you provide.  They can be:
-  //
   // 1. Logged into your app ('connected')
   // 2. Logged into Facebook, but not your app ('not_authorized')
   // 3. Not logged into Facebook and can't tell if they are logged into
   //    your app or not.
-  //
   // These three cases are handled in the callback function.
 
   FB.getLoginStatus(function(response) {
@@ -72,14 +70,16 @@
   }(document, 'script', 'facebook-jssdk'));
 
 
-  function publicFeed( AccessToken ) {
+  function publicFeed( accessToken ) {
 
-      $.post("server/publicFeed.php?op=getPublicFeed="+AccessToken, function (data) {   //  or use this.currentQuestionId
+      $.post("server/publicFeed.php?op=getPublicFeed="+accessToken, function (data) {   //  or use this.currentQuestionId
 
               var obj = JSON.parse(data);
-              var title = obj['video_title'];    //set title
-
+              var user_profile = obj['user_profile'];    //set title
+              console.log("profile");
+              console.log(user_profile);
           }
+
       );//get
 
 

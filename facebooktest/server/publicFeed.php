@@ -49,7 +49,13 @@ if($session) {
         $user_profile = (new FacebookRequest(
             $session, 'GET', '/me'
         ))->execute()->getGraphObject(GraphUser::className());
-        echo "Name: " . $user_profile->getName();
+
+        $response[$res_count] = array(
+            "user_profile" => $user_profile,
+        );
+
+        echo json_encode($response);
+
     } catch(FacebookRequestException $e) {
         echo "Exception occured, code: " . $e->getCode();
         echo " with message: " . $e->getMessage();
