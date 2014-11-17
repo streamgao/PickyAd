@@ -3,8 +3,9 @@
  * Created by IntelliJ IDEA.
  * User: stream
  * Date: 11/16/14
- * Time: 4:09 PM
+ * Time: 8:48 PM
  */
+
 
 require_once( 'Facebook/FacebookSession.php' );
 require_once( 'Facebook/FacebookRedirectLoginHelper.php' );
@@ -26,24 +27,48 @@ use Facebook\FacebookAuthorizationException;
 use Facebook\GraphObject;
 use Facebook\GraphUser;
 
+
 session_start();
+
 if($_SERVER['REQUEST_METHOD'] === "POST" ){
     $method = $_POST['method'];
 }else{
     $method = $_GET['method'];
 }
 
-// Initialize application by Application ID and Secret
-FacebookSession::setDefaultApplication('770707736335720', '15d79634f7b439545f0d60328dea3998');
-
-//$access_token = $_POST['access_token'];
-$access_token = $_REQUEST["access_token"];
-$session = new FacebookSession( $access_token );
+$access_token = $_GET['access_token'];
+//$access_token = $_REQUEST["access_token"];
 echo $access_token;
-echo $session;
-echo "session";
 
 
+try {
+    $session = new FacebookSession( $access_token );
+    echo "session";
+    echo $session;
+}
+catch( FacebookRequestException $ex ) {
+    // Exception
+    echo "FacebookRequestException";
+}
+catch( Exception $ex ) {
+    // When validation fails or other local issues
+    echo "Exception";
+}
+
+// Initialize application by Application ID and Secret
+try {
+   // FacebookSession::setDefaultApplication('770707736335720', '15d79634f7b439545f0d60328dea3998');
+    $session->setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
+    echo "successful";
+}catch (Exception $e){
+    echo "session error";
+}
+
+
+
+
+// Initialize application by Application ID and Secret
+//$session->setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
 if($session) {
     try {
         $user_profile = (new FacebookRequest(
@@ -57,7 +82,10 @@ if($session) {
         echo "Exception occured, code: " . $e->getCode();
         echo " with message: " . $e->getMessage();
     }
+}else{
+    echo "error";
 }
+
 
 
 

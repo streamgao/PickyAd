@@ -51,7 +51,8 @@ try {
 
 
 try {
-    $session = new FacebookSession( $access_token, null );
+    $session = new FacebookSession( $access_token );
+    echo "session";
     echo $session;
 }
 catch( FacebookRequestException $ex ) {
