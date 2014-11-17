@@ -84,9 +84,10 @@ if ($session){ //if we have the FB session
 	//header("location: ". $redirect_url);
 	
 }else{ 
-	
+	$_SESSION["sessionerror"] = "sessionerror";
+
 	//session var is still there
-	if(isset($_SESSION["fb_user_details"]))
+	/*if(isset($_SESSION["fb_user_details"]))
 	{
 		print 'Hi '.$_SESSION["fb_user_details"]["name"].' you are logged in! [ <a href="?log-out=1">log-out</a> ] ';
 		print '<pre>';
@@ -98,7 +99,7 @@ if ($session){ //if we have the FB session
 		//display login url 
 		$login_url = $helper->getLoginUrl( array( 'scope' => $required_scope ) );
 		echo '<a href="'.$login_url.'">Login with Facebook</a>'; 
-	}
+	}*/
 }
 
 
