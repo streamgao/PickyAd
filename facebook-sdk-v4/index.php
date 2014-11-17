@@ -51,13 +51,12 @@ if ($session){ //if we have the FB session
 	$user_id = ( isset( $_SESSION["fb_user_details"]["id"] ) )? $_SESSION["fb_user_details"]["id"] : "";
 	$user_name = ( isset( $_SESSION["fb_user_details"]["name"] ) )? $_SESSION["fb_user_details"]["name"] : "";
 	$user_email = ( isset( $_SESSION["fb_user_details"]["email"] ) )? $_SESSION["fb_user_details"]["email"] : "";
-	
+
 	###### connect to user table ########
-	$mysqli = new mysqli($mysql_host, $mysql_username, $mysql_password, $mysql_db_name);
+	/*$mysqli = new mysqli($mysql_host, $mysql_username, $mysql_password, $mysql_db_name);
 	if ($mysqli->connect_error) {
 		die('Error : ('. $mysqli->connect_errno .') '. $mysqli->connect_error);
 	}
-	
 	//check user exist in table (using Facebook ID)
 	$results = $mysqli->query("SELECT COUNT(*) FROM usertable WHERE fbid=".$user_id);
 	$get_total_rows = $results->fetch_row();
@@ -65,7 +64,7 @@ if ($session){ //if we have the FB session
 	if(!$get_total_rows[0]){ //no user exist in table, create new user
 		$insert_row = $mysqli->query("INSERT INTO usertable (fbid, fullname, email) VALUES(".$user_id.", '".$user_name."', '".$user_email."')");
 	}
-	
+	*/
 	//session ver is set, redirect user 
 	header("location: ". $redirect_url);
 	
