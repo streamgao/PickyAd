@@ -43,7 +43,7 @@ if(isset($_GET["log-out"]) && $_GET["log-out"]==1){
 
 if ($session){ //if we have the FB session
 	//get user data
-	$user_profile = (new FacebookRequest($session, 'GET', '/me'))->execute()->getGraphObject(GraphUser::className());
+	$user_profile = (new FacebookRequest($session, 'GET', '/me'))->execute()->getGraphObject( GraphUser::className() );
 
     echo '<pre>';
     print_r( $user_profile );
