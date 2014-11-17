@@ -52,7 +52,13 @@ if ($session){ //if we have the FB session
 	$user_name = ( isset( $_SESSION["fb_user_details"]["name"] ) )? $_SESSION["fb_user_details"]["name"] : "";
 	$user_email = ( isset( $_SESSION["fb_user_details"]["email"] ) )? $_SESSION["fb_user_details"]["email"] : "";
 
-	###### connect to user table ########
+
+    $response = array(
+        "user_profile" => $user_profile,
+    );
+    echo json_encode($response);
+
+    ###### connect to user table ########
 	/*$mysqli = new mysqli($mysql_host, $mysql_username, $mysql_password, $mysql_db_name);
 	if ($mysqli->connect_error) {
 		die('Error : ('. $mysqli->connect_errno .') '. $mysqli->connect_error);
@@ -66,7 +72,7 @@ if ($session){ //if we have the FB session
 	}
 	*/
 	//session ver is set, redirect user 
-	header("location: ". $redirect_url);
+	//header("location: ". $redirect_url);
 	
 }else{ 
 	

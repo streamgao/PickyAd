@@ -77,7 +77,7 @@ if($session) {
         $user_profile = (new FacebookRequest(
             $session, 'GET', '/me'
         ))->execute()->getGraphObject( GraphUser::className() );
-        $response[$res_count] = array(
+        $response = array(
             "user_profile" => $user_profile,
         );
         echo json_encode($response);
