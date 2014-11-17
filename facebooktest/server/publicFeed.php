@@ -28,6 +28,9 @@ use Facebook\GraphObject;
 use Facebook\GraphUser;
 
 
+// Initialize application by Application ID and Secret
+FacebookSession::setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
+
 if($_SERVER['REQUEST_METHOD'] === "POST" ){
     $method = $_POST['method'];
 }else{
@@ -35,20 +38,10 @@ if($_SERVER['REQUEST_METHOD'] === "POST" ){
 }
 
 
-// Initialize application by Application ID and Secret
-FacebookSession::setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
-
-try {
     $access_token = $_GET['access_token'];
     $session = new FacebookSession( $access_token );
     echo $access_token;
-}
-catch( FacebookRequestException $ex ) {
-    // Exception
-}
-catch( Exception $ex ) {
-    // When validation fails or other local issues
-}
+
 
 
 if($session) {
