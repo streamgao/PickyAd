@@ -60,7 +60,6 @@ catch( Exception $ex ) {
 
 // Initialize application by Application ID and Secret
 //$session->setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
-
 if($session) {
     try {
         $user_profile = (new FacebookRequest(
