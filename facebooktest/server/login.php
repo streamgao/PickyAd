@@ -31,7 +31,7 @@ use Facebook\GraphObject;
 FacebookSession::setDefaultApplication('770707736335720', '15d79634f7b439545f0d60328dea3998');
 
 // Login Healper with reditect URI
-$helper = new FacebookRedirectLoginHelper( 'http://pickyad-env.elasticbeanstalk.com' );
+$helper = new FacebookRedirectLoginHelper( 'http://pickyad-env.elasticbeanstalk.com/facebook-sdk-v4' );
 
 try {
     $session = $helper->getSessionFromRedirect();
@@ -51,7 +51,6 @@ if( isset($session) )
     $response = $request->execute();
     // Responce
     $data = $response->getGraphObject();
-
     // Print data
     echo  print_r( $data, 1 );
 }
@@ -61,3 +60,7 @@ else
     echo '<a href="' . $helper->getLoginUrl() . '">Login</a>';
 }
 ?>
+
+<div>afdkjfkd;j dkflj</div>
+<h1>h1</h1>
+<p>pp</p>
