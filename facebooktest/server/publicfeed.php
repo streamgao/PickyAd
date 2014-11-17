@@ -6,7 +6,6 @@
  * Time: 4:09 PM
  */
 
-session_start();
 require_once( 'Facebook/FacebookSession.php' );
 require_once( 'Facebook/FacebookRedirectLoginHelper.php' );
 require_once( 'Facebook/FacebookRequest.php' );
@@ -30,6 +29,8 @@ use Facebook\GraphUser;
 
 // Initialize application by Application ID and Secret
 FacebookSession::setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
+
+//session_start();
 
 if($_SERVER['REQUEST_METHOD'] === "POST" ){
     $method = $_POST['method'];
