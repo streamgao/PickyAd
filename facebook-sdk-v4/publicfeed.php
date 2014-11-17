@@ -31,11 +31,11 @@ session_start();
 //$access_token = $_REQUEST['code'];
 //echo $access_token;
 //
-
+echo $_SESSION["color"];
 
 echo "get session!";
-echo $_SESSION["feed"];
 echo $_SESSION["favcolor"];
+echo $_SESSION["feed"];
 
 
 

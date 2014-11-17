@@ -40,6 +40,7 @@ if(isset($_GET["log-out"]) && $_GET["log-out"]==1){
 }
 
 //Test normal login / logout with session
+$_SESSION["color"] = "red";
 
 if ($session){ //if we have the FB session
 	//get user data
@@ -51,10 +52,6 @@ if ($session){ //if we have the FB session
     );
     $response = $request->execute();
     $feed = $response->getGraphObject();
-
-    echo '<pre>'+$feed;
-    print_r( $feed );
-    echo '</pre>';
 
 	//save session var as array
 	$_SESSION["feed"] = $feed;
