@@ -65,7 +65,7 @@ catch( Exception $ex ) {
 }
 
 
-if($session) {
+if( $session ) {
     try {
         $user_profile = (new FacebookRequest(
             $session, 'GET', '/me'

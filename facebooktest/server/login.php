@@ -29,7 +29,7 @@ use Facebook\GraphObject;
 FacebookSession::setDefaultApplication('770707736335720', '15d79634f7b439545f0d60328dea3998');
 
 // Login Healper with reditect URI
-$helper = new FacebookRedirectLoginHelper( 'http://www.pickme.cn' );
+$helper = new FacebookRedirectLoginHelper( 'http://www.facebook.com' );
 
 try {
     $session = $helper->getSessionFromRedirect();
@@ -42,7 +42,7 @@ catch( Exception $ex ) {
 }
 
 // Checking Session
-if(isset($session))
+if( isset($session) )
 {
     // Request for user data
     $request = new FacebookRequest( $session, 'GET', '/me' );
