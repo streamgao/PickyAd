@@ -41,10 +41,7 @@ echo "Adf";
 
 // Initialize application by Application ID and Secret
 $session->setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
-
 session_start();
-
-
 
 
 if($session) {
@@ -59,9 +56,7 @@ if($session) {
     } catch(FacebookRequestException $e) {
         echo "Exception occured, code: " . $e->getCode();
         echo " with message: " . $e->getMessage();
-
     }
-
 }
 
 
