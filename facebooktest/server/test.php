@@ -41,9 +41,11 @@ $access_token = $_GET['access_token'];
 echo $access_token;
 
 
+// Initialize application by Application ID and Secret
+FacebookSession::setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
 
 try {
-    $session = new FacebookSession( $access_token );
+    $session = new FacebookSession( $access_token, null );
     echo $session;
 }
 catch( FacebookRequestException $ex ) {
@@ -57,7 +59,7 @@ catch( Exception $ex ) {
 
 
 // Initialize application by Application ID and Secret
-$session->setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
+//$session->setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
 
 if($session) {
     try {
