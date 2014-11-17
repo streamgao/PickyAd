@@ -38,7 +38,7 @@ $access_token = $_REQUEST["access_token"];
 $session = new FacebookSession( $access_token );
 echo $access_token;
 echo $session;
-echo "Adf";
+echo "session";
 
 // Initialize application by Application ID and Secret
 $session->setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
