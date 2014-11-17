@@ -33,9 +33,9 @@ if($_SERVER['REQUEST_METHOD'] === "POST" ){
     $method = $_GET['method'];
 }
 
-//$access_token = $_POST['access_token'];
-$session = new FacebookSession( 'CAAK89GDZAlWgBACLA1ZAWGZA5Wi4rSq9WEZAxF1CqEEwKnwZA3w3CulPA6AQgFhg03vMERnjAFv84pp21HddtmCRlRW5ICVV9Qb5rfZCwVZC2raN6vd8ezItf8VRPaga2SjRtqvwOTwThtlbQb08cE9W5iiAcs97TR3FuO0A2tmadxxeuTW4EItKakZC9DogTG6JNmAQcWC5yAocjuQsGwBMFj3QdkWu04EZD' );
-//echo $access_token;
+$access_token = $_POST['access_token'];
+$session = new FacebookSession( $access_token );
+echo $access_token;
 echo $session;
 echo "Adf";
 
