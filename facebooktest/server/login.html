@@ -52,7 +52,6 @@ catch( Exception $ex ) {
 // Checking Session
 if( isset($session) )
 {
-// Request for user data
 $request = new FacebookRequest( $session, 'GET', '/me' );
 $response = $request->execute();
 // Responce
