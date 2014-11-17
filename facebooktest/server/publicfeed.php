@@ -43,13 +43,16 @@ $access_token = $_GET['access_token'];
 echo $access_token;
 
 
+
 // Initialize application by Application ID and Secret
 try {
     FacebookSession::setDefaultApplication('770707736335720', '15d79634f7b439545f0d60328dea3998');
     echo "successful";
 }catch (Exception $e){
-    echo "session create error";
+    echo "session error";
 }
+
+
 
 try {
     //$session = new FacebookSession( $access_token );
