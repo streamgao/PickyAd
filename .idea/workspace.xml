@@ -33,10 +33,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facebooktest/server/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5609756" vertical-offset="595" max-vertical-offset="1065">
+            <state vertical-scroll-proportion="-9.583333" vertical-offset="595" max-vertical-offset="1065">
               <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
               <folding>
                 <element signature="e#6#98#0#PHP" expanded="true" />
@@ -46,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/facebook-sdk-v4/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.32" vertical-offset="424" max-vertical-offset="2385">
-              <caret line="86" column="47" selection-start-line="86" selection-start-column="47" selection-end-line="86" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.67654985" vertical-offset="1264" max-vertical-offset="2385">
+              <caret line="101" column="7" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
               <folding>
                 <element signature="e#661#690#0#PHP" expanded="true" />
               </folding>
@@ -121,8 +121,8 @@
         <option value="$PROJECT_DIR$/facebook-sdk-v4/facebook-php-sdk-v4-4.0-dev/publicfeed.php" />
         <option value="$PROJECT_DIR$/facebooktest/server/publicfeed.php" />
         <option value="$PROJECT_DIR$/facebook-sdk-v4/publicfeed.php" />
-        <option value="$PROJECT_DIR$/facebook-sdk-v4/index.php" />
         <option value="$PROJECT_DIR$/facebooktest/server/login.php" />
+        <option value="$PROJECT_DIR$/facebook-sdk-v4/index.php" />
       </list>
     </option>
   </component>
@@ -521,12 +521,12 @@
       <workItem from="1415499147191" duration="483000" />
       <workItem from="1416031196423" duration="1073000" />
       <workItem from="1416114973844" duration="599000" />
-      <workItem from="1416165656778" duration="21148000" />
+      <workItem from="1416165656778" duration="21208000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101179000" />
+    <option name="totallyTimeSpent" value="101239000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="712" extended-state="6" />
@@ -1000,23 +1000,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facebook-sdk-v4/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.32" vertical-offset="424" max-vertical-offset="2385">
-          <caret line="86" column="47" selection-start-line="86" selection-start-column="47" selection-end-line="86" selection-end-column="47" />
-          <folding>
-            <element signature="e#661#690#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facebooktest/server/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5609756" vertical-offset="595" max-vertical-offset="1065">
+        <state vertical-scroll-proportion="-9.583333" vertical-offset="595" max-vertical-offset="1065">
           <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
           <folding>
             <element signature="e#6#98#0#PHP" expanded="true" />
             <element signature="e#572#601#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook-sdk-v4/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67654985" vertical-offset="1264" max-vertical-offset="2385">
+          <caret line="101" column="7" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
+          <folding>
+            <element signature="e#661#690#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
