@@ -26,7 +26,7 @@ use Facebook\FacebookAuthorizationException;
 use Facebook\GraphObject;
 use Facebook\GraphUser;
 
-
+session_start();
 if($_SERVER['REQUEST_METHOD'] === "POST" ){
     $method = $_POST['method'];
 }else{
@@ -42,7 +42,7 @@ echo "Adf";
 
 // Initialize application by Application ID and Secret
 $session->setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
-session_start();
+
 
 
 if($session) {

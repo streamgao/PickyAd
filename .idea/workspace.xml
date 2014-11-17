@@ -36,8 +36,8 @@
       <file leaf-file-name="publicfeed.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/facebooktest/server/publicfeed.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6921182" vertical-offset="184" max-vertical-offset="990">
-              <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.2857143" vertical-offset="229" max-vertical-offset="990">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
               <folding>
                 <element signature="e#560#589#0#PHP" expanded="true" />
               </folding>
@@ -526,12 +526,12 @@
       <workItem from="1415499147191" duration="483000" />
       <workItem from="1416031196423" duration="1073000" />
       <workItem from="1416114973844" duration="599000" />
-      <workItem from="1416165656778" duration="10334000" />
+      <workItem from="1416165656778" duration="10438000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90365000" />
+    <option name="totallyTimeSpent" value="90469000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="717" extended-state="6" />
@@ -976,8 +976,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/facebooktest/server/publicfeed.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6921182" vertical-offset="184" max-vertical-offset="990">
-          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.2857143" vertical-offset="229" max-vertical-offset="990">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding>
             <element signature="e#560#589#0#PHP" expanded="true" />
           </folding>
