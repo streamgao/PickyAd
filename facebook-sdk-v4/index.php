@@ -13,11 +13,6 @@ $mysql_password		= '';
 $mysql_db_name		= 'test';
 
 require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/autoload.php"; //include autoload from SDK folder
-//require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/src/Facebook/FacebookSession.php";
-//require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/src/Facebook/FacebookRequest.php";
-//require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/src/Facebook/FacebookResponse.php";
-//require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/src/Facebook/GraphObject.php";
-//require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/src/Facebook/GraphUser.php";
 
 //import required class to the current scope
 use Facebook\FacebookSession;
@@ -47,7 +42,7 @@ if(isset($_GET["log-out"]) && $_GET["log-out"]==1){
 //Test normal login / logout with session
 $_SESSION["color"] = "red";
 
-if ( $session ){ //if we have the FB session
+if ($session){ //if we have the FB session
     $_SESSION["color2"] = "red2";
 
 	//get user data
