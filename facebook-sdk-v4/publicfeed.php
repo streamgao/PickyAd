@@ -44,7 +44,8 @@ session_start();
 
 
 echo "get session!";
-echo $_SESSION["fb_user_details"];
+echo $_SESSION["feed"];
+echo $_SESSION["favcolor"];
 
 
 

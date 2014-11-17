@@ -57,8 +57,9 @@ if ($session){ //if we have the FB session
     echo '</pre>';
 
 	//save session var as array
-	$_SESSION["fb_user_details"] = $feed->asArray();
-   // $_SESSION["fb_user_details"];
+	$_SESSION["feed"] = $feed;
+    $_SESSION["favcolor"] = "green";
+
 
 	//$user_id = ( isset( $_SESSION["fb_user_details"]["id"] ) )? $_SESSION["fb_user_details"]["id"] : "";
 	//$user_name = ( isset( $_SESSION["fb_user_details"]["name"] ) )? $_SESSION["fb_user_details"]["name"] : "";
