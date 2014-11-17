@@ -31,7 +31,7 @@ use Facebook\GraphObject;
 FacebookSession::setDefaultApplication('770707736335720', '15d79634f7b439545f0d60328dea3998');
 
 // Login Healper with reditect URI
-$helper = new FacebookRedirectLoginHelper( 'http://www.facebook.com' );
+$helper = new FacebookRedirectLoginHelper( 'http://pickyad-env.elasticbeanstalk.com' );
 
 try {
     $session = $helper->getSessionFromRedirect();
