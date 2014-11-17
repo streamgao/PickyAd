@@ -4,7 +4,7 @@ session_start(); //Session should always be active
 $app_id				= '770707736335720';  //localhost
 $app_secret 		= '15d79634f7b439545f0d60328dea3998';
 $required_scope 	= 'public_profile, publish_actions'; //Permissions required
-$redirect_url 		= 'http://localhost/facebook-connect/'; //FB redirects to this page with a code
+$redirect_url 		= 'http://www.facebook.com'; //FB redirects to this page with a code
 
 //MySqli details for saving user details
 $mysql_host			= 'localhost';
