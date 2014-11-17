@@ -31,8 +31,9 @@ use Facebook\GraphUser;
 FacebookSession::setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
 
 try {
-    $access_token = $_POST['access_token'];
+    $access_token = $_GET['access_token'];
     $session = new FacebookSession( $access_token );
+    echo $access_token;
 }
 catch( FacebookRequestException $ex ) {
     // Exception

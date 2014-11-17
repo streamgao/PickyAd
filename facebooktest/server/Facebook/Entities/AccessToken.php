@@ -269,13 +269,10 @@ class AccessToken
 
   /**
    * Request a code from a long lived access token.
-   *
    * @param array $params
    * @param string|null $appId
    * @param string|null $appSecret
-   *
    * @return string
-   *
    * @throws FacebookRequestException
    */
   public static function requestCode(array $params, $appId = null, $appSecret = null)
