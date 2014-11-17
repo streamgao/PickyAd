@@ -13,10 +13,10 @@
 //require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/src/Facebook/GraphUser.php";
 
 use Facebook\FacebookSession;
-use Facebook\FacebookRequest;
-use Facebook\FacebookResponse;
-use Facebook\GraphObject;
-use Facebook\GraphUser;
+//use Facebook\FacebookRequest;
+//use Facebook\FacebookResponse;
+//use Facebook\GraphObject;
+//use Facebook\GraphUser;
 
 
 session_start();
