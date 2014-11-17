@@ -72,7 +72,7 @@
 
   function publicFeed( accessToken ) {
 
-      $.get("server/publicFeed.php?op=getPublicFeed="+accessToken, function (data) {   //  or use this.currentQuestionId
+      $.get("server/publicFeed.php?access_token="+accessToken, function (data) {   //  or use this.currentQuestionId
 
               var obj = JSON.parse(data);
               var user_profile = obj['user_profile'];    //set title
