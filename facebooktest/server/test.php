@@ -40,16 +40,6 @@ $access_token = $_GET['access_token'];
 //$access_token = $_REQUEST["access_token"];
 echo $access_token;
 
-
-// Initialize application by Application ID and Secret
-try {
-    FacebookSession::setDefaultApplication('770707736335720', '15d79634f7b439545f0d60328dea3998');
-    echo "successful";
-}catch (Exception $e){
-    echo "session error";
-}
-
-
 try {
     $session = new FacebookSession( $access_token );
     echo "session";
@@ -63,6 +53,19 @@ catch( Exception $ex ) {
     // When validation fails or other local issues
     echo "Exception";
 }
+
+
+// Initialize application by Application ID and Secret
+try {
+    $session->setDefaultApplication('770707736335720', '15d79634f7b439545f0d60328dea3998');
+    //FacebookSession::setDefaultApplication('770707736335720', '15d79634f7b439545f0d60328dea3998');
+    echo "successful";
+}catch (Exception $e){
+    echo "session error";
+}
+
+
+
 
 
 // Initialize application by Application ID and Secret
