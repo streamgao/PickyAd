@@ -3,8 +3,9 @@
  * Created by IntelliJ IDEA.
  * User: stream
  * Date: 11/16/14
- * Time: 4:09 PM
+ * Time: 8:48 PM
  */
+
 
 require_once( 'Facebook/FacebookSession.php' );
 require_once( 'Facebook/FacebookRedirectLoginHelper.php' );
@@ -26,6 +27,8 @@ use Facebook\FacebookAuthorizationException;
 use Facebook\GraphObject;
 use Facebook\GraphUser;
 
+
+
 session_start();
 if($_SERVER['REQUEST_METHOD'] === "POST" ){
     $method = $_POST['method'];
@@ -35,7 +38,7 @@ if($_SERVER['REQUEST_METHOD'] === "POST" ){
 
 //$access_token = $_POST['access_token'];
 $access_token = $_REQUEST["access_token"];
-$session = new FacebookSession( $access_token );
+//$session = new FacebookSession( $access_token );
 echo $access_token;
 echo $session;
 echo "Adf";
@@ -44,21 +47,6 @@ echo "Adf";
 $session->setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
 
 
-
-if($session) {
-    try {
-        $user_profile = (new FacebookRequest(
-            $session, 'GET', '/me'
-        ))->execute()->getGraphObject( GraphUser::className() );
-        $response[$res_count] = array(
-            "user_profile" => $user_profile,
-        );
-        echo json_encode($response);
-    } catch(FacebookRequestException $e) {
-        echo "Exception occured, code: " . $e->getCode();
-        echo " with message: " . $e->getMessage();
-    }
-}
 
 
 
