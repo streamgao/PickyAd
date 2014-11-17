@@ -1,9 +1,9 @@
 <?php
 /**
  * Created by IntelliJ IDEA.
- * User: stream
- * Date: 11/16/14
- * Time: 4:23 PM
+ * User: wenzhongchi
+ * Date: 11/13/14
+ * Time: 9:27 PM
  */
 
 session_start();
@@ -28,10 +28,11 @@ use Facebook\GraphObject;
 // Initialize application by Application ID and Secret
 FacebookSession::setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
 
+// Login Healper with reditect URI
+$helper = new FacebookRedirectLoginHelper( 'http://www.pickme.cn' );
 
 try {
-    $access_token = $_POST['access_token'];
-    $session = new FacebookSession( $access_token );
+    $session = $helper->getSessionFromRedirect();
 }
 catch( FacebookRequestException $ex ) {
     // Exception
@@ -41,7 +42,7 @@ catch( Exception $ex ) {
 }
 
 // Checking Session
-if( isset($session) )
+if(isset($session))
 {
     // Request for user data
     $request = new FacebookRequest( $session, 'GET', '/me' );
