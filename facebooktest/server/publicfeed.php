@@ -49,9 +49,10 @@ try {
     echo "session error";
 }
 
+SignedRequest $signedRequest = null;
 
 try {
-    $session = new FacebookSession( $access_token );
+    $session = new FacebookSession( $access_token, $signedRequest );
     echo "session";
     echo $session;
 }
