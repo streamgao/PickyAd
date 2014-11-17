@@ -50,10 +50,9 @@ try {
     echo "session error";
 }
 
-$helper = new FacebookJavaScriptLoginHelper();
+
 try {
-    //$session = new FacebookSession( $access_token );
-    $session = $helper->getSession();
+    $session = new FacebookSession( $access_token );
     echo "session";
     echo $session;
 }

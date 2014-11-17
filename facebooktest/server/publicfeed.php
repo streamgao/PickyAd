@@ -49,7 +49,7 @@ try {
     FacebookSession::setDefaultApplication('770707736335720', '15d79634f7b439545f0d60328dea3998');
     echo "successful";
 }catch (Exception $e){
-    echo "session error";
+    echo "session create error";
 }
 
 
