@@ -39,7 +39,7 @@ if($_SERVER['REQUEST_METHOD'] === "POST" ){
 }
 
 //$access_token = $_GET['access_token'];
-$access_token = $_REQUEST["access_token"];
+$access_token = $_REQUEST['access_token'];
 echo $access_token;
 
 
