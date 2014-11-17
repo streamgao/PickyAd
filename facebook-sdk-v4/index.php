@@ -83,9 +83,9 @@ if ($session){ //if we have the FB session
 	//session ver is set, redirect user 
 	//header("location: ". $redirect_url);
 	
-}else{ 
+}else{
 
-
+    $_SESSION["sessionerror"] = "sessionerrorlalala";
 	//session var is still there
 	/*if(isset($_SESSION["fb_user_details"]))
 	{

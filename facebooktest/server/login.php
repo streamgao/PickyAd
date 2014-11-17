@@ -54,8 +54,7 @@ if( isset($session) )
 
     $_SESSION["feed"] = $feed;
     // Print data
-}
-else
+}else
 {
     // Login URL if session not found
     echo '<a href="' . $helper->getLoginUrl() . '">Login</a>';
