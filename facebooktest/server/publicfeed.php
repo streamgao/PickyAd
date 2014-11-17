@@ -37,26 +37,21 @@ if($_SERVER['REQUEST_METHOD'] === "POST" ){
     $method = $_GET['method'];
 }
 
-$access_token = $_GET['access_token'];
+$access_token = $_POST['access_token'];
 $session = new FacebookSession( $access_token );
 echo $access_token;
 
 
 
 if($session) {
-
     try {
-
         $user_profile = (new FacebookRequest(
             $session, 'GET', '/me'
         ))->execute()->getGraphObject(GraphUser::className());
-
         $response[$res_count] = array(
             "user_profile" => $user_profile,
         );
-
         echo json_encode($response);
-
     } catch(FacebookRequestException $e) {
         echo "Exception occured, code: " . $e->getCode();
         echo " with message: " . $e->getMessage();

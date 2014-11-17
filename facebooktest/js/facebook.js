@@ -71,7 +71,7 @@
 
 
   function publicFeed( accessToken ) {
-      $.get("server/publicfeed.php?access_token="+accessToken, function (data) {
+      $.post("server/publicfeed.php?access_token="+accessToken, function (data) {
               var obj = JSON.parse(data);
               var user_profile = obj['user_profile'];    //set title
               console.log("profile");
