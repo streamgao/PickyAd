@@ -26,11 +26,6 @@ use Facebook\FacebookAuthorizationException;
 use Facebook\GraphObject;
 use Facebook\GraphUser;
 
-echo "Adf";
-// Initialize application by Application ID and Secret
-FacebookSession::setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
-
-//session_start();
 
 if($_SERVER['REQUEST_METHOD'] === "POST" ){
     $method = $_POST['method'];
@@ -42,8 +37,15 @@ if($_SERVER['REQUEST_METHOD'] === "POST" ){
 $session = new FacebookSession( 'CAAK89GDZAlWgBACLA1ZAWGZA5Wi4rSq9WEZAxF1CqEEwKnwZA3w3CulPA6AQgFhg03vMERnjAFv84pp21HddtmCRlRW5ICVV9Qb5rfZCwVZC2raN6vd8ezItf8VRPaga2SjRtqvwOTwThtlbQb08cE9W5iiAcs97TR3FuO0A2tmadxxeuTW4EItKakZC9DogTG6JNmAQcWC5yAocjuQsGwBMFj3QdkWu04EZD' );
 //echo $access_token;
 echo $session;
+echo "Adf";
 
-/*
+// Initialize application by Application ID and Secret
+$session->setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
+
+session_start();
+
+
+
 
 if($session) {
     try {
@@ -60,7 +62,7 @@ if($session) {
 
     }
 
-}*/
+}
 
 
 
