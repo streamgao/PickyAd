@@ -5,12 +5,12 @@
  * Date: 11/17/14
  * Time: 2:52 AM
  */
-
-require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/src/Facebook/FacebookSession.php";
-require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/src/Facebook/FacebookRequest.php";
-require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/src/Facebook/FacebookResponse.php";
-require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/src/Facebook/GraphObject.php";
-require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/src/Facebook/GraphUser.php";
+//
+//require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/src/Facebook/FacebookSession.php";
+//require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/src/Facebook/FacebookRequest.php";
+//require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/src/Facebook/FacebookResponse.php";
+//require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/src/Facebook/GraphObject.php";
+//require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/src/Facebook/GraphUser.php";
 
 use Facebook\FacebookSession;
 use Facebook\FacebookRequest;
