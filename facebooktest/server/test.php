@@ -84,8 +84,4 @@ if($session) {
     echo "error";
 }
 
-
-
-
-
 ?>
