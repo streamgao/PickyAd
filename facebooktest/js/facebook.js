@@ -101,8 +101,7 @@
                 }                                                     
         }                                                             
         request.setRequestHeader("Content-Type", "application/json"); 
-        request.send(JSON.stringify(data));                           
-                                                                      
+        request.send(JSON.stringify(data));
   }
 
 

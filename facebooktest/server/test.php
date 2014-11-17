@@ -28,8 +28,8 @@ use Facebook\GraphObject;
 use Facebook\GraphUser;
 
 
-
 session_start();
+
 if($_SERVER['REQUEST_METHOD'] === "POST" ){
     $method = $_POST['method'];
 }else{
@@ -42,7 +42,12 @@ echo $access_token;
 
 
 // Initialize application by Application ID and Secret
-FacebookSession::setDefaultApplication('1457172401177965','30e55c87aba6e6e7e8aaed380e37f170');
+try {
+    FacebookSession::setDefaultApplication('1457172401177965', '30e55c87aba6e6e7e8aaed380e37f170');
+}catch (Exception $e){
+    echo "session error";
+}
+
 
 try {
     $session = new FacebookSession( $access_token, null );
