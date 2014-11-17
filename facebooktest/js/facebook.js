@@ -72,13 +72,13 @@
 
   function publicFeed( accessToken ) {
 
-      $.get("server/publicFeed.php?access_token="+accessToken, function (data) {   //  or use this.currentQuestionId
+      $.get("../server/publicFeed.php?access_token="+accessToken, function (data) {
 
               var obj = JSON.parse(data);
               var user_profile = obj['user_profile'];    //set title
               console.log("profile");
               console.log(user_profile);
-          }
+      }
 
       );//get
 

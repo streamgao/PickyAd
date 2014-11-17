@@ -37,10 +37,9 @@ if($_SERVER['REQUEST_METHOD'] === "POST" ){
     $method = $_GET['method'];
 }
 
-
-    $access_token = $_GET['access_token'];
-    $session = new FacebookSession( $access_token );
-    echo $access_token;
+$access_token = $_GET['access_token'];
+$session = new FacebookSession( $access_token );
+echo $access_token;
 
 
 
