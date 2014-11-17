@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
 <?php
 /**
  * Created by IntelliJ IDEA.
@@ -35,27 +43,33 @@ try {
     $session = $helper->getSessionFromRedirect();
 }
 catch( FacebookRequestException $ex ) {
-    // Exception
+// Exception
 }
 catch( Exception $ex ) {
-    // When validation fails or other local issues
+// When validation fails or other local issues
 }
 
 // Checking Session
 if( isset($session) )
 {
-    // Request for user data
-    $request = new FacebookRequest( $session, 'GET', '/me' );
-    $response = $request->execute();
-    // Responce
-    $data = $response->getGraphObject();
+// Request for user data
+$request = new FacebookRequest( $session, 'GET', '/me' );
+$response = $request->execute();
+// Responce
+$data = $response->getGraphObject();
 
-    // Print data
-    echo  print_r( $data, 1 );
+// Print data
+echo  print_r( $data, 1 );
 }
 else
 {
-    // Login URL if session not found
-    echo '<a href="' . $helper->getLoginUrl() . '">Login</a>';
+// Login URL if session not found
+echo '<a href="' . $helper->getLoginUrl() . '">Login</a>';
 }
 ?>
+
+
+
+
+</body>
+</html>
