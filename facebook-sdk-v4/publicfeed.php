@@ -51,6 +51,8 @@ echo $_SESSION["feed"];
 $session = new FacebookSession( $access_token );
 if( $session ){
     echo "session successful";
+} else{
+    echo "use token session failed";
 }
 
 
