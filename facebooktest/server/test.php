@@ -15,8 +15,7 @@ require_once( 'Facebook/FacebookSDKException.php' );
 require_once( 'Facebook/FacebookRequestException.php' );
 require_once( 'Facebook/FacebookAuthorizationException.php' );
 require_once( 'Facebook/GraphObject.php' );
-require_once( 'Facebook/GraphUser.php' );
-require_once( 'Facebook/FacebookJavaScriptLoginHelper.php' );
+require_once( 'Facebook\FacebookJavaScriptLoginHelper' );
 
 use Facebook\FacebookSession;
 use Facebook\FacebookRedirectLoginHelper;
