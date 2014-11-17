@@ -31,61 +31,20 @@ use Facebook\FacebookJavaScriptLoginHelper;
 
 session_start();
 
-if($_SERVER['REQUEST_METHOD'] === "POST" ){
-    $method = $_POST['method'];
-}else{
-    $method = $_GET['method'];
-}
-
-//$access_token = $_GET['access_token'];
-$access_token = $_REQUEST['code'];
-echo $access_token;
-
-
-// Initialize application by Application ID and Secret
-try {
-    FacebookSession::setDefaultApplication('770707736335720', '15d79634f7b439545f0d60328dea3998');
-    echo "successful";
-}catch (Exception $e){
-    echo "session set error";
-}
+//if($_SERVER['REQUEST_METHOD'] === "POST" ){
+//    $method = $_POST['method'];
+//}else{
+//    $method = $_GET['method'];
+//}
+//
+////$access_token = $_GET['access_token'];
+//$access_token = $_REQUEST['code'];
+//echo $access_token;
+//
 
 
-try {
-    //$session = new FacebookSession( $access_token );
-    $helper = new FacebookJavaScriptLoginHelper();
-    $session = $helper->getSession();
-    echo "session";
-    echo $session;
-}
-catch( FacebookRequestException $ex ) {
-    // Exception
-    echo "FacebookRequestException";
-}
-catch( Exception $ex ) {
-    // When validation fails or other local issues
-    echo "Exception";
-}
-
-
-if( $session ) {
-    try {
-        $user_profile = (new FacebookRequest(
-            $session, 'GET', '/me'
-        ))->execute()->getGraphObject( GraphUser::className() );
-        $response = array(
-            "user_profile" => $user_profile,
-        );
-        echo json_encode($response);
-    } catch(FacebookRequestException $e) {
-        echo "Exception occured, code: " . $e->getCode();
-        echo " with message: " . $e->getMessage();
-    }
-}else{
-    echo "error";
-}
-
-
+echo "get session!";
+echo $_SESSION["fb_user_details"];
 
 
 

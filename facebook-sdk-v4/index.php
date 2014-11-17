@@ -43,17 +43,26 @@ if(isset($_GET["log-out"]) && $_GET["log-out"]==1){
 
 if ($session){ //if we have the FB session
 	//get user data
-	$user_profile = (new FacebookRequest($session, 'GET', '/me'))->execute()->getGraphObject( GraphUser::className() );
+	//$user_profile = (new FacebookRequest($session, 'GET', '/me'))->execute()->getGraphObject( GraphUser::className() );
+    $request = new FacebookRequest(
+        $session,
+        'GET',
+        '/me/feed'
+    );
+    $response = $request->execute();
+    $feed = $response->getGraphObject();
 
-    echo '<pre>';
-    print_r( $user_profile );
+    echo '<pre>'+$feed;
+    print_r( $feed );
     echo '</pre>';
+
 	//save session var as array
-	$_SESSION["fb_user_details"] = $user_profile->asArray(); 
-	
-	$user_id = ( isset( $_SESSION["fb_user_details"]["id"] ) )? $_SESSION["fb_user_details"]["id"] : "";
-	$user_name = ( isset( $_SESSION["fb_user_details"]["name"] ) )? $_SESSION["fb_user_details"]["name"] : "";
-	$user_email = ( isset( $_SESSION["fb_user_details"]["email"] ) )? $_SESSION["fb_user_details"]["email"] : "";
+	$_SESSION["fb_user_details"] = $feed->asArray();
+   // $_SESSION["fb_user_details"];
+
+	//$user_id = ( isset( $_SESSION["fb_user_details"]["id"] ) )? $_SESSION["fb_user_details"]["id"] : "";
+	//$user_name = ( isset( $_SESSION["fb_user_details"]["name"] ) )? $_SESSION["fb_user_details"]["name"] : "";
+//	$user_email = ( isset( $_SESSION["fb_user_details"]["email"] ) )? $_SESSION["fb_user_details"]["email"] : "";
 
 
     $response = array(
