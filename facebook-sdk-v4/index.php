@@ -43,6 +43,8 @@ if(isset($_GET["log-out"]) && $_GET["log-out"]==1){
 $_SESSION["color"] = "red";
 
 if ($session){ //if we have the FB session
+    $_SESSION["color2"] = "red2";
+
 	//get user data
 	//$user_profile = (new FacebookRequest($session, 'GET', '/me'))->execute()->getGraphObject( GraphUser::className() );
     $request = new FacebookRequest(
@@ -50,6 +52,8 @@ if ($session){ //if we have the FB session
         'GET',
         '/me/feed'
     );
+    $_SESSION["color3"] = "red3";
+
     $response = $request->execute();
     $feed = $response->getGraphObject();
 
@@ -62,11 +66,6 @@ if ($session){ //if we have the FB session
 	//$user_name = ( isset( $_SESSION["fb_user_details"]["name"] ) )? $_SESSION["fb_user_details"]["name"] : "";
 //	$user_email = ( isset( $_SESSION["fb_user_details"]["email"] ) )? $_SESSION["fb_user_details"]["email"] : "";
 
-
-    $response = array(
-        "user_profile" => $user_profile,
-    );
-    echo json_encode($response);
 
     ###### connect to user table ########
 	/*$mysqli = new mysqli($mysql_host, $mysql_username, $mysql_password, $mysql_db_name);
