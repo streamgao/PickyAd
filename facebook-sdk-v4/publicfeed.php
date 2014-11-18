@@ -14,15 +14,18 @@
 
 require_once('facebook-php-sdk-v4-4.0-dev/src/Facebook/FacebookSession.php');
 require_once('facebook-php-sdk-v4-4.0-dev/src/Facebook/FacebookRequest.php');
+require_once('facebook-php-sdk-v4-4.0-dev/src/Facebook/FacebookRequestException.php');
 require_once('facebook-php-sdk-v4-4.0-dev/src/Facebook/FacebookResponse.php');
 require_once('facebook-php-sdk-v4-4.0-dev/src/Facebook/GraphObject.php');
 require_once('facebook-php-sdk-v4-4.0-dev/src/Facebook/GraphUser.php');
+
 
 use Facebook\FacebookSession;
 use Facebook\FacebookRequest;
 use Facebook\FacebookResponse;
 use Facebook\GraphObject;
 use Facebook\GraphUser;
+use Facebook\FacebookRequestException;
 
 
 session_start();
@@ -52,6 +55,7 @@ $session = new FacebookSession( $access_token );
 echo $session;
 if( $session !=null ){
     echo "session successful";
+    echo $session;
 } else{
     echo "use token session failed";
 }

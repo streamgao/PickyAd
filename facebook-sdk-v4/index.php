@@ -44,7 +44,6 @@ $_SESSION["color"] = "red";
 
 if ($session){ //if we have the FB session
     $_SESSION["color2"] = "red2";
-
 	//get user data
 	//$user_profile = (new FacebookRequest($session, 'GET', '/me'))->execute()->getGraphObject( GraphUser::className() );
     $request = new FacebookRequest(
