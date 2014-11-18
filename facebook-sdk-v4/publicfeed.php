@@ -39,7 +39,6 @@ echo $access_token;
 
 echo $_SESSION["color"];
 
-echo "get session!";
 echo $_SESSION["color2"];
 echo $_SESSION["color3"];
 echo $_SESSION["sessionerror"];
