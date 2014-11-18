@@ -88,7 +88,16 @@
 		var jsonD =  {data:JSON.stringify(response)};
 		console.log("jsonD:", response);
 
-      });                                                           
+      });
+      FB.api('/me/feed', 'post', { message: body }, function(response) {
+          if (!response || response.error) {
+              alert('Error occured');
+          } else {
+              alert('Post ID: ' + response.id);
+          }
+      });
+
+
 	};                                                               
                                                                      
 
