@@ -56,10 +56,10 @@
       <file leaf-file-name="publicfeed.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/facebook-sdk-v4/publicfeed.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49029127" vertical-offset="503" max-vertical-offset="960">
-              <caret line="52" column="2" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.50970876" vertical-offset="75" max-vertical-offset="915">
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
               <folding>
-                <element signature="e#1007#1036#0#PHP" expanded="true" />
+                <element signature="e#919#948#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -515,12 +515,12 @@
       <workItem from="1416114973844" duration="599000" />
       <workItem from="1416165656778" duration="21393000" />
       <workItem from="1416236692306" duration="1783000" />
-      <workItem from="1416331686213" duration="719000" />
+      <workItem from="1416331686213" duration="781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103926000" />
+    <option name="totallyTimeSpent" value="103988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="712" extended-state="6" />
@@ -964,10 +964,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/facebook-sdk-v4/publicfeed.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49029127" vertical-offset="503" max-vertical-offset="960">
-          <caret line="52" column="2" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.50970876" vertical-offset="75" max-vertical-offset="915">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding>
-            <element signature="e#1007#1036#0#PHP" expanded="true" />
+            <element signature="e#919#948#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
