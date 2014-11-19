@@ -23,6 +23,64 @@ use Facebook\FacebookRedirectLoginHelper;
 FacebookSession::setDefaultApplication($app_id , $app_secret);
 $helper = new FacebookRedirectLoginHelper($redirect_url);
 
+if ($_SESSION['fb_token']) {
+    $session = new FacebookSession($_SESSION['fb_token']);
+    try {
+        if (!$session->validate()) {
+            $session = null;
+        }
+    } catch (Exception $e) {
+        $session = null;
+    }
+}
+
+if (!$session) {
+    try {
+        $session = $helper->getSessionFromRedirect();
+    } catch (FacebookRequestException $e) {
+        print_r($e);
+    } catch (Exception $e) {
+        print_r($e);
+    }
+}
+
+if ($session) {
+    // Store the access token here:
+    $_SESSION['fb_token'] = $session->getToken();
+    // User logged in. App logic goes here...
+} else {
+    $url = $helper->getLoginUrl(array('publish_stream', 'manage_notifications', 'user_friends'));
+    echo "<script type='text/javascript'>top.location.href = '$url';</script>";
+}
+
+try {
+
+    $user_profile = (new FacebookRequest($session, 'GET', '/me'))
+        ->execute()->getGraphObject(GraphUser::className());
+
+    echo "Name: " . $user_profile->getName();
+    var_dump($user_profile);
+} catch (FacebookRequestException $e) {
+
+    echo "Exception occurred, code: " . $e->getCode();
+    echo "with message: " . $e->getMessage();
+}
+$user_id = $user_profile->getId();
+
+$user_locale = $user_profile->getProperty('locale');
+
+try {
+
+    $friends = (new FacebookRequest($session, 'GET', '/me/friends'))
+        ->execute()->getGraphObject()->asArray();
+    $friendGraphUsers = $friends[1];
+} catch (FacebookRequestException $e) {
+
+    echo "Exception occurred, code: " . $e->getCode();
+    echo "with message: " . $e->getMessage();
+}
+
+/*
 try {
   $session = $helper->getSessionFromRedirect();
 } catch(FacebookRequestException $ex) {
@@ -81,7 +139,7 @@ if ($session){ //if we have the FB session
 	*/
 	//session ver is set, redirect user 
 	//header("location: ". $redirect_url);
-	
+	/*
 }else{
 
 	//session var is still there
@@ -99,7 +157,7 @@ if ($session){ //if we have the FB session
 		echo '<a href="'.$login_url.'">Login with Facebook</a>'; 
 	}
 }
-
+*/
 
 /* Demo review
 if ($session){ //if we have the FB session
@@ -150,3 +208,5 @@ if ($session){ //if we have the FB session
 	echo '<a href="'.$login_url.'">Login with Facebook</a>'; 
 }
 */
+
+?>

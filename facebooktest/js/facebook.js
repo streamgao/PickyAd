@@ -80,7 +80,11 @@
 
 
     console.log('Welcome!  Fetching your information.... ');          
-    FB.api('/me/feed', function(response) {
+    FB.api('/me/feed',
+      {
+            "with": "location"
+      },
+      function(response) {
       console.log('Successful login for: ' + JSON.stringify(response));
       document.getElementById('status').innerHTML =                   
         'Thanks for logging in, ' + response+ '!';
@@ -90,14 +94,18 @@
 
       });
 
-      FB.api('feed', function(response) {
-          if (!response || response.error) {
-              alert('Error occured');
-          } else {
-              alert('Post ID: ' + response.id);
-              console.log(response);
+      FB.api(
+          "/me/feed",
+
+          function (response) {
+              if (response && !response.error) {
+                  /* handle the result */
+                  alert("feed error");
+              }else{
+                  console.log(response);
+              }
           }
-      });
+      );
 
 
 	};                                                               
