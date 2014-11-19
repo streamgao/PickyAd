@@ -80,10 +80,10 @@
 
 
     console.log('Welcome!  Fetching your information.... ');          
-    FB.api('/me', function(response) {                                
+    FB.api('/me/feed', function(response) {
       console.log('Successful login for: ' + JSON.stringify(response));
       document.getElementById('status').innerHTML =                   
-        'Thanks for logging in, ' + response.name + '!';              
+        'Thanks for logging in, ' + response+ '!';
         //findUserFriends();
 		var jsonD =  {data:JSON.stringify(response)};
 		console.log("jsonD:", response);
