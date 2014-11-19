@@ -37,30 +37,52 @@ use Facebook\GraphSessionInfo;
 FacebookSession::setDefaultApplication($app_id , $app_secret);
 $helper = new FacebookRedirectLoginHelper($redirect_url);
 
-try {
-    $session = $helper->getSessionFromRedirect();
-} catch( FacebookRequestException $ex ) {
-    // When Facebook returns an error
-} catch( Exception $ex ) {
-    // When validation fails or other local issues
+if ( isset( $_SESSION ) && isset( $_SESSION['fb_token'] ) ) {
+    // create new session from saved access_token
+    $session = new FacebookSession( $_SESSION['fb_token'] );
+    // validate the access_token to make sure it's still valid
+    try {
+        if ( !$session->validate() ) {
+            $session = null;
+        }
+    } catch ( Exception $e ) {
+        // catch any exceptions
+        $session = null;
+    }
 }
-
+if ( !isset( $session ) || $session === null ) {
+    // no session exists
+    try {
+        $session = $helper->getSessionFromRedirect();
+    } catch( FacebookRequestException $ex ) {
+        // When Facebook returns an error
+        // handle this better in production code
+        print_r( $ex );
+    } catch( Exception $ex ) {
+        // When validation fails or other local issues
+        // handle this better in production code
+        print_r( $ex );
+    }
+}
 // see if we have a session
 if ( isset( $session ) ) {
+    // save the session
+    $_SESSION['fb_token'] = $session->getToken();
+    // create a session using saved token or the new one we generated at login
+    $session = new FacebookSession( $session->getToken() );
     // graph api request for user data
     $request = new FacebookRequest( $session, 'GET', '/me' );
     $response = $request->execute();
     // get response
-    $graphObject = $response->getGraphObject();
-
-    // print data
-    echo  print_r( $graphObject, 1 );
+    $graphObject = $response->getGraphObject()->asArray();
+    // print profile data
+    echo '<pre>' . print_r( $graphObject, 1 ) . '</pre>';
+    // print logout url using session and redirect_uri (logout.php page should destroy the session)
+    echo '<a href="' . $helper->getLogoutUrl( $session, 'http://yourwebsite.com/app/logout.php' ) . '">Logout</a>';
 } else {
     // show login url
-    echo '<a href="' . $helper->getLoginUrl() . '">Login</a>';
+    echo '<a href="' . $helper->getLoginUrl( array( 'email', 'user_friends' ) ) . '">Login</a>';
 }
-
-
 
 
 /*
@@ -128,7 +150,6 @@ if ($session){ //if we have the FB session
 	$user_email =  $user_profile->getEmail();
 	$location =  $user_profile->getLocation();
 
-
     ######## Check User Permission called 'publish_actions' ##########
     $user_permissions = (new FacebookRequest($session, 'GET', '/me/permissions'))->execute()->getGraphObject(GraphUser::className())->asArray();
     $found_permission = false;
@@ -144,22 +165,6 @@ if ($session){ //if we have the FB session
 		$post_data = array('source' => '@'.$image, 'message' => 'This is test Message');
 		$response = (new FacebookRequest( $session, 'POST', '/me/photos', $post_data ))->execute()->getGraphObject();
     }
-
-
-	###### Save info in database ########
-	$mysqli = new mysqli($mysql_host, $mysql_username, $mysql_password, $mysql_db_name);
-	if ($mysqli->connect_error) {
-		die('Error : ('. $mysqli->connect_errno .') '. $mysqli->connect_error);
-	}
-	$results = $mysqli->query("SELECT COUNT(*) FROM usertable WHERE id=".$user_id);
-	$get_total_rows = $results->fetch_row();
-
-	if(!$get_total_rows[0]){
-		$insert_row = $mysqli->query("INSERT INTO usertable (fbid, fullname, email) VALUES(".$user_id.", '".$user_name."', '".$user_email."')");
-		if($insert_row){
-			print 'Success! ID of last inserted record is : ' .$mysqli->insert_id .'<br />';
-		}
-	}
 }else{
 
 	//display login url
