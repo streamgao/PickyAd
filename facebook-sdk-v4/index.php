@@ -46,6 +46,7 @@ catch( Exception $ex ) {
     // When validation fails or other local issues
 }
 
+
 // Checking Session
 if( isset($session) )
 {

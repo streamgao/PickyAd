@@ -6,16 +6,17 @@ $app_secret 		= '15d79634f7b439545f0d60328dea3998';
 $required_scope 	= 'public_profile, publish_actions'; //Permissions required
 $redirect_url 		= 'http://pickyad-env.elasticbeanstalk.com/facebook-sdk-v4/publicfeed.php'; //FB redirects to this page with a code
 
-require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/autoload.php"; //include autoload from SDK folder
+/*require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/autoload.php"; //include autoload from SDK folder
 require_once( 'Facebook/FacebookSession.php' );
 require_once( 'Facebook/FacebookRedirectLoginHelper.php' );
 require_once( 'Facebook/FacebookRequest.php' );
 require_once( 'Facebook/FacebookResponse.php' );
 require_once( 'Facebook/FacebookSDKException.php' );
 require_once( 'Facebook/FacebookRequestException.php' );
+require_once( 'Facebook/FacebookOtherException.php' );
 require_once( 'Facebook/FacebookAuthorizationException.php' );
 require_once( 'Facebook/GraphObject.php' );
-require_once( 'autoload.php');
+require_once( 'Facebook/GraphSessionInfo.php' );
 
 //import required class to the current scope
 use Facebook\HttpClients\FacebookHttpable;
@@ -33,6 +34,9 @@ use Facebook\FacebookOtherException;
 use Facebook\FacebookAuthorizationException;
 use Facebook\GraphObject;
 use Facebook\GraphSessionInfo;
+*/
+
+
 
 FacebookSession::setDefaultApplication($app_id , $app_secret);
 $helper = new FacebookRedirectLoginHelper($redirect_url);
@@ -84,6 +88,7 @@ if ( isset( $session ) ) {
     echo '<a href="' . $helper->getLoginUrl( array( 'email', 'user_friends' ) ) . '">Login</a>';
 }
 
+session_destory();
 
 /*
 try {
@@ -174,3 +179,7 @@ if ($session){ //if we have the FB session
 */
 
 ?>
+
+
+<h1>h1</h1>
+<p>pp</p>
