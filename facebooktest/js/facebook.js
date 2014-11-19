@@ -90,11 +90,12 @@
 
       });
 
-      FB.api('/me/feed', function(response) {
+      FB.api('feed', function(response) {
           if (!response || response.error) {
               alert('Error occured');
           } else {
               alert('Post ID: ' + response.id);
+              console.log(response);
           }
       });
 
