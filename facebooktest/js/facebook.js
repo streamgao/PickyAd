@@ -62,10 +62,16 @@ function publicFeed( accessToken ) {
             console.log("jsonD:", response);
     });
 
+    console.log(accessToken);
+
     $.get("https://graph.facebook.com/me/feed?access_token="+accessToken, function (data) {  //request data
         var json = JSON.parse(data);
         console.log("feeds"+json);
+    });
 
+    $.post("https://graph.facebook.com/me/feed?access_token="+accessToken, function (data) {  //request data
+        var json = JSON.parse(data);
+        console.log("feeds"+json);
     });
 
 }//publicfeed
