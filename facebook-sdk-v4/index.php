@@ -7,7 +7,7 @@ $app_secret 		= '15d79634f7b439545f0d60328dea3998';
 $required_scope 	= 'public_profile, publish_actions'; //Permissions required
 $redirect_url 		= 'http://pickyad-env.elasticbeanstalk.com/facebook-sdk-v4/publicfeed.php'; //FB redirects to this page with a code
 
-/*require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/autoload.php"; //include autoload from SDK folder
+require_once __DIR__ . "/facebook-php-sdk-v4-4.0-dev/autoload.php"; //include autoload from SDK folder
 require_once( 'Facebook/FacebookSession.php' );
 require_once( 'Facebook/FacebookRedirectLoginHelper.php' );
 require_once( 'Facebook/FacebookRequest.php' );
@@ -35,7 +35,7 @@ use Facebook\FacebookOtherException;
 use Facebook\FacebookAuthorizationException;
 use Facebook\GraphObject;
 use Facebook\GraphSessionInfo;
-*/
+
 
 
 
