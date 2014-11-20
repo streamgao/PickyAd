@@ -94,18 +94,14 @@
 
       });
 
-      FB.api(
-          "/me/feed",
-
-          function (response) {
-              if (response && !response.error) {
-                  /* handle the result */
-                  alert("feed error");
-              }else{
-                  console.log(response);
-              }
+      var body = 'Reading JS SDK documentation';
+      FB.api('/me/feed', 'post', { message: body }, function(response) {
+          if (!response || response.error) {
+              alert('Error occured');
+          } else {
+              alert('Post ID: ' + response.id);
           }
-      );
+      });
 
 
 	};                                                               
