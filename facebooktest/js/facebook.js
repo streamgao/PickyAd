@@ -67,14 +67,9 @@ function publicFeed( accessToken ) {
     FB.api( '/me/feed', 'get',
         function(response) {
             console.log("/me/feed"+response);
-            //console.log();
+            console.log(response);
         }
     );
-
-//    $.get("https://graph.facebook.com/me/feed?access_token="+accessToken, function (data) {  //request data
-//        var json = JSON.parse(data);
-//        console.log("feeds"+json);
-//    });
     $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (data) {  //request data
         //var json = JSON.parse(data);
         console.log("feeds2"+data);
@@ -85,10 +80,6 @@ function publicFeed( accessToken ) {
         console.log("feeds3"+data);
         console.log(data);
     });
-//    $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (data) {  //request data
-//        var json = JSON.parse(data);
-//        console.log("feeds4"+json);
-//    });
 
     FB.api( 'https://graph.facebook.com/me/feed?access_token=', 'get',
         function(response) {
