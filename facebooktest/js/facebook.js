@@ -72,13 +72,13 @@
 
 
   function publicFeed( accessToken ) {
-      $.get("server/publicfeed.php", function (data) {
+     /* $.get("server/publicfeed.php", function (data) {
               var obj = JSON.parse(data);
               var user_profile = obj['user_profile'];    //set title
               console.log("profile");
               console.log(user_profile);
       }
-      );//get
+      );//this part does not work... cannot create session with the given token in php*/
 
 
     console.log('Welcome!  Fetching your information.... ');          
