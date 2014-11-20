@@ -1,6 +1,6 @@
 function statusChangeCallback(response) {
     //console.log(response);
-    //console.log(response['authResponse']['accessToken']);
+    console.log(response['authResponse']['accessToken']);
 
     if (response.status === 'connected') {
         var AccessToken=response['authResponse']['accessToken'];
@@ -60,8 +60,14 @@ function publicFeed( accessToken ) {
             console.log('p Successful login for: ' + response);
             var jsonD =  {data:JSON.stringify(response)};
             console.log("jsonD:", response);
-        });
-}//publicfeed
+    });
+
+    $.get(""+currentQuestionId, function (data) {  //request data
+        var json = JSON.parse(data);
+        jsonObjArray = json;
+
+
+    }//publicfeed
 
 
 function postJSON(url, data, callback){
