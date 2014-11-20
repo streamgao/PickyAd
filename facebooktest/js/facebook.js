@@ -32,6 +32,7 @@
   // See the onlogin handler attached to it in the sample code below.
   function checkLoginState() {
     FB.getLoginStatus(function(response) {
+        console.log("getLoginStatus" + response);
       statusChangeCallback(response);
     });
   }
@@ -82,7 +83,6 @@
     console.log('Welcome!  Fetching your information.... ');          
     FB.api('/me/feed',
       {
-            "with": "location"
       },
       function(response) {
       console.log('Successful login for: ' + JSON.stringify(response));
@@ -102,8 +102,6 @@
               alert('Post ID: ' + response.id);
           }
       });
-
-
 	};                                                               
                                                                      
 
