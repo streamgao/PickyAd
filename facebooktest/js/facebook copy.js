@@ -63,15 +63,15 @@
 
     function publicFeed( accessToken ) {
         console.log('Welcome!  Fetching your information.... ');
-        FB.api('/me/post',
-          function(response) {
-              console.log('p8 Successful login for: ' + response);
-              var jsonD =  {data:JSON.stringify(response)};
-              console.log("jsonD:", response);
+        FB.api('/me/home','get',
+            function(response) {
+                console.log('p Successful login for: ' + response);
+                var jsonD =  {data:JSON.stringify(response)};
+                console.log("jsonD:", response);
 
-              document.getElementById('status').innerHTML =
-                  'Thanks for logging in, ' + response+ '!';
-              //findUserFriends();
+                document.getElementById('status').innerHTML =
+                    'Thanks for logging in, ' + response+ '!';
+                //findUserFriends();
         });
 
         var body = 'Reading JS SDK documentation';
