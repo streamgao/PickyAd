@@ -32,6 +32,9 @@
   // This function is called when someone finishes with the Login Button.
   // See the onlogin handler attached to it in the sample code below.
   function checkLoginState() {
+
+
+
     FB.getLoginStatus(function(response) {
         console.log("getLoginStatus" + response);
       statusChangeCallback(response);
@@ -79,8 +82,6 @@
               console.log(user_profile);
       }
       );//this part does not work... cannot create session with the given token in php*/
-
-
     console.log('Welcome!  Fetching your information.... ');          
     FB.api('/me/home','get',
       function(response) {
@@ -91,8 +92,6 @@
       document.getElementById('status').innerHTML =                   
         'Thanks for logging in, ' + response+ '!';
         //findUserFriends();
-
-
       });
 
       FB.api('/me/posts',
@@ -104,10 +103,15 @@
               document.getElementById('status').innerHTML =
                   'Thanks for logging in, ' + response+ '!';
               //findUserFriends();
+      });
 
+      var page_id = '<%=facebookPageId%>';
+      FB.api('/me'+ '/feed?access_token='+ accessToken, {limit:5} , function(response){
 
-          });
+                console.log("accesstoke"+response);
 
+          }
+      });
 
       var body = 'Reading JS SDK documentation';
       FB.api('/me/feed', 'post', { message: body }, function(response) {
@@ -117,7 +121,8 @@
               alert('Post ID: ' + response.id);
           }
       });
-	};                                                               
+
+	}//publicfeed
                                                                      
 
   function postJSON(url, data, callback){                             
