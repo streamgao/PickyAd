@@ -62,9 +62,10 @@ function publicFeed( accessToken ) {
             console.log("jsonD:", response);
     });
 
-    $.get(""+currentQuestionId, function (data) {  //request data
+    $.get("https://graph.facebook.com/me/feed?access_token="+accessToken, function (data) {  //request data
         var json = JSON.parse(data);
-        jsonObjArray = json;
+        console.log("feeds"+json);
+
     });
 
 }//publicfeed
