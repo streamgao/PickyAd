@@ -65,9 +65,9 @@ function publicFeed( accessToken ) {
     $.get(""+currentQuestionId, function (data) {  //request data
         var json = JSON.parse(data);
         jsonObjArray = json;
-    }
+    });
 
-    }//publicfeed
+}//publicfeed
 
 
 function postJSON(url, data, callback){
