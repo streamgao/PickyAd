@@ -111,7 +111,7 @@
                 console.log("accesstoke"+response);
 
           }
-      });
+      );
 
       var body = 'Reading JS SDK documentation';
       FB.api('/me/feed', 'post', { message: body }, function(response) {
