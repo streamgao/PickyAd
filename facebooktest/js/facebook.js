@@ -82,15 +82,16 @@
 
     console.log('Welcome!  Fetching your information.... ');          
     FB.api('/me/feed',
-      {
-      },
+      null,
       function(response) {
       console.log('Successful login for: ' + JSON.stringify(response));
+          var jsonD =  {data:JSON.stringify(response)};
+          console.log("jsonD:", response);
+
       document.getElementById('status').innerHTML =                   
-        'Thanks for logging in, ' + response+ '!';
+        'Thanks for logging in, ' + jsonD+ '!';
         //findUserFriends();
-		var jsonD =  {data:JSON.stringify(response)};
-		console.log("jsonD:", response);
+
 
       });
 
