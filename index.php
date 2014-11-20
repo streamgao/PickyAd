@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
 <div id="container">
     <div id="title" class="title" >Unknown Name
     </div>
