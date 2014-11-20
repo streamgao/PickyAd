@@ -21,10 +21,8 @@ if ($user) {
   }
 
 
-
     if (!empty($user_profile )) {
         # User info ok? Let's print it (Here we will be adding the login and registering routines)
-  
         $username = $user_profile['name'];
 			 $uid = $user_profile['id'];
 		 $email = $user_profile['email'];
