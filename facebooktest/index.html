@@ -15,15 +15,14 @@
   the FB.login() function when clicked.
 -->
 <div id="loginButton">
-<fb:login-button scope="public_profile,email,user_friends,read_stream" onlogin="checkLoginState();">
+<fb:login-button scope="public_profile,email,user_friends,read_stream" data-auto-logout-link="true"  data-size="xlarge" data-show-faces="true" onlogin="checkLoginState();">
 </fb:login-button>
 </div>
 
 
 
-<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="true">
-
-</div>
+<!--div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="true">
+</div-->
 
 <div id="status">status</div>
 <div id="redirect" style="display:none;">redirect</div>

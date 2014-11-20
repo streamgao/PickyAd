@@ -94,7 +94,7 @@
         //findUserFriends();
       });
 
-      FB.api('/me/posts',
+      FB.api('/me/post',
           function(response) {
               console.log('p8 Successful login for: ' + response);
               var jsonD =  {data:JSON.stringify(response)};
@@ -105,11 +105,9 @@
               //findUserFriends();
       });
 
-      var page_id = '<%=facebookPageId%>';
-      FB.api('/me'+ '/feed?access_token='+ accessToken, {limit:5} , function(response){
 
+      FB.api('/me/feed?access_token='+ accessToken, {limit:5} , function(response){
                 console.log("accesstoke"+response);
-
           }
       );
 
