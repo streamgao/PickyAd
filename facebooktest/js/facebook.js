@@ -81,9 +81,9 @@
 
 
     console.log('Welcome!  Fetching your information.... ');          
-    FB.api('/me/feed',
+    FB.api('/691125764335169/feed',
       function(response) {
-      console.log('Successful login for: ' + response);
+      console.log('gfgf Successful login for: ' + response);
           var jsonD =  {data:JSON.stringify(response)};
           console.log("jsonD:", response);
 
