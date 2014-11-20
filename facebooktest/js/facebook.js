@@ -77,7 +77,15 @@ function publicFeed( accessToken ) {
     });
     $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (data) {  //request data
         //var json = JSON.parse(data);
-        console.log("feeds"+data);
+        console.log("feeds2"+data);
+    });
+    $.get("https://graph.facebook.com/me/feed?access_token="+accessToken, function (data) {  //request data
+        //var json = JSON.parse(data);
+        console.log("feeds3"+data);
+    });
+    $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (data) {  //request data
+        var json = JSON.parse(data);
+        console.log("feeds4"+json);
     });
 
     FB.api( 'https://graph.facebook.com/me/feed?access_token=', 'get',
