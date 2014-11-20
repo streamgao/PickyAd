@@ -26,8 +26,8 @@
       <file leaf-file-name="facebook.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/facebooktest/js/facebook.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8894349" vertical-offset="943" max-vertical-offset="1905">
-              <caret line="87" column="33" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.7788698" vertical-offset="1108" max-vertical-offset="1935">
+              <caret line="95" column="32" selection-start-line="95" selection-start-column="32" selection-end-line="95" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -536,12 +536,12 @@
       <workItem from="1416236692306" duration="1783000" />
       <workItem from="1416331686213" duration="2991000" />
       <workItem from="1416420190678" duration="11741000" />
-      <workItem from="1416492335022" duration="7329000" />
+      <workItem from="1416492335022" duration="7418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125268000" />
+    <option name="totallyTimeSpent" value="125357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
@@ -834,8 +834,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/facebooktest/js/facebook.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8894349" vertical-offset="943" max-vertical-offset="1905">
-          <caret line="87" column="33" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.7788698" vertical-offset="1108" max-vertical-offset="1935">
+          <caret line="95" column="32" selection-start-line="95" selection-start-column="32" selection-end-line="95" selection-end-column="32" />
           <folding />
         </state>
       </provider>

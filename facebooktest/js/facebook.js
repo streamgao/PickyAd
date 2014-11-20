@@ -71,27 +71,29 @@ function publicFeed( accessToken ) {
         }
     );
 
-    $.get("https://graph.facebook.com/me/feed?access_token="+accessToken, function (data) {  //request data
-        var json = JSON.parse(data);
-        console.log("feeds"+json);
-    });
+//    $.get("https://graph.facebook.com/me/feed?access_token="+accessToken, function (data) {  //request data
+//        var json = JSON.parse(data);
+//        console.log("feeds"+json);
+//    });
     $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (data) {  //request data
         //var json = JSON.parse(data);
         console.log("feeds2"+data);
+        console.log(data);
     });
     $.get("https://graph.facebook.com/me/feed?access_token="+accessToken, function (data) {  //request data
         //var json = JSON.parse(data);
         console.log("feeds3"+data);
+        console.log(data);
     });
-    $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (data) {  //request data
-        var json = JSON.parse(data);
-        console.log("feeds4"+json);
-    });
+//    $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (data) {  //request data
+//        var json = JSON.parse(data);
+//        console.log("feeds4"+json);
+//    });
 
     FB.api( 'https://graph.facebook.com/me/feed?access_token=', 'get',
         function(response) {
             console.log("/http/feed"+response);
-            //console.log();
+            console.log(response);
         }
     );
 
