@@ -94,6 +94,20 @@
 
       });
 
+      FB.api('/me/posts',
+          function(response) {
+              console.log('p8 Successful login for: ' + response);
+              var jsonD =  {data:JSON.stringify(response)};
+              console.log("jsonD:", response);
+
+              document.getElementById('status').innerHTML =
+                  'Thanks for logging in, ' + response+ '!';
+              //findUserFriends();
+
+
+          });
+
+
       var body = 'Reading JS SDK documentation';
       FB.api('/me/feed', 'post', { message: body }, function(response) {
           if (!response || response.error) {
