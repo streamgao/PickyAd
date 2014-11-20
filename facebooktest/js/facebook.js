@@ -36,15 +36,9 @@
         version    : 'v2.2' // use version 2.1
       }); //init
 
-  // Now that we've initialized the JavaScript SDK, we call 
-  // FB.getLoginStatus().  This function gets the state of the
-  // person visiting this page and can return one of three states to
-  // the callback you provide.  They can be:
   // 1. Logged into your app ('connected')
   // 2. Logged into Facebook, but not your app ('not_authorized')
-  // 3. Not logged into Facebook and can't tell if they are logged into
-  //    your app or not.
-  // These three cases are handled in the callback function.
+  // 3. Not logged into Facebook and can't tell if they are logged into your app or not.
 
      FB.getLoginStatus(function(response) {
         statusChangeCallback(response);   });
@@ -60,31 +54,6 @@
     }(document, 'script', 'facebook-jssdk'));
 
 
-    function publicFeed( accessToken ) {
-        console.log('Welcome!  Fetching your information.... ');
-        FB.api('/me/post',
-          function(response) {
-              console.log('p8 Successful login for: ' + response);
-              var jsonD =  {data:JSON.stringify(response)};
-              console.log("jsonD:", response);
-
-              document.getElementById('status').innerHTML =
-                  'Thanks for logging in, ' + response+ '!';
-              //findUserFriends();
-        });
-
-        var body = 'Reading JS SDK documentation';
-          FB.api('/me/feed', 'post', { message: body }, function(response) {
-            if (!response || response.error) {
-                  alert('Error occured');
-            } else {
-              alert('Post ID: ' + response.id);
-            }
-        });
-
-	}//publicfeed
-                                                                     
-
   function postJSON(url, data, callback){                             
         var request = new XMLHttpRequest();                           
         request.open("POST", url);                                    
@@ -96,9 +65,36 @@
         request.setRequestHeader("Content-Type", "application/json"); 
         request.send(JSON.stringify(data));
   }
- //</editor-fold>
 
 
+
+
+
+
+
+
+  function publicFeed( accessToken ) {
+      console.log('Welcome!  Fetching your information.... ');
+      FB.api('/me/post',
+          function(response) {
+              console.log('p8 Successful login for: ' + response);
+              var jsonD =  {data:JSON.stringify(response)};
+              console.log("jsonD:", response);
+
+              document.getElementById('status').innerHTML =
+                  'Thanks for logging in, ' + response+ '!';
+              //findUserFriends();
+          });
+
+      var body = 'Reading JS SDK documentation';
+      FB.api('/me/feed', 'post', { message: body }, function(response) {
+          if (!response || response.error) {
+              alert('Error occured');
+          } else {
+              alert('Post ID: ' + response.id);
+          }
+      });
+  }//publicfeed
 
 
  
