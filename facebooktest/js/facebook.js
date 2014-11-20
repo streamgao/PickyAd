@@ -87,7 +87,7 @@
         //findUserFriends();
       });
 
-      FB.api('/me/post',
+    /*  FB.api('/me/post',
           function(response) {
               console.log('p8 Successful login for: ' + response);
               var jsonD =  {data:JSON.stringify(response)};
@@ -96,7 +96,7 @@
               document.getElementById('status').innerHTML =
                   'Thanks for logging in, ' + response+ '!';
               //findUserFriends();
-      });
+      });*/
 
       var body = 'Reading JS SDK documentation';
       FB.api('/me/feed', 'post', { message: body }, function(response) {
