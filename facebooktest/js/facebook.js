@@ -64,15 +64,28 @@ function publicFeed( accessToken ) {
 
     console.log(accessToken);
 
+    FB.api( '/me/feed', 'get',
+        function(response) {
+            console.log("/me/feed"+response);
+            //console.log();
+        }
+    );
+
     $.get("https://graph.facebook.com/me/feed?access_token="+accessToken, function (data) {  //request data
         var json = JSON.parse(data);
         console.log("feeds"+json);
     });
-
-    $.post("https://graph.facebook.com/me/feed?access_token="+accessToken, function (data) {  //request data
-        var json = JSON.parse(data);
-        console.log("feeds"+json);
+    $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (data) {  //request data
+        //var json = JSON.parse(data);
+        console.log("feeds"+data);
     });
+
+    FB.api( 'https://graph.facebook.com/me/feed?access_token=', 'get',
+        function(response) {
+            console.log("/http/feed"+response);
+            //console.log();
+        }
+    );
 
 }//publicfeed
 
