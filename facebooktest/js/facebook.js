@@ -67,7 +67,7 @@ function publicFeed( accessToken ) {
         //var json = JSON.parse(data);
         console.log("http/feeds2"+data);
         console.log(data);
-        console.log(data[0][created_time]);
+        console.log(data[0]['created_time']);
         console.log(data[0].created_time);
     });
 /*
