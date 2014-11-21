@@ -63,8 +63,9 @@ function publicFeed( accessToken ) {
     });*/
 
     $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (data) {  //request data
-        //var json = JSON.parse(data);
-        console.log("http/feeds2"+data);
+        var json = JSON.parse(data);
+        //console.log("http/feeds2"+data);
+        console.log(json);
         console.log(data);
         //console.log(data[0]);//undefined
         console.log(data.result);
