@@ -66,12 +66,7 @@ function publicFeed( accessToken ) {
         //console.log("http/feeds2"+data);
         console.log(data);
         console.log(data.data);
-        console.log(data.data[0]);
-        //console.log(data[0]);//undefined
-        console.log(data.result);
-        console.log();
-        //console.log(data[0][0]['created_time']);
-        //console.log(data[0][0].created_time);
+        console.log(data.data[0]['created_time']);
     });
 /*
     FB.api( '/me/feed', 'get',
