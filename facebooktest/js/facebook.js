@@ -65,7 +65,7 @@ function publicFeed( accessToken ) {
     $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (data) {  //request data
         //console.log("http/feeds2"+data);
         console.log(data);
-        console.log(data[1]);
+        console.log(data.data);
         //console.log(data[0]);//undefined
         console.log(data.result);
         console.log();
