@@ -55,30 +55,26 @@ window.fbAsyncInit = function() {
 
 function publicFeed( accessToken ) {
     console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me/home','get',
+    /*FB.api('/me/home','get',
         function(response) {
             console.log('p Successful login for: ' + response);
             var jsonD =  {data:JSON.stringify(response)};
             console.log("jsonD:", response);
-    });
+    });*/
 
     console.log(accessToken);
-
-    FB.api( '/me/feed', 'get',
-        function(response) {
-            console.log("/me/feed"+response);
-            console.log(response);
-        }
-    );
     $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (data) {  //request data
         //var json = JSON.parse(data);
-        console.log("feeds2"+data);
+        console.log("http/feeds2"+data);
         console.log(data);
+        console.log(data[0][created_time]);
+        console.log(data[0].created_time);
     });
-    $.get("https://graph.facebook.com/me/feed?access_token="+accessToken, function (data) {  //request data
-        //var json = JSON.parse(data);
-        console.log("feeds3"+data);
-        console.log(data);
+/*
+    FB.api( '/me/feed', 'get',
+        function(response) {
+        console.log("/me/feed"+response);
+        console.log(response);
     });
 
     FB.api( 'https://graph.facebook.com/me/feed?access_token=', 'get',
@@ -86,7 +82,7 @@ function publicFeed( accessToken ) {
             console.log("/http/feed"+response);
             console.log(response);
         }
-    );
+    );*/
 
 }//publicfeed
 
@@ -102,7 +98,6 @@ function postJSON(url, data, callback){
     request.setRequestHeader("Content-Type", "application/json");
     request.send(JSON.stringify(data));
 }
-//</editor-fold>
 
 /*
  var body = 'Reading JS SDK documentation';
