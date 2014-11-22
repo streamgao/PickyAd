@@ -16,7 +16,7 @@
 			echo json_encode($response['docSentiment']);
 		}else{
             //echo 'neutral';
-            echo json_encode('type'=>'neutral','score'=>'0.5');
+            echo json_encode( array('type'=>'neutral','score'=>'0.5') );
         }
 
 	} else {
