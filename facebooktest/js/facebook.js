@@ -53,36 +53,6 @@ window.fbAsyncInit = function() {
 }(document, 'script', 'facebook-jssdk'));
 
 
-function publicFeed( accessToken ) {
-    console.log('Welcome!  Fetching your information.... ');
-    /*FB.api('/me/home','get',
-        function(response) {
-            console.log('p Successful login for: ' + response);
-            var jsonD =  {data:JSON.stringify(response)};
-            console.log("jsonD:", response);
-    });*/
-
-    $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (data) {  //request data
-        //console.log("http/feeds2"+data);
-        console.log(data);
-        console.log(data.data);
-        console.log(data.data[0]['created_time']);
-    });
-/*
-    FB.api( '/me/feed', 'get',
-        function(response) {
-        console.log("/me/feed"+response);
-        console.log(response);
-    });
-
-    FB.api( 'https://graph.facebook.com/me/feed?access_token=', 'get',
-        function(response) {
-            console.log("/http/feed"+response);
-            console.log(response);
-        }
-    );*/
-
-}//publicfeed
 
 
 function postJSON(url, data, callback){
