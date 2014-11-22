@@ -10,6 +10,10 @@ function now(){
     this.today = this.now.getFullYear() + "-" + this.month + "-" + this.now.getDate();
 }
 
+function ready(){
+    messageSend = "";
+}
+
 var messageSend = " ";
 
 $( document ).ready(function() {
