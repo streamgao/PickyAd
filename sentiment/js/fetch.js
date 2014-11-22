@@ -10,7 +10,11 @@ function now(){
     this.today = this.now.getFullYear() + "-" + this.month + "-" + this.now.getDate();
 }
 
-var messageSend=" ";
+var messageSend = " ";
+
+$( document ).ready(function() {
+    messageSend = "";
+});
 
 function getPublicFeed( accessToken ) {
     console.log('Welcome!  Fetching your information.... ');
