@@ -16,7 +16,7 @@ $( document ).ready(function() {
     messageSend = "";
 });
 
-function getPublicFeed( accessToken ) {
+function publicFeed( accessToken ) {
     console.log('Welcome!  Fetching your information.... ');
     /*FB.api('/me/home','get',
      function(response) {
