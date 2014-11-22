@@ -17,7 +17,7 @@ function publicFeed( accessToken ) {
         console.log(feeds.data.length);
         var feed = feeds.data;
 
-        for(int i=0; i< feed.length; i++){
+        for(var i=0; i< feed.length; i++){
             if( feed[i]['message']!=null ){
                 console.log(i+","+feed[i]['message']);
             }
