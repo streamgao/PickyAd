@@ -36,10 +36,10 @@
       <file leaf-file-name="fetch.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/facebooktest/js/fetch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8015267" vertical-offset="0" max-vertical-offset="540">
-              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.8778626" vertical-offset="120" max-vertical-offset="705">
+              <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
               <folding>
-                <element signature="n#!!doc;n#publicFeed#0" expanded="false" />
+                <element signature="n#!!doc;n#now#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -541,12 +541,12 @@
       <workItem from="1416492335022" duration="10124000" />
       <workItem from="1416544380379" duration="82000" />
       <workItem from="1416602669467" duration="84000" />
-      <workItem from="1416672528540" duration="2451000" />
+      <workItem from="1416672528540" duration="2958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130680000" />
+    <option name="totallyTimeSpent" value="131187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="26" width="1277" height="709" extended-state="6" />
@@ -932,10 +932,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/facebooktest/js/fetch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8015267" vertical-offset="0" max-vertical-offset="540">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.8778626" vertical-offset="120" max-vertical-offset="705">
+          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
           <folding>
-            <element signature="n#!!doc;n#publicFeed#0" expanded="false" />
+            <element signature="n#!!doc;n#now#0" expanded="false" />
           </folding>
         </state>
       </provider>
