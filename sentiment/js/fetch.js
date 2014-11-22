@@ -34,12 +34,14 @@ function getPublicFeed( accessToken ) {
                     messageSend + =feed[i]['message'];
                     console.log( messageSend );
                 }
-            }
+            }//if time today
         }
+    });//get feed
+
+
+    $.get('analyse/respond.php?analyseText='+messageSend),function(data){
+        var score = JSON.parse(data);
+        console.log(score);
+
     });
-
-
-
-
-
 }//publicfeed
