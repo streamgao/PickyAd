@@ -20,12 +20,9 @@ function publicFeed( accessToken ) {
      });*/
     $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (feeds) {  //request data
         console.log(feeds.data);
-
         var feed = feeds.data;
-
         var today = new now();
-        console.log( today.today );
-
+        //console.log( today.today );
         for(var i=0; i< feed.length; i++){
             if( feed[i]['updated_time'].substr(0, 10) == today.today ){
                 if( feed[i]['message']!=null ){
