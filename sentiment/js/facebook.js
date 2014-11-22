@@ -6,7 +6,7 @@ function statusChangeCallback(response) {
         var AccessToken=response['authResponse']['accessToken'];
         var uid = response.authResponse.userID;
         var accessToken = response.authResponse.accessToken;
-        $.getScript("my_lovely_script.js", function(){
+        $.getScript("fetch.js", function(){
             console.log("Script loaded and executed.");
             publicFeed( accessToken );
         });
