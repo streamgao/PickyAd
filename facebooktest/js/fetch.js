@@ -18,8 +18,11 @@ function publicFeed( accessToken ) {
         var feed = feeds.data;
 
         for(var i=0; i< feed.length; i++){
+
             if( feed[i]['message']!=null ){
                 console.log(i+","+feed[i]['message']);
+                console.log( feed[i]['updated_time'].getTime() );
+               // if( feed[i]['updated_time'].getTime() )
             }
         }
     });
