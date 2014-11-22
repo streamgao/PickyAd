@@ -43,9 +43,15 @@ function publicFeed( accessToken ) {
     });//get feed
 
 
+    callAnalysis( messageSend );
+
+}//publicfeed
+
+
+function callAnalysis( messageAll ){
+
     $.get('analyse/respond.php?analyseText='+messageSend),function(data){
         var score = JSON.parse(data);
-        console.log(score);
-
+        console.log("result"+score);
     });
-}//publicfeed
+}

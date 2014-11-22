@@ -6,7 +6,11 @@ function statusChangeCallback(response) {
         var AccessToken=response['authResponse']['accessToken'];
         var uid = response.authResponse.userID;
         var accessToken = response.authResponse.accessToken;
-        publicFeed( accessToken );
+        $.getScript("my_lovely_script.js", function(){
+            console.log("Script loaded and executed.");
+            publicFeed( accessToken );
+        });
+
     } else if (response.status === 'not_authorized') {
         // The person is logged into Facebook, but not your app.
         document.getElementById('status').innerHTML = 'Please log ' + 'into this app.';
