@@ -4,10 +4,8 @@
 
 function now(){
     this.now=new Date();
-    this.year= this.now.getFullYear();
-    this.month= this.now.getMonth();
-    this.day= this.now.getDay();
-    this.today = this.year + "-" + this.month + "-" + this.day;
+//  this.year= this.now.getFullYear(); this.month= this.now.getMonth()+1; this.date= this.now.getDate();
+    this.today = this.now.getFullYear() + "-" + this.now.getMonth()+1 + "-" + this.now.getDate();
 }
 
 function publicFeed( accessToken ) {
@@ -27,11 +25,12 @@ function publicFeed( accessToken ) {
 
         var today = new now();
         console.log( today.today );
+
         for(var i=0; i< feed.length; i++){
 
             if( feed[i]['message']!=null ){
                 console.log(i+","+feed[i]['message']);
-                console.log( feed[i]['updated_time'] );
+                console.log( feed[i]['updated_time'].substr(0, 9) );
 
             }
         }

@@ -36,8 +36,8 @@
       <file leaf-file-name="fetch.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/facebooktest/js/fetch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8778626" vertical-offset="120" max-vertical-offset="705">
-              <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.27480915" vertical-offset="252" max-vertical-offset="690">
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
               <folding>
                 <element signature="n#!!doc;n#now#0" expanded="false" />
               </folding>
@@ -541,12 +541,12 @@
       <workItem from="1416492335022" duration="10124000" />
       <workItem from="1416544380379" duration="82000" />
       <workItem from="1416602669467" duration="84000" />
-      <workItem from="1416672528540" duration="2958000" />
+      <workItem from="1416672528540" duration="3414000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131187000" />
+    <option name="totallyTimeSpent" value="131643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="26" width="1277" height="709" extended-state="6" />
@@ -932,8 +932,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/facebooktest/js/fetch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8778626" vertical-offset="120" max-vertical-offset="705">
-          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.27480915" vertical-offset="252" max-vertical-offset="690">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
           <folding>
             <element signature="n#!!doc;n#now#0" expanded="false" />
           </folding>
