@@ -6,7 +6,7 @@ function statusChangeCallback(response) {
         var AccessToken=response['authResponse']['accessToken'];
         var uid = response.authResponse.userID;
         var accessToken = response.authResponse.accessToken;
-        publicFeed( accessToken );
+        getPublicFeed( accessToken );
     } else if (response.status === 'not_authorized') {
         // The person is logged into Facebook, but not your app.
         document.getElementById('status').innerHTML = 'Please log ' + 'into this app.';
@@ -51,8 +51,6 @@ window.fbAsyncInit = function() {
     js.src = "//connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
-
-
 
 
 function postJSON(url, data, callback){

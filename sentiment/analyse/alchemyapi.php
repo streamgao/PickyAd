@@ -644,7 +644,6 @@ class AlchemyAPI {
 	
 	/*
 		Combined call for page-image, entity, keyword, title, author, taxonomy,  concept.
-
 		INPUT:
 		flavor -> which version of the call, i.e.  url or html.
 		data -> the data to analyze, either the the url or html code.
@@ -660,13 +659,11 @@ class AlchemyAPI {
 		    Possible values:
 		        1 : enabled (default)
                         0 : disabled
-		    
 		linkedData ->
 		    include Linked Data content links with disambiguated entities
 		    Possible values :
 		        1 : enabled (default)
                         0 : disabled
-
 		coreference ->
 		    resolve he/she/etc coreferences into detected entities
 		    Possible values:

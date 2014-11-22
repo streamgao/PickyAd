@@ -10,7 +10,9 @@ function now(){
     this.today = this.now.getFullYear() + "-" + this.month + "-" + this.now.getDate();
 }
 
-function publicFeed( accessToken ) {
+var messageSend=" ";
+
+function getPublicFeed( accessToken ) {
     console.log('Welcome!  Fetching your information.... ');
     /*FB.api('/me/home','get',
      function(response) {
@@ -18,6 +20,8 @@ function publicFeed( accessToken ) {
      var jsonD =  {data:JSON.stringify(response)};
      console.log("jsonD:", response);
      });*/
+
+
     $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (feeds) {  //request data
         console.log(feeds.data);
         var feed = feeds.data;
@@ -26,7 +30,9 @@ function publicFeed( accessToken ) {
         for(var i=0; i< feed.length; i++){
             if( feed[i]['updated_time'].substr(0, 10) == today.today ){
                 if( feed[i]['message']!=null ){
-                    console.log(i+","+feed[i]['message']);
+                    //console.log(i+","+feed[i]['message']);
+                    messageSend + =feed[i]['message'];
+                    console.log( messageSend );
                 }
             }
         }
