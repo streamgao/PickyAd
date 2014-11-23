@@ -55,18 +55,18 @@ function callAnalysis( messageAll ){
         var score = jQuery.parseJSON(json);
         var s = JSON.parse(json);
         console.log("result2");
-        console.log(data);
+        console.log(json);
         console.log(score);
+        console.log(s);
     });
     $.getJSON("analyse/respond.php?analyseText="+messageAll, function(data){
-        //var score = JSON.parse( data,function(k,v){} );
         console.log("result3");
+        console.log(data);
         console.log(data.data);
         console.log(data.result);
     });
     $.ajax({
-
-        url: "analyse/respond.php?analyseText="+messageAll,
+        url: "http://pickyad-env.elasticbeanstalk.com/sentiment/analyse/respond.php?analyseText="+messageAll,
         type: "GET",
         dataType: "jsonp",
         async:false,
