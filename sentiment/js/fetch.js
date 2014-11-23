@@ -53,6 +53,7 @@ function callAnalysis( messageAll ){
     $.get("analyse/respond.php?analyseText="+messageAll, function(json){
         //var score = JSON && JSON.parse(json) || $.parseJSON(json);
         var score = jQuery.parseJSON(json);
+        var s = JSON.parse(json);
         console.log("result2");
         console.log(data);
         console.log(score);
