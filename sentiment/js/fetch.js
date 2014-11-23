@@ -57,10 +57,10 @@ function callAnalysis( messageAll ){
         console.log(score);
     });
     $.post("analyse/respond.php?analyseText="+messageAll, function(data){
-        var score = JSON.parse( data,function(k,v){} );
+        //var score = JSON.parse( data,function(k,v){} );
         console.log("result3");
-        console.log(data);
-        console.log(score);
+        console.log(data.data);
+        console.log(data.result);
     });
 
 }
