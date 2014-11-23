@@ -50,11 +50,6 @@ function publicFeed( accessToken ) {
 
 function callAnalysis( messageAll ){
 
-    $.get('../analyse/respond.php?analyseText='+messageAll,function(data){
-        //var score = JSON.parse(data);
-        console.log("result");
-        console.log(data);
-    });
     $.get('analyse/respond.php?analyseText='+messageAll,function(data){
         //var score = JSON.parse(data);
         console.log("result2");
@@ -64,11 +59,6 @@ function callAnalysis( messageAll ){
         //var score = JSON.parse(data);
         console.log("result3");
         console.log(data);
-    });
-    $.post('analyse/respond.php?analyseText='+messageAll,function(data){
-        //var score = JSON.parse(data);
-        console.log("result4");
-        console.log( JSON.parse(data) );
     });
 
 }
