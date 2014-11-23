@@ -60,15 +60,15 @@ html,body {
 #messageAll{
     height: 50px;
     width: 300px;
-    position: absolute;
+    position: relative;
     top: 100px;
-    left: 10%;
+    left: 30%;
 }
 
 #result{
     height: 50px;
     width: 300px;
-    position: absolute;
+    position: relative;
     top: 200px;
     left: 30%;
 }
@@ -76,7 +76,7 @@ html,body {
 #result2{
     height: 50px;
     width: 300px;
-    position: absolute;
+    position: relative;
     top: 200px;
     left: 30%;
 }
