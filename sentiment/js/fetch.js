@@ -41,11 +41,10 @@ function publicFeed( accessToken ) {
             }//if time today
         }
         console.log( "1"+ messageSend );
+        callAnalysis( messageSend );
     });//get feed
+
     console.log( "2"+ messageSend );
-
-    callAnalysis( messageSend );
-
 }//publicfeed
 
 
