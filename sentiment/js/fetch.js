@@ -50,7 +50,7 @@ function publicFeed( accessToken ) {
 
 function callAnalysis( messageAll ){
     console.log( "3"+ messageAll );
-    $.getJSON("analyse/respond.php?analyseText="+messageAll, function(json){
+    $.get("analyse/respond.php?analyseText="+messageAll, function(json){
         //var score = JSON && JSON.parse(json) || $.parseJSON(json);
         var score = jQuery.parseJSON(json);
         var s = JSON.parse(json);
@@ -75,7 +75,7 @@ function callAnalysis( messageAll ){
             console.log(msg);
         },
         error: function () {
-            console.log("resulterror");
+            console.log("result error");
         }
 
     });
