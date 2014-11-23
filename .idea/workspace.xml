@@ -33,12 +33,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sentiment/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="405">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.2932961" vertical-offset="0" max-vertical-offset="405">
+              <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,18 +48,18 @@
       <file leaf-file-name="fetch.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sentiment/js/fetch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="960">
-              <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="960">
+              <caret line="54" column="56" selection-start-line="54" selection-start-column="56" selection-end-line="54" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebook.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="facebook.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sentiment/js/facebook.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.886076" vertical-offset="1450" max-vertical-offset="2160">
-              <caret line="120" column="35" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1705" max-vertical-offset="2160">
+              <caret line="137" column="7" selection-start-line="137" selection-start-column="7" selection-end-line="137" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -129,9 +131,9 @@
         <option value="$PROJECT_DIR$/sentiment/input.html" />
         <option value="$PROJECT_DIR$/sentiment/analyse/respond.php" />
         <option value="$PROJECT_DIR$/sentiment/analyse/alchemyapi.php" />
-        <option value="$PROJECT_DIR$/sentiment/index.html" />
-        <option value="$PROJECT_DIR$/sentiment/js/fetch.js" />
         <option value="$PROJECT_DIR$/sentiment/js/facebook.js" />
+        <option value="$PROJECT_DIR$/sentiment/js/fetch.js" />
+        <option value="$PROJECT_DIR$/sentiment/index.html" />
       </list>
     </option>
   </component>
@@ -559,12 +561,12 @@
       <workItem from="1416544380379" duration="82000" />
       <workItem from="1416602669467" duration="84000" />
       <workItem from="1416672528540" duration="6264000" />
-      <workItem from="1416700644627" duration="927000" />
+      <workItem from="1416700644627" duration="1048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135420000" />
+    <option name="totallyTimeSpent" value="135541000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
@@ -663,7 +665,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="465">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="9" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -920,27 +924,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sentiment/index.html">
+    <entry file="file://$PROJECT_DIR$/sentiment/js/facebook.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="405">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1705" max-vertical-offset="2160">
+          <caret line="137" column="7" selection-start-line="137" selection-start-column="7" selection-end-line="137" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sentiment/js/fetch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="960">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="960">
+          <caret line="54" column="56" selection-start-line="54" selection-start-column="56" selection-end-line="54" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sentiment/js/facebook.js">
+    <entry file="file://$PROJECT_DIR$/sentiment/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.886076" vertical-offset="1450" max-vertical-offset="2160">
-          <caret line="120" column="35" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
-          <folding />
+        <state vertical-scroll-proportion="0.2932961" vertical-offset="0" max-vertical-offset="405">
+          <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
