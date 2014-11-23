@@ -49,8 +49,10 @@ function publicFeed( accessToken ) {
 
 
 function callAnalysis( messageAll ){
-    $.get('analyse/respond.php?analyseText='+messageSend,function(data){
+
+    $.get('analyse/respond.php?analyseText='+messageAll,function(data){
         //var score = JSON.parse(data);
         console.log("result"+data);
+        console.log(data);
     });
 }
