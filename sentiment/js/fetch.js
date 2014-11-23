@@ -52,7 +52,7 @@ function callAnalysis( messageAll ){
     console.log( "3"+ messageAll );
     $.get("analyse/respond.php?analyseText="+messageAll, function(json){
         //var score = JSON && JSON.parse(json) || $.parseJSON(json);
-        var s = JSON.parse(json);
+        var score = JSON.parse(json);
         console.log("result2");
         console.log(json);
         console.log("[]"+score['type']);
