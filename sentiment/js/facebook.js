@@ -98,9 +98,6 @@ function ready(){
 
 var messageSend = " ";
 
-$( document ).ready(function() {
-    messageSend = "";
-});
 
 function publicFeed( accessToken ) {
     console.log('Welcome!  Fetching your information.... ');
@@ -110,7 +107,7 @@ function publicFeed( accessToken ) {
      var jsonD =  {data:JSON.stringify(response)};
      console.log("jsonD:", response);
      });*/
-
+    ready();
 
     $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (feeds) {  //request data
         console.log(feeds.data);
