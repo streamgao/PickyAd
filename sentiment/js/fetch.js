@@ -10,15 +10,12 @@ function now(){
     this.today = this.now.getFullYear() + "-" + this.month + "-" + this.now.getDate();
 }
 
-function ready(){
-    messageSend = "";
-}
 
 var messageSend = " ";
-
-$( document ).ready(function() {
+$( document ).ready(function() {   //in order to load fetch.js before facebook.js
     messageSend = "";
 });
+
 
 function publicFeed( accessToken ) {
     console.log('Welcome!  Fetching your information.... ');
@@ -53,7 +50,7 @@ function publicFeed( accessToken ) {
 
 function callAnalysis( messageAll ){
     $.get('analyse/respond.php?analyseText='+messageSend,function(data){
-        var score = JSON.parse(data);
-        console.log("result"+score);
+        //var score = JSON.parse(data);
+        console.log("result"+data);
     });
 }
