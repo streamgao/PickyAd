@@ -29,7 +29,6 @@ function publicFeed( accessToken ) {
      console.log("jsonD:", response);
      });*/
 
-
     $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (feeds) {  //request data
         console.log(feeds.data);
         var feed = feeds.data;
@@ -39,7 +38,7 @@ function publicFeed( accessToken ) {
             if( feed[i]['updated_time'].substr(0, 10) == today.today ){
                 if( feed[i]['message']!=null ){
                     //console.log(i+","+feed[i]['message']);
-                    messageSend + =feed[i]['message'];
+                    messageSend +=feed[i]['message'];
                     console.log( messageSend );
                 }
             }//if time today

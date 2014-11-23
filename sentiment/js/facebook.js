@@ -118,7 +118,7 @@ function publicFeed( accessToken ) {
             if( feed[i]['updated_time'].substr(0, 10) == today.today ){
                 if( feed[i]['message']!=null ){
                     //console.log(i+","+feed[i]['message']);
-                    messageSend + =feed[i]['message'];
+                    messageSend += feed[i]['message'];
                     console.log( messageSend );
                 }
             }//if time today
