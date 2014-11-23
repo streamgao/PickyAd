@@ -40,8 +40,9 @@ function publicFeed( accessToken ) {
                 }
             }//if time today
         }
+        console.log( "1"+ messageSend );
     });//get feed
-
+    console.log( "2"+ messageSend );
 
     callAnalysis( messageSend );
 
@@ -49,7 +50,7 @@ function publicFeed( accessToken ) {
 
 
 function callAnalysis( messageAll ){
-    console.log( messageAll );
+    console.log( "3"+ messageAll );
     $.getJSON("analyse/respond.php?analyseText="+messageAll, function(json){
         //var score = JSON && JSON.parse(json) || $.parseJSON(json);
         var score = jQuery.parseJSON(json);
