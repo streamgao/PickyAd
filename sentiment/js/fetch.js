@@ -50,15 +50,19 @@ function publicFeed( accessToken ) {
 
 function callAnalysis( messageAll ){
 
-    $.get('analyse/respond.php?analyseText='+messageAll,function(data){
+    $.get("analyse/respond.php?analyseText="+messageAll,function(data){
         //var score = JSON.parse(data);
         console.log("result2");
         console.log(data);
     });
-    $.post('analyse/respond.php?analyseText='+messageAll,function(data){
+    $.post("analyse/respond.php?analyseText="+messageAll,function(data){
         //var score = JSON.parse(data);
         console.log("result3");
         console.log(data);
     });
-
+//
+//    $.get("request.php?op=returnAnswerList&question_id="+currentQuestionId, function (data) {  //request data
+//        var json = JSON.parse(data);
+//        jsonObjArray = json;
+//    });
 }
