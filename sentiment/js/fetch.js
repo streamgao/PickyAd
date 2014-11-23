@@ -51,10 +51,10 @@ function publicFeed( accessToken ) {
 function callAnalysis( messageAll ){
 
     $.get("analyse/respond.php?analyseText="+messageAll, function(json){
-        var score = JSON && JSON.parse(json) || $.parseJSON(json);
+        //var score = JSON && JSON.parse(json) || $.parseJSON(json);
         console.log("result2");
         console.log(data);
-        console.log(score);
+        //console.log(score);
     });
     $.post("analyse/respond.php?analyseText="+messageAll, function(data){
         //var score = JSON.parse( data,function(k,v){} );
