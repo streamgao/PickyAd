@@ -55,8 +55,8 @@ function callAnalysis( messageAll ){
         var score = jQuery.parseJSON(json);
         var s = JSON.parse(json);
         console.log("result2");
-//        console.log(json);
-//        console.log(score);
+        console.log(json.data);
+        console.log(score.result);
         console.log(s.data);
     });
     $.getJSON("analyse/respond.php?analyseText="+messageAll, function(data){
