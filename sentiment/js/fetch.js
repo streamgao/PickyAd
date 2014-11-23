@@ -50,7 +50,7 @@ function publicFeed( accessToken ) {
 
 function callAnalysis( messageAll ){
 
-    $.get("analyse/respond.php?analyseText="+messageAll, function(json){
+    $.getJSON("analyse/respond.php?analyseText="+messageAll, function(json){
         //var score = JSON && JSON.parse(json) || $.parseJSON(json);
         var score = jQuery.parseJSON(json);
         var s = JSON.parse(json);
@@ -58,7 +58,7 @@ function callAnalysis( messageAll ){
         console.log(data);
         console.log(score);
     });
-    $.post("analyse/respond.php?analyseText="+messageAll, function(data){
+    $.getJSON("analyse/respond.php?analyseText="+messageAll, function(data){
         //var score = JSON.parse( data,function(k,v){} );
         console.log("result3");
         console.log(data.data);
