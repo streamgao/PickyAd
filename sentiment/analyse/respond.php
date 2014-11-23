@@ -1,12 +1,10 @@
 <?php
 
-	//$text = 
 	require_once 'alchemyapi.php';
 	$alchemyapi = new AlchemyAPI();
-	
 
 	$demo_text = $_GET['analyseText'];
-	$demo_url = 'http://www.npr.org/2013/11/26/247336038/dont-stuff-the-turkey-and-other-tips-from-americas-test-kitchen';
+	//$demo_url = 'http://www.npr.org/2013/11/26/247336038/dont-stuff-the-turkey-and-other-tips-from-americas-test-kitchen';
 
 	$response = $alchemyapi->sentiment('text',$demo_text, null);
 
@@ -14,9 +12,10 @@
 
 		if (array_key_exists('score', $response['docSentiment'])) {
 			echo json_encode( $response['docSentiment'] );
+            echo $response['docSentiment'];
 		}else{
             //echo 'neutral';
-            echo json_encode( array('type'=>'neutral','score'=>'0.5') );
+            echo json_encode( array("type"=>"neutral","score"=>"0.5") );
         }
 
 	} else {
