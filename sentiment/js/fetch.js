@@ -58,7 +58,7 @@ function callAnalysis( messageAll ){
         console.log("result2");
         console.log(score);
         document.getElementById("result").innerHTML = score.object;
-        $("#result2").html() =  score['type']+","+ score['score'];
+        $("#result2").html( score['type']+","+ score['score'] );
     });
 
 }
