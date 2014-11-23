@@ -7,4 +7,4 @@
  */
 session_start();
 
-echo $_SESSION["result"];
+echo  json_encode($_SESSION["result"]);
