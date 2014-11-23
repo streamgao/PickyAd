@@ -76,7 +76,7 @@ function postJSON(url, data, callback){
  if (!response || response.error) {
  alert('Error occured');
  } else {
- alert('Post ID: ' + response.id);
+ console.log('Post ID: ' + response.id);
  }
  });*/
 
@@ -106,7 +106,7 @@ function publicFeed( accessToken ) {
      console.log('p Successful login for: ' + response);
      var jsonD =  {data:JSON.stringify(response)};
      console.log("jsonD:", response);
-     });*/
+     });*/ /*
     ready();
 
     $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (feeds) {  //request data
