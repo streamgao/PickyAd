@@ -50,8 +50,8 @@ function publicFeed( accessToken ) {
 
 function callAnalysis( messageAll ){
 
-    $.get("analyse/respond.php?analyseText="+messageAll, function(data){
-        var score = jQuery.parseJSON(data);
+    $.get("analyse/respond.php?analyseText="+messageAll, function(json){
+        var score = JSON && JSON.parse(json) || $.parseJSON(json);
         console.log("result2");
         console.log(data);
         console.log(score);
