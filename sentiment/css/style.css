@@ -77,6 +77,14 @@ html,body {
     left: 10%;
 }
 
+#result2{
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    top: 200px;
+    left: 10%;
+}
+
 
 /* footer */
 .footer{
