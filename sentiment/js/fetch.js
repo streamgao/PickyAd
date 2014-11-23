@@ -64,5 +64,21 @@ function callAnalysis( messageAll ){
         console.log(data.data);
         console.log(data.result);
     });
+    $.ajax({
+
+        url: "analyse/respond.php?analyseText="+messageAll,
+        type: "GET",
+        dataType: "jsonp",
+        async:false,
+        success: function (msg) {
+            console.log("result22");
+            console.log(msg);
+        },
+        error: function () {
+            console.log("resulterror");
+            ErrorFunction();
+        }
+
+    });
 
 }
