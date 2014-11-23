@@ -48,8 +48,8 @@
       <file leaf-file-name="fetch.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sentiment/js/fetch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5822785" vertical-offset="715" max-vertical-offset="1110">
-              <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.5063291" vertical-offset="670" max-vertical-offset="1080">
+              <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -575,12 +575,12 @@
       <workItem from="1416544380379" duration="82000" />
       <workItem from="1416602669467" duration="84000" />
       <workItem from="1416672528540" duration="6264000" />
-      <workItem from="1416700644627" duration="4048000" />
+      <workItem from="1416700644627" duration="4223000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138541000" />
+    <option name="totallyTimeSpent" value="138716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
@@ -959,8 +959,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sentiment/js/fetch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5822785" vertical-offset="715" max-vertical-offset="1110">
-          <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.5063291" vertical-offset="670" max-vertical-offset="1080">
+          <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
           <folding />
         </state>
       </provider>

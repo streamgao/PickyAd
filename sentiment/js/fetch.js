@@ -52,18 +52,16 @@ function callAnalysis( messageAll ){
     console.log( "3"+ messageAll );
     $.get("analyse/respond.php?analyseText="+messageAll, function(json){
         //var score = JSON && JSON.parse(json) || $.parseJSON(json);
-        var score = jQuery.parseJSON(json);
         var s = JSON.parse(json);
         console.log("result2");
-        console.log(json.data);
-        console.log(score.result);
-        console.log(s.data);
+        console.log(json);
+        console.log("[]"+score['type']);
+        console.log("."+score.type);
+
     });
     $.getJSON("analyse/respond.php?analyseText="+messageAll, function(data){
         console.log("result3");
         console.log(data);
-//        console.log(data.data);
-//        console.log(data.result);
     });
 
 }
