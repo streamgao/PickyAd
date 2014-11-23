@@ -56,8 +56,8 @@ function callAnalysis( messageAll ){
         //var score = JSON && JSON.parse(json) || $.parseJSON(json);
         var score = JSON.parse(json);
         console.log("result2");
-        console.log(score.data);
-        $("#result").innerHTML = score.data;
+        console.log(score);
+        $("#result").innerHTML = score['type']+score['score'];
     });
 
 }
