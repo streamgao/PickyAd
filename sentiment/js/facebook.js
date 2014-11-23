@@ -80,7 +80,7 @@ function postJSON(url, data, callback){
  }
  });*/
 
-
+/*
 
 
 
@@ -137,3 +137,4 @@ function callAnalysis( messageAll ){
         console.log("result"+score);
     });
 }
+*/
