@@ -49,7 +49,7 @@ function publicFeed( accessToken ) {
 
 
 function callAnalysis( messageAll ){
-
+    console.log( messageAll );
     $.getJSON("analyse/respond.php?analyseText="+messageAll, function(json){
         //var score = JSON && JSON.parse(json) || $.parseJSON(json);
         var score = jQuery.parseJSON(json);
