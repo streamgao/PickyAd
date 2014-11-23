@@ -1,4 +1,5 @@
 <?php
+    session_start();
 
 	require_once 'alchemyapi.php';
 	$alchemyapi = new AlchemyAPI();
@@ -7,23 +8,24 @@
 	//$demo_url = 'http://www.npr.org/2013/11/26/247336038/dont-stuff-the-turkey-and-other-tips-from-americas-test-kitchen';
 
 	$response = $alchemyapi->sentiment('text',$demo_text, null);
+    $respond;
 
 	if ($response['status'] == 'OK') {
 
 		if (array_key_exists('score', $response['docSentiment'])) {
-			echo json_encode( $response['docSentiment'] );
-            //echo $response['docSentiment'];
+            $respond = $response['docSentiment'];
 		}else{
-            //echo 'neutral';
-            echo json_encode( array("type"=>"neutral","score"=>"0.5") );
+            $respond = array("type"=>"neutral","score"=>"0.5");
+            //echo json_encode( $respond );
         }
-
-	} else {
-		echo json_encode('Error in the targeted sentiment analysis call: ', $response['statusInfo']);
+	}else {
+        $respond = array("Error"=> $response['statusInfo']);
+		//echo json_encode( );
 	}
 
+    echo json_encode( $respond );
 
-
+    $_SESSION["result"] = $respond ;
 
 
 ?>

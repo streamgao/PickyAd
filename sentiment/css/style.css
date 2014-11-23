@@ -61,7 +61,7 @@ html,body {
     height: 50px;
     width: 300px;
     position: relative;
-    top: 100px;
+    top: 70px;
     left: 30%;
 }
 
@@ -69,15 +69,7 @@ html,body {
     height: 50px;
     width: 300px;
     position: relative;
-    top: 200px;
-    left: 30%;
-}
-
-#result2{
-    height: 50px;
-    width: 300px;
-    position: relative;
-    top: 200px;
+    top: 70px;
     left: 30%;
 }
 
