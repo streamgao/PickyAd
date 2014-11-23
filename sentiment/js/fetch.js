@@ -50,15 +50,13 @@ function publicFeed( accessToken ) {
 
 function callAnalysis( messageAll ){
     console.log( "3"+ messageAll );
-    document.getElementById("messageAll").innerHTML=messageAll;
-
+    $("#messageAll").html(messageAll);
     $.get("analyse/respond.php?analyseText="+messageAll, function(json){
         //var score = JSON && JSON.parse(json) || $.parseJSON(json);
         var score = JSON.parse(json);
         console.log("result2");
         console.log(score);
-        document.getElementById("result").innerHTML = score.object;
-        $("#result2").html( score['type']+","+ score['score'] );
+        $("#result").html( score['type']+","+ score['score'] );
     });
 
 }
