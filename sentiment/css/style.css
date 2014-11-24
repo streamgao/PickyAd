@@ -32,6 +32,14 @@ html,body {
     margin: 0px;
     padding: 0px;
 }
+.logo{
+    background: url(../img/logoL.jpg) center center no-repeat;
+    height: 50px;
+    width: 50px;
+    background-size: 100% 100%;
+    position: relative;
+    clear: none;
+}
 
 #container{
     width: 100%;
