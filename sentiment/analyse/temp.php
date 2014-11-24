@@ -6,4 +6,4 @@
  * Time: 11:44 AM
  */
 
-echo  json_encode( array("type"=>"positive", "score"=>"0.30864")  );
+echo  json_encode( array("type"=>"positive", "score"=>"0.30864","mixed"=>"1")  );
