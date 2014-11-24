@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sentiment/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.625" vertical-offset="120" max-vertical-offset="810">
-              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.74860334" vertical-offset="212" max-vertical-offset="825">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -43,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fetch.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="fetch.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sentiment/js/fetch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2658228" vertical-offset="0" max-vertical-offset="1065">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
               <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
               <folding />
             </state>
@@ -115,8 +115,8 @@
         <option value="$PROJECT_DIR$/sentiment/privacy.html" />
         <option value="$PROJECT_DIR$/sentiment/products.html" />
         <option value="$PROJECT_DIR$/sentiment/about.html" />
-        <option value="$PROJECT_DIR$/sentiment/index.html" />
         <option value="$PROJECT_DIR$/sentiment/js/fetch.js" />
+        <option value="$PROJECT_DIR$/sentiment/index.html" />
       </list>
     </option>
   </component>
@@ -563,12 +563,12 @@
       <workItem from="1416672528540" duration="6264000" />
       <workItem from="1416700644627" duration="6681000" />
       <workItem from="1416713145921" duration="292000" />
-      <workItem from="1416766781321" duration="5622000" />
+      <workItem from="1416766781321" duration="5733000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147088000" />
+    <option name="totallyTimeSpent" value="147199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
@@ -1014,18 +1014,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sentiment/index.html">
+    <entry file="file://$PROJECT_DIR$/sentiment/js/fetch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625" vertical-offset="120" max-vertical-offset="810">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sentiment/js/fetch.js">
+    <entry file="file://$PROJECT_DIR$/sentiment/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2658228" vertical-offset="0" max-vertical-offset="1065">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.74860334" vertical-offset="212" max-vertical-offset="825">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
