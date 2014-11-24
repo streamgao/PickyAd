@@ -27,6 +27,7 @@ function publicFeed( accessToken ) {
      });*/
 
     $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (feeds) {  //request data
+        console.log("feeds.data");
         console.log(feeds.data);
         var feed = feeds.data;
         var today = new now();
