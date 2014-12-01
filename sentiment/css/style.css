@@ -94,11 +94,18 @@ html,body {
     left: 20%;
 }
 .backBlue{
-    background:rgba(184, 209, 219, 0.5);
+    background:rgba(184, 209, 219, 0.7);
 }
 .marginSmall{
     margin: 10px;
 }
+.paddingSmall{
+    padding: 10px;
+}
+.colorW{
+    color: white;
+}
+
 
 #messageAll{
     height: 50px;
@@ -106,6 +113,7 @@ html,body {
     position: relative;
     top: 70px;
 }
+
 
 #result{
     height: 50px;
