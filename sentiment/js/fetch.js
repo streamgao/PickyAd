@@ -11,7 +11,7 @@ function now(){
     }
 
     if( this.date<10 ){
-        this.date = "0"+this.date;
+        this.date = "0"+this.date.toString();
     }
     this.month= this.now.getMonth()+1;
     this.today = this.now.getFullYear() + "-" + this.month + "-" + this.date;
