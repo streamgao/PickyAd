@@ -27,4 +27,5 @@ if( $mixed==null ){
 }
 
 $resultFix = array( "type"=>$type,"score"=>$score,"mixed"=>$mixed );
+echo json_encode( $resultFix);
 echo  json_encode($_SESSION["result"]);
