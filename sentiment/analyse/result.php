@@ -9,9 +9,9 @@ session_start();
 
 $result = _SESSION["result"];
 
-$type = $result["type"];
-$score = $result["score"];
-$mixed = $result["mixed"];
+$type = $result['type'];
+$score = $result['score'];
+$mixed = $result['mixed'];
 
 
 if ( $type == "positive" ){
