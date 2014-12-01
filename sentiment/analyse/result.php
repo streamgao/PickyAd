@@ -7,4 +7,8 @@
  */
 session_start();
 
+$result = _SESSION["result"];
+$type = $result['type'];
+$score =
+
 echo  json_encode($_SESSION["result"]);
