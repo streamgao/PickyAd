@@ -16,15 +16,15 @@ $score = $result['score'];
 $mixed = $result['mixed'];
 
 if ( $type == "positive" ){
-    $type = 1;
+    $type = "1";
 }else if( $type == "negative" ){
-    $type = 2;
+    $type = "2";
 }else {  //netural
-    $type = 0;
+    $type = "0";
 }
 
 if( $mixed==null ){
-    $mixed = 0;
+    $mixed = "0";
 }
 
 $resultFix = array( "type"=>$type,"score"=>$score,"mixed"=>$mixed );
