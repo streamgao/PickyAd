@@ -19,7 +19,7 @@ if ( $type == "positive" ){
     $type = 1;
 }else if( $type == "negative" ){
     $type = 2;
-} else {
+}else {  //netural
     $type = 0;
 }
 

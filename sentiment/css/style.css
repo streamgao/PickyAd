@@ -50,22 +50,7 @@ html,body {
 }
 
 
-#messageAll{
-    height: 50px;
-    width: 300px;
-    position: relative;
-    top: 70px;
-    left: 30%;
-}
-
-#result{
-    height: 50px;
-    width: 300px;
-    position: relative;
-    top: 150px;
-    left: 30%;
-}
-
+/*------------- menu ---------------*/
 #bootstrap-menu.navbar-default .navbar-brand {
     color: rgba(117, 117, 117, 1);
 }
@@ -103,7 +88,30 @@ html,body {
 #bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #ffffff;
 }
+/*------------- menu ---------------*/
 
+
+
+
+#messageAll{
+    height: 50px;
+    width: 300px;
+    position: relative;
+    top: 70px;
+    left: 30%;
+}
+
+#result{
+    height: 50px;
+    width: 300px;
+    position: relative;
+    top: 150px;
+    left: 30%;
+}
+
+.middleLeft{
+    left: 10%;
+}
 
 .subcontainer{
     width: 80%;
