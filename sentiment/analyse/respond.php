@@ -5,9 +5,8 @@
 	$alchemyapi = new AlchemyAPI();
 
 	$demo_text = $_GET['analyseText'];
-
 	$response = $alchemyapi->sentiment('text',$demo_text, null);
-    $respond;
+    //$respond;
 
 	if ($response['status'] == 'OK') {
 
@@ -23,8 +22,7 @@
 	}
 
     echo json_encode( $respond );
-
-    $_SESSION["result"] = $respond ;
+    $_SESSION["result"] = $respond;
 
 
 ?>
