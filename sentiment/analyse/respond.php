@@ -5,7 +5,6 @@
 	$alchemyapi = new AlchemyAPI();
 
 	$demo_text = $_GET['analyseText'];
-	//$demo_url = 'http://www.npr.org/2013/11/26/247336038/dont-stuff-the-turkey-and-other-tips-from-americas-test-kitchen';
 
 	$response = $alchemyapi->sentiment('text',$demo_text, null);
     $respond;
