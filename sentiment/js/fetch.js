@@ -6,14 +6,17 @@ function now(){
     this.now=new Date();
 //  this.year= this.now.getFullYear();
     this.date= this.now.getDate();
+    this.month= this.now.getMonth()+1;
+
     if( this.now.getHours()>21 ){  //trick.....should change later
         this.date= this.now.getDate()+1;
     }
-
     if( this.date<10 ){
         this.date = "0"+this.date.toString();
     }
-    this.month= this.now.getMonth()+1;
+    if( this.month<10 ){
+        this.month = "0"+this.month.toString();
+    }
     this.today = this.now.getFullYear() + "-" + this.month + "-" + this.date;
 }
 
