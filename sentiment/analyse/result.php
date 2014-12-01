@@ -8,11 +8,11 @@
 session_start();
 
 $result = _SESSION["result"];
+echo  json_encode($_SESSION["result"]);
 
 $type = $result['type'];
 $score = $result['score'];
 $mixed = $result['mixed'];
-
 
 if ( $type == "positive" ){
     $type = 1;
@@ -28,4 +28,3 @@ if( $mixed==null ){
 
 $resultFix = array( "type"=>$type,"score"=>$score,"mixed"=>$mixed );
 echo json_encode( $resultFix);
-echo  json_encode($_SESSION["result"]);
