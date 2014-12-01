@@ -90,8 +90,15 @@ html,body {
 }
 /*------------- menu ---------------*/
 
-
-
+.middleLeft{
+    left: 20%;
+}
+.backBlue{
+    background:rgba(184, 209, 219, 0.5);
+}
+.marginSmall{
+    margin: 10px;
+}
 
 #messageAll{
     height: 50px;
@@ -107,9 +114,7 @@ html,body {
     top: 150px;
 }
 
-.middleLeft{
-    left: 20%;
-}
+
 
 .subcontainer{
     width: 80%;
