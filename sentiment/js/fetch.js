@@ -36,7 +36,6 @@ function publicFeed( accessToken ) {
      console.log("jsonD:", response);
      });*/
     $.get('https://graph.facebook.com/me/feed?access_token='+accessToken, function (feeds) {  //request data
-        console.log("feeds.data");
         console.log(feeds.data);
         var feed = feeds.data;
         var today = new now();
@@ -49,16 +48,12 @@ function publicFeed( accessToken ) {
                 }
             }//if time today
         }
-        //console.log( "1"+ messageSend );
         callAnalysis( messageSend );
     });//get feed
-
-    console.log( "2"+ messageSend );
 }//publicfeed
 
 
 function callAnalysis( messageAll ){
-    console.log( "3"+ messageAll );
     $("#messageAll").html(messageAll);
     $.get("analyse/respond.php?analyseText="+messageAll, function(json){
         //var score = JSON && JSON.parse(json) || $.parseJSON(json);
