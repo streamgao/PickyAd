@@ -13,7 +13,7 @@
 		if (array_key_exists('score', $response['docSentiment'])) {
             $respond = $response['docSentiment'];
 		}else{
-            $respond = array("type"=>"neutral","score"=>"0.5");
+            $respond = array("type"=>"neutral","score"=>0.5);
             //echo json_encode( $respond );
         }
 	}else {
