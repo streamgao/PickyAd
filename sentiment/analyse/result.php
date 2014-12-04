@@ -34,13 +34,11 @@
         $mixed = "0";
     }
     */
+    $id = 1;
 
     if ($find_db) {
-        echo("connect successfully!");
-
-        $query = "SELECT emotion.* FROM emotion WHERE id='1' ";
+        $query = "SELECT emotion.* FROM emotion WHERE id = '$id' ";
         $result = mysql_query($query);
-        echo($result);
 
         while( $field = mysql_fetch_row($result) ) {
             $type = $field[1];
@@ -52,6 +50,5 @@
         $resultFix = array("error" => "databse connection fail");
     }
     echo json_encode($resultFix);
-
 
 ?>

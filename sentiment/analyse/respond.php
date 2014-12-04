@@ -1,6 +1,6 @@
 <?php
     /*-------------database-------------*/
-/*    $user_name = "stream";
+    $user_name = "stream";
     $password = "gaoxi123";
     $database = "mindfullamp";
     $hostname = "aaglnrhc6ky1th.ch5sjbwjm96s.us-west-2.rds.amazonaws.com";
@@ -8,8 +8,7 @@
     $connect_db = mysql_connect($hostname, $user_name, $password);
     $find_db = mysql_select_db($database);
 
-*/
-    session_start();
+ //   session_start();
     //sentiment analysis
     require_once 'alchemyapi.php';
     $alchemyapi = new AlchemyAPI();
@@ -49,16 +48,17 @@
     if ($mixed == null) {
         $mixed = "0";
     }
-/*
+
+    $id = 1;
     //update database
     if($find_db) {
-        $query = "UPDATE emotion  SET type='$type',score='$score'  WHERE id=1 ";
+        $query = "UPDATE emotion  SET type='$type',score='$score'  WHERE id='$id' ";
         $result = mysql_query($query);
 
         if( $result ) {
             echo "update successfully!";
         }
     }
-*/
+
 
 ?>
