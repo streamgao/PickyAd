@@ -39,13 +39,12 @@
         $query = "SELECT type,score,mixed FROM emotion WHERE id=1 ";
         $result = mysql_query($query);
 
-        while ($field = mysql_fetch_row($result)) {
+        while( $field = mysql_fetch_row($result) ) {
             $type = $field[0];
             $score = $field[1];
             $mixed = $field[2];
         }
         $resultFix = array("type" => $type, "score" => $score, "mixed" => $mixed);
-
     } else {
         $resultFix = array("error" => "databse connection fail");
     }
