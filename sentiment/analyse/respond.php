@@ -33,9 +33,9 @@
     $connect_db = mysql_connect($hostname, $user_name, $password);
     $find_db = mysql_select_db($database);
 
-    $type = $response['type'];
-    $score = $response['score'];
-    $mixed = $response['mixed'];
+    $type = $respond['type'];
+    $score = $respond['score'];
+    $mixed = $respond['mixed'];
 
     if ($type == "positive") {
         $type = "1";
@@ -44,7 +44,6 @@
     } else { //netural
         $type = "0";
     }
-
     if ($mixed == null) {
         $mixed = "0";
     }
