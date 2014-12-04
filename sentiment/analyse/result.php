@@ -15,8 +15,8 @@
     $find_db = mysql_select_db($database);
 
 
-    session_start();
-    $result = $_SESSION["result"];
+ //   session_start();
+ //   $result = $_SESSION["result"];
     /*
     $type = $result['type'];
     $score = $result['score'];

@@ -1,12 +1,4 @@
 <?php
-    /*-------------database-------------*/
-    $user_name = "stream";
-    $password = "gaoxi123";
-    $database = "mindfullamp";
-    $hostname = "aaglnrhc6ky1th.ch5sjbwjm96s.us-west-2.rds.amazonaws.com";
-
-    $connect_db = mysql_connect($hostname, $user_name, $password);
-    $find_db = mysql_select_db($database);
 
  //   session_start();
     //sentiment analysis
@@ -30,8 +22,16 @@
     }
 
     echo json_encode($respond);
-    $_SESSION["result"] = $respond;
 
+
+/*-------------database-------------*/
+    $user_name = "stream";
+    $password = "gaoxi123";
+    $database = "mindfullamp";
+    $hostname = "aaglnrhc6ky1th.ch5sjbwjm96s.us-west-2.rds.amazonaws.com";
+
+    $connect_db = mysql_connect($hostname, $user_name, $password);
+    $find_db = mysql_select_db($database);
 
     $type = $response['type'];
     $score = $response['score'];
@@ -58,6 +58,8 @@
         if( $result ) {
             echo "update successfully!";
         }
+    }else {
+        $resultFix = array("error" => "databse connection fail");
     }
 
 
