@@ -39,6 +39,7 @@ function publicFeed( accessToken ) {
         console.log(feeds.data);
         var feed = feeds.data;
         var today = new now();
+        console.log( today );
 
         for(var i=0; i< feed.length; i++){
             if( feed[i]['updated_time'].substr(0, 10) == today.today ){
