@@ -8,7 +8,7 @@ function now(){
     this.date= this.now.getDate();
     this.month= this.now.getMonth()+1;
 
-    if( this.now.getHours()>21 ){  //trick.....should change later
+    if( this.now.getHours()>19 ){  //trick.....should change later
         this.date= this.now.getDate()+1;
     }
     if( this.date<10 ){
