@@ -36,13 +36,16 @@
     */
 
     if ($find_db) {
-        $query = "SELECT type,score,mixed FROM emotion WHERE id=1 ";
+        echo("connect successfully!");
+
+        $query = "SELECT emotion.* FROM emotion WHERE id=1 ";
         $result = mysql_query($query);
+        echo($result);
 
         while( $field = mysql_fetch_row($result) ) {
-            $type = $field[0];
-            $score = $field[1];
-            $mixed = $field[2];
+            $type = $field[1];
+            $score = $field[2];
+            $mixed = $field[3];
         }
         $resultFix = array("type" => $type, "score" => $score, "mixed" => $mixed);
     } else {
