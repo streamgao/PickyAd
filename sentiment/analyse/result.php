@@ -38,7 +38,7 @@
     if ($find_db) {
         echo("connect successfully!");
 
-        $query = "SELECT emotion.* FROM emotion WHERE id=1 ";
+        $query = "SELECT emotion.* FROM emotion WHERE id='1' ";
         $result = mysql_query($query);
         echo($result);
 
