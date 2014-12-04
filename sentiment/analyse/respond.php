@@ -1,4 +1,4 @@
-{<?php
+<?php
     /*-------------database-------------*/
     $user_name = "stream";
     $password = "gaoxi123";
@@ -50,11 +50,12 @@
         $mixed = "0";
     }
 
+    //update database
     if($find_db) {
         $query = "UPDATE emotion  SET type='$type',score='$score'  WHERE id=1 ";
         $result = mysql_query($query);
 
-        while ($field = mysql_fetch_row($result)) {
+        if( $result ) {
             echo "update successfully!";
         }
     }
