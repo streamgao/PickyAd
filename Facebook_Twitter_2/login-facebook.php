@@ -5,8 +5,8 @@ require 'config/fbconfig.php';
 require 'config/functions.php';
 
 $facebook = new Facebook(array(
-            'appId' => APP_ID,
-            'secret' => APP_SECRET,
+            'appId' => 770707736335720,
+            'secret' => 15d79634f7b439545f0d60328dea3998,
             ));
 
 $user = $facebook->getUser();
@@ -19,9 +19,6 @@ if ($user) {
     error_log($e);
     $user = null;
   }
-
-
-
 
 
 
