@@ -1,6 +1,6 @@
 <?php
 ob_start();
-require("twitter/twitteroauth.php");
+require 'twitter/twitteroauth.php';
 require 'config/twconfig.php';
 require 'config/functions.php';
 session_start();
