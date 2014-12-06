@@ -7,8 +7,10 @@ echo "why cannot go to https://twitter.com/oauth/authorize?oauth_token=";
 
 $twitteroauth = new TwitterOAuth(YOUR_CONSUMER_KEY, YOUR_CONSUMER_SECRET);
 // Requesting authentication tokens, the parameter is the URL we will be redirected to
-$request_token = $twitteroauth->getRequestToken('http://onlinewebapplication.com/Facebook2/getTwitterData.php');
+//$request_token = $twitteroauth->getRequestToken('http://onlinewebapplication.com/Facebook2/getTwitterData.php');
+$request_token = $twitteroauth->getRequestToken('http://http://pickyad-env.elasticbeanstalk.com/Facebook_Twitter/getTwitterData.php');
 
+echo($request_token);
 // Saving them into the session
 
 $_SESSION['oauth_token'] = $request_token['oauth_token'];
