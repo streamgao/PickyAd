@@ -17,7 +17,7 @@ if (empty($_SESSION['access_token']) || empty($_SESSION['access_token']['oauth_t
 $access_token = $_SESSION['access_token'];
 
 /* Create a TwitterOauth object with consumer/user tokens. */
-$connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token['oauth_token'], $access_token['oauth_token_secret']);
+$connection = new TwitterOAuth('YC6UqKwK4fcw8edeyPH56uDzh', 'PpsNoAhXle1Vpq1ppi9Pk9q043j7yNNAUYHfWUwEExTzYbx07r', $access_token['oauth_token'], $access_token['oauth_token_secret']);
 
 /* If method is set change API call made. Test is called by default. */
 $content = $connection->get('account/verify_credentials');
