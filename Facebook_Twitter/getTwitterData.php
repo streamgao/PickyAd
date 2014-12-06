@@ -1,8 +1,8 @@
 <?php
 ob_start();
-require("twitter/twitteroauth.php");
-require 'config/twconfig.php';
-require 'config/functions.php';
+require_once 'twitter/twitteroauth.php';
+require_once 'config/twconfig.php';
+require_once 'config/functions.php';
 session_start();
 
 if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empty($_SESSION['oauth_token_secret'])) {
