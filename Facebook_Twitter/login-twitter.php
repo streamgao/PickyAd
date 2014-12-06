@@ -1,6 +1,6 @@
 <?php
-require 'twitter/twitteroauth.php';
-require 'config/twconfig.php';
+require_once 'twitter/twitteroauth.php';
+require_once 'config/twconfig.php';
 session_start();
 
 $twitteroauth = new TwitterOAuth(YOUR_CONSUMER_KEY, YOUR_CONSUMER_SECRET);

@@ -28,7 +28,7 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
         $uid = $user_info->id;
         $username = $user_info->name;
         $user = new User();
-        $userdata = $user->checkUser($uid, 'twitter', $username,$email,$twitter_otoken,$twitter_otoken_secret);
+        $userdata = $user->checkUser($uid, 'twitter', $username,$email,$twitter_otoken, $twitter_otoken_secret);
         if(!empty($userdata)){
             session_start();
             $_SESSION['id'] = $userdata['id'];

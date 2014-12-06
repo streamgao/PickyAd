@@ -5,7 +5,6 @@ if (isset($_SESSION['id'])) {
     // Redirection to login page twitter or facebook
     header("location: home.php");
 }
-
 if (array_key_exists("login", $_GET)) {
     $oauth_provider = $_GET['oauth_provider'];
     if ($oauth_provider == 'twitter') {
@@ -15,6 +14,7 @@ if (array_key_exists("login", $_GET)) {
     }
 }
 ?>
+
 <title>onlinewebapplication.com Facebook | Twitter Login</title>
 <style type="text/css">
     #buttons
@@ -38,6 +38,4 @@ if (array_key_exists("login", $_GET)) {
 <h1>Twitter Facebook Login </h1>
     <a href="?login&oauth_provider=twitter"><img src="images/tw_login.png"></a>&nbsp;&nbsp;&nbsp;
     <a href="?login&oauth_provider=facebook"><img src="images/fb_login.png"></a> <br />
-	<br />
-	<a href="http://onlinewebapplication.com/">http://onlinewebapplication.com</a>   
 </div>
