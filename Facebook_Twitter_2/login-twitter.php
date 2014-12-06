@@ -1,6 +1,7 @@
 <?php
 require 'twitter/twitteroauth.php';
 require 'config/twconfig.php';
+
 session_start();
 
 $twitteroauth = new TwitterOAuth('YC6UqKwK4fcw8edeyPH56uDzh', 'PpsNoAhXle1Vpq1ppi9Pk9q043j7yNNAUYHfWUwEExTzYbx07r');
