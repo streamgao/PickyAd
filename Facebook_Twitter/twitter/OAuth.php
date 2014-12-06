@@ -651,7 +651,7 @@ class OAuthServer {
   /**
    * check that the timestamp is new enough
    */
-  private function check_timestamp( $timestamp ) {
+  private function check_timestamp($timestamp) {
     if( ! $timestamp )
       throw new OAuthException(
         'Missing timestamp parameter. The parameter is required'
@@ -686,6 +686,7 @@ class OAuthServer {
       throw new OAuthException("Nonce already used: $nonce");
     }
   }
+
 }
 
 class OAuthDataStore {
@@ -819,7 +820,7 @@ class OAuthUtil {
     foreach ($pairs as $pair) {
       $split = explode('=', $pair, 2);
       $parameter = OAuthUtil::urldecode_rfc3986($split[0]);
-      $value = isset( $split[1]) ? OAuthUtil::urldecode_rfc3986($split[1] ) : '';
+      $value = isset($split[1]) ? OAuthUtil::urldecode_rfc3986($split[1]) : '';
 
       if (isset($parsed_parameters[$parameter])) {
         // We have already recieved parameter(s) with this name, so add to the list
