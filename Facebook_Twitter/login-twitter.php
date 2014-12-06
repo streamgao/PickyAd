@@ -1,11 +1,12 @@
 <?php
 require_once 'twitter/twitteroauth.php';
 require_once 'config/twconfig.php';
-session_start();
 
 echo "why cannot go to https://twitter.com/oauth/authorize?oauth_token=";
 echo ('why cannot go to');
-echo("whysa;ldkj");
+echo ("whysa;ldkj");
+
+session_start();
 
 $twitteroauth = new TwitterOAuth(YOUR_CONSUMER_KEY, YOUR_CONSUMER_SECRET);
 // Requesting authentication tokens, the parameter is the URL we will be redirected to
