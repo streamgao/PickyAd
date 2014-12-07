@@ -35,6 +35,20 @@
     $mixed = $respond['mixed'];
 
     $id = 1;
+
+
+if ( $type == "positive" ){
+    $type = "1";
+}else if( $type == "negative" ){
+    $type = "2";
+}else {  //netural
+    $type = "0";
+}
+
+if( $mixed==null ){
+    $mixed = "0";
+}
+
     //update database
     if($find_db) {
         $query = "UPDATE emotion  SET type='$type',score='$score'  WHERE id='$id' ";
