@@ -32,8 +32,8 @@
 
     if( $mixed==null ){
         $mixed = "0";
-    }
-    */
+    }*/
+
     $id = 1;
 
     if ($find_db) {
