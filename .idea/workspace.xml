@@ -23,6 +23,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="login-twitter.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Facebook_Twitter/login-twitter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9220779" vertical-offset="155" max-vertical-offset="600">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="control.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mindfullamp/js/control.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -36,7 +46,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mindfullamp/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1665" max-vertical-offset="2145">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1466" max-vertical-offset="2145">
               <caret line="130" column="15" selection-start-line="130" selection-start-column="15" selection-end-line="130" selection-end-column="15" />
               <folding />
             </state>
@@ -79,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="result.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mindfullamp/result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.91935486" vertical-offset="423" max-vertical-offset="915">
+            <state vertical-scroll-proportion="-14.25" vertical-offset="423" max-vertical-offset="915">
               <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -94,8 +104,8 @@
       <file leaf-file-name="wave.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mindfullamp/css/wave.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1515">
-              <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1530">
+              <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -150,10 +160,8 @@
         <option value="$PROJECT_DIR$/sentiment/analyse/result.php" />
         <option value="$PROJECT_DIR$/sentiment/analyse/respond.php" />
         <option value="$PROJECT_DIR$/Facebook_Twitter/config/twconfig.php" />
-        <option value="$PROJECT_DIR$/Facebook_Twitter/login-twitter.php" />
         <option value="$PROJECT_DIR$/Facebook_Twitter/twitter/test.php" />
         <option value="$PROJECT_DIR$/Facebook_Twitter/twitter/twitteroauth.php" />
-        <option value="$PROJECT_DIR$/mindfullamp/css/wave.css" />
         <option value="$PROJECT_DIR$/mindfullamp/jquery-360-sprite-spin/index.html" />
         <option value="$PROJECT_DIR$/mindfullamp/js/control.js" />
         <option value="$PROJECT_DIR$/mindfullamp/effect.html" />
@@ -162,6 +170,8 @@
         <option value="$PROJECT_DIR$/mindfullamp/about.html" />
         <option value="$PROJECT_DIR$/mindfullamp/index.html" />
         <option value="$PROJECT_DIR$/mindfullamp/result.html" />
+        <option value="$PROJECT_DIR$/mindfullamp/css/wave.css" />
+        <option value="$PROJECT_DIR$/Facebook_Twitter/login-twitter.php" />
       </list>
     </option>
   </component>
@@ -241,11 +251,7 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mindfullamp" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="Facebook_Twitter" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -594,12 +600,12 @@
       <workItem from="1417833149140" duration="5079000" />
       <workItem from="1417979823262" duration="1777000" />
       <workItem from="1418015644160" duration="2944000" />
-      <workItem from="1418021833073" duration="9431000" />
+      <workItem from="1418021833073" duration="10081000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182481000" />
+    <option name="totallyTimeSpent" value="183131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="716" extended-state="6" />
@@ -939,14 +945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Facebook_Twitter/login-twitter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57831323" vertical-offset="105" max-vertical-offset="570">
-          <caret line="23" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Facebook_Twitter/twitter/twitteroauth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8578313" vertical-offset="139" max-vertical-offset="3675">
@@ -1000,26 +998,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mindfullamp/css/wave.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1515">
-          <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.74345547" vertical-offset="16" max-vertical-offset="420">
           <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="152" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mindfullamp/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1665" max-vertical-offset="2145">
-          <caret line="130" column="15" selection-start-line="130" selection-start-column="15" selection-end-line="130" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1056,11 +1038,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mindfullamp/result.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91935486" vertical-offset="423" max-vertical-offset="915">
+        <state vertical-scroll-proportion="-14.25" vertical-offset="423" max-vertical-offset="915">
           <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#a#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindfullamp/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1665" max-vertical-offset="2145">
+          <caret line="130" column="15" selection-start-line="130" selection-start-column="15" selection-end-line="130" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindfullamp/css/wave.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1530">
+          <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Facebook_Twitter/login-twitter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9220779" vertical-offset="155" max-vertical-offset="600">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

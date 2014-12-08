@@ -60,6 +60,7 @@ div i {
   height: 100px;
   border-radius: 50%;
   z-index: 20;
+  cursor: pointer;
   -webkit-animation: glowAnimation 3s ease infinite;
   animation: glowAnimation 3s ease infinite;
 }
