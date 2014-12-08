@@ -9,7 +9,6 @@ $twitteroauth = new TwitterOAuth(YOUR_CONSUMER_KEY, YOUR_CONSUMER_SECRET);
 
 //$request_token = $twitteroauth->getRequestToken('http://onlinewebapplication.com/Facebook2/getTwitterData.php');
 $request_token = $twitteroauth->getRequestToken('http://pickyad-env.elasticbeanstalk.com/twitter/getTwitterData.php');
-//$request_token = $twitteroauth->getRequestToken('http://liuctic.com/gx/getTwitterData.php');
 
 // Saving them into the session
 $_SESSION['oauth_token'] = $request_token['oauth_token'];
