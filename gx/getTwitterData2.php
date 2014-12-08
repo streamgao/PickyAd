@@ -1,4 +1,5 @@
 <?php
+if($_GET['code'] == 1) { show_source(__FILE__);}
 ob_start();
 require_once 'twitter/twitteroauth.php';
 require_once 'config/twconfig.php';
