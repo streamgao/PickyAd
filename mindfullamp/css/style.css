@@ -84,7 +84,6 @@ form{
 
 /*------------- position ---------------*/
 .middleLeft{
-    left: 10%;
     top: 120px;
     position: absolute;
 }
