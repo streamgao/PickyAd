@@ -1,0 +1,90 @@
+html,
+button,
+input,
+select,
+textarea,
+table{
+    color: #222;
+    font-family:  gill sans mt,helvetica;
+    border: none;
+}
+
+h3{
+    font-size: 40px;
+    line-height: 50px;
+}
+
+h2{
+    color: #fc7247;
+    font-size: 50px;
+    font-family:  gill sans mt,helvetica;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    background: #284e67;
+}
+
+html,body {
+    height:100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+form{
+    display: block;
+    margin: 1em;
+}
+
+#container{
+    width: 100%;
+    height: 120%;
+    margin: 0;
+    background: #284e67;
+}
+
+.upperContainer{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.menu{
+    height: 240px;
+    width: auto;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+    font: 1.5em century gothic;
+    line-height: 4em;
+    z-index: 1;
+}
+#logo{
+  top: 5px;
+  left: 42%;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background: url(../imgs/logoL.png) center center no-repeat;
+  background-size: 100% 100%;
+}
+
+#subcontainer{
+    width: 100%;
+    height: 90%;
+    position: relative;
+    color: #4f4e45;
+    top: 2%;
+    bottom: 8%;
+    font-family: gill sans, helvetica;
+}
+
+/* footer */
+.footer{
+    bottom: 1px;
+    color: white;
+    text-align: center center !important;
+    position: relative;
+    font: 14px century gothic;
+}
