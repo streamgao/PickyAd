@@ -8,7 +8,7 @@ $twitteroauth = new TwitterOAuth(YOUR_CONSUMER_KEY, YOUR_CONSUMER_SECRET);
 // Requesting authentication tokens, the parameter is the URL we will be redirected to
 
 //$request_token = $twitteroauth->getRequestToken('http://onlinewebapplication.com/Facebook2/getTwitterData.php');
-$request_token = $twitteroauth->getRequestToken('http://pickyad-env.elasticbeanstalk.com/twitter/getTwitterData2.php');
+$request_token = $twitteroauth->getRequestToken('http://pickyad-env.elasticbeanstalk.com/gx/getTwitterData2.php');
 //$request_token = $twitteroauth->getRequestToken('http://liuctic.com/gx/getTwitterData.php');
 
 // Saving them into the session
