@@ -49,7 +49,7 @@ form{
 .upperContainer{
     position: relative;
     width: 100%;
-    height: 330px;
+    height: 270px;
     overflow:hidden; 
 }
 .lowerContainer{
@@ -60,7 +60,7 @@ form{
 }
 
 .menu{
-    height: 240px;
+    height: 270px;
     width: auto;
     color: white;
     overflow: hidden;
