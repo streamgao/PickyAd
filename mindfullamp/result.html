@@ -6,35 +6,42 @@
     <title>Mindful Lamp__STREAM GAO</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/wave.css" type="text/css">
-    <script src='js/none.js'></script>
-    <script src="js/index.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/fetch.js"></script>
+    <script type="text/javascript" src="js/facebook.js" defer="defer"></script>
 </head>
 <body>
 <div id="container">
-	<div class="upperContainer" >
-		<div class="menu">
-			<div class="wave" id="haha">
-        	   <i></i>
+    <div class="upperContainer" >
+        <div class="menu">
+            <div class="wave" id="haha">
+               <i></i>
             </div>
             <div class="rotate" id="menu1"> 
                 Effect 
             </div>
-        	<div class="rotate" id="menu2"> Feeds </div>
-        	<div class="rotate" id="menu3"> Results </div>
-        	<div class="rotate" id="menu4"> About </div>
-        	<div id="logo"></div>
-		</div>
-		 
-		<div class="login">
-		</div>
-	</div>
-	<div class="lowerContainer" >
-		<div class="content">
-		</div>
-	</div>
+            <div class="rotate" id="menu2"> Feeds </div>
+            <div class="rotate" id="menu3"> Results </div>
+            <div class="rotate" id="menu4"> About </div>
+            <div id="logo"></div>
+
+            <div class="fb-login-button middleLeft" scope="public_profile,email,user_friends,read_stream" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="true" onlogin="checkLoginState();">
+             </div>
+        </div>     
+    </div>
+
+    <div class="lowerContainer" >
+        <div class="content">
+            <div class="subtitle">
+                <h3>See your emotion today: </h3>
+                <div id="result"></div>
+            </div>
+
+        </div>
+    </div>
 </div>
-
-
+</div>
 
 </body>
 </html>

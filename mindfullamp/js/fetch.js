@@ -55,13 +55,13 @@ function publicFeed( accessToken ) {
 
 
 function callAnalysis( messageAll ){
-    $("#messageAll").html(messageAll);
+    $("#feed").html(messageAll);
     $.get("analyse/respond.php?analyseText="+messageAll, function(json){
         //var score = JSON && JSON.parse(json) || $.parseJSON(json);
         var score = JSON.parse(json);
         console.log("result2");
         console.log(score);
-        $("#result").html( score['type']+","+ score['score'] );
+        $("#result").html( score['type']+" , "+ score['score'] );
     });
 
 }
