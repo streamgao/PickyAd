@@ -38,5 +38,5 @@ if (array_key_exists("login", $_GET)) {
 <h1>Twitter Facebook Login </h1>
     <a href="?login&oauth_provider=twitter"><img src="images/tw_login.png"></a>&nbsp;&nbsp;&nbsp;
     <a href="?login&oauth_provider=facebook"><img src="images/fb_login.png"></a> <br />
-    <h1>ajdksaf</h1>
+    <h1>test. thanks !~</h1>
 </div>

@@ -7,8 +7,8 @@ session_start();
 $twitteroauth = new TwitterOAuth('YC6UqKwK4fcw8edeyPH56uDzh', 'PpsNoAhXle1Vpq1ppi9Pk9q043j7yNNAUYHfWUwEExTzYbx07r');
 // Requesting authentication tokens, the parameter is the URL we will be redirected to
 //var_dump($twitteroauth);
-//$request_token = $twitteroauth->getRequestToken('http://pickyad-env.elasticbeanstalk.com/Facebook_Twitter/getTwitterData.php');
-$$request_token = $twitteroauth->getAccessToken($_GET['oauth_verifier']);
+$request_token = $twitteroauth->getRequestToken('http://pickyad-env.elasticbeanstalk.com/Facebook_Twitter/getTwitterData.php');
+
 //var_dump($twitteroauth);die();
 //var_dump($request_token); die();
 // Saving them into the session
