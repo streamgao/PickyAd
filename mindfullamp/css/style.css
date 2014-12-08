@@ -33,7 +33,9 @@ html,body {
     margin: 0px;
     padding: 0px;
 }
-
+a{
+    color: #ffffff !important;
+}
 a:hover{
     color:#58bcfa;
 }
