@@ -63,7 +63,6 @@ div i {
   -webkit-animation: glowAnimation 3s ease infinite;
   animation: glowAnimation 3s ease infinite;
 }
-
 @-webkit-keyframes glowAnimation {    
   0% { box-shadow: 0 0 20px #ffffff, 0 0 8px #ffffff, 0 0 2px #ffffff, inset 0 0 2px #ffffff, inset 0 0 4px #ffffff; }
   50% { box-shadow: 0 0 60px #ffffff, 0 0 15px #ffffff, 0 0 2px #ffffff, inset 0 0 3px #ffffff, inset 0 0 6px #ffffff; }
