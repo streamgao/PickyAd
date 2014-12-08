@@ -128,7 +128,9 @@ img{
 /* footer */
 .footer{
     bottom: 1px;
-    color: white;
+    color: #1c4d6c;
+    left: 42%;
+    bottom: 5%;
     text-align: center center !important;
     position: relative;
     font: 14px century gothic;
