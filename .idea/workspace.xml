@@ -43,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="result.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mindfullamp/result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="300" max-vertical-offset="765">
-              <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.4715447" vertical-offset="396" max-vertical-offset="795">
+              <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -63,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mindfullamp/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1477833" vertical-offset="1049" max-vertical-offset="1950">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1229" max-vertical-offset="1950">
               <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding />
             </state>
@@ -140,10 +140,10 @@
         <option value="$PROJECT_DIR$/Facebook_Twitter/twitter/test.php" />
         <option value="$PROJECT_DIR$/Facebook_Twitter/twitter/twitteroauth.php" />
         <option value="$PROJECT_DIR$/mindfullamp/effect.html" />
-        <option value="$PROJECT_DIR$/mindfullamp/css/style.css" />
         <option value="$PROJECT_DIR$/mindfullamp/feeds.html" />
-        <option value="$PROJECT_DIR$/mindfullamp/result.html" />
         <option value="$PROJECT_DIR$/mindfullamp/about.html" />
+        <option value="$PROJECT_DIR$/mindfullamp/css/style.css" />
+        <option value="$PROJECT_DIR$/mindfullamp/result.html" />
       </list>
     </option>
   </component>
@@ -576,12 +576,12 @@
       <workItem from="1417833149140" duration="5079000" />
       <workItem from="1417979823262" duration="1777000" />
       <workItem from="1418015644160" duration="2944000" />
-      <workItem from="1418021833073" duration="3193000" />
+      <workItem from="1418021833073" duration="3302000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176243000" />
+    <option name="totallyTimeSpent" value="176352000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="716" extended-state="6" />
@@ -994,18 +994,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mindfullamp/result.html">
+    <entry file="file://$PROJECT_DIR$/mindfullamp/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="300" max-vertical-offset="765">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1229" max-vertical-offset="1950">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mindfullamp/css/style.css">
+    <entry file="file://$PROJECT_DIR$/mindfullamp/result.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1477833" vertical-offset="1049" max-vertical-offset="1950">
-          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4715447" vertical-offset="396" max-vertical-offset="795">
+          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
           <folding />
         </state>
       </provider>
