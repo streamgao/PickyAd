@@ -34,9 +34,8 @@ html,body {
     padding: 0px;
 }
 
-form{
-    display: block;
-    margin: 1em;
+a:hover{
+    color:#58bcfa;
 }
 
 #container{
