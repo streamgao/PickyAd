@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login-twitter.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login-twitter.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Facebook_Twitter/login-twitter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22077923" vertical-offset="140" max-vertical-offset="525">
-              <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+            <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="525">
+              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -55,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getTwitterData.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="getTwitterData.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Facebook_Twitter/getTwitterData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.375" vertical-offset="408" max-vertical-offset="840">
-              <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.04032258" vertical-offset="0" max-vertical-offset="840">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -158,8 +158,8 @@
         <option value="$PROJECT_DIR$/mindfullamp/index.html" />
         <option value="$PROJECT_DIR$/mindfullamp/result.html" />
         <option value="$PROJECT_DIR$/mindfullamp/css/wave.css" />
-        <option value="$PROJECT_DIR$/Facebook_Twitter/getTwitterData.php" />
         <option value="$PROJECT_DIR$/Facebook_Twitter/login-twitter.php" />
+        <option value="$PROJECT_DIR$/Facebook_Twitter/getTwitterData.php" />
       </list>
     </option>
   </component>
@@ -610,12 +610,12 @@
       <workItem from="1417833149140" duration="5079000" />
       <workItem from="1417979823262" duration="1777000" />
       <workItem from="1418015644160" duration="2944000" />
-      <workItem from="1418021833073" duration="11533000" />
+      <workItem from="1418021833073" duration="11675000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184583000" />
+    <option name="totallyTimeSpent" value="184725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="716" extended-state="6" />
@@ -1051,18 +1051,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Facebook_Twitter/getTwitterData.php">
+    <entry file="file://$PROJECT_DIR$/Facebook_Twitter/login-twitter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.375" vertical-offset="408" max-vertical-offset="840">
-          <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Facebook_Twitter/login-twitter.php">
+    <entry file="file://$PROJECT_DIR$/Facebook_Twitter/getTwitterData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22077923" vertical-offset="140" max-vertical-offset="525">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.04032258" vertical-offset="0" max-vertical-offset="840">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
