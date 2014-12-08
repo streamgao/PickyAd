@@ -5,7 +5,7 @@ if($_GET['code']==1) { show_source(__FILE__); die();}
 $dbg = 0;
 if($_GET['dbg'] == 1) {$dbg=1;}
 if($dbg) { echo "0<br/>\n";}
-require "twitter/twitteroauth.php";
+require ('twitter/twitteroauth.php');
 if($dbg) { echo "1<br/>\n";}
 require_once 'config/twconfig.php';
 if($dbg) { echo "2<br/>\n";}
