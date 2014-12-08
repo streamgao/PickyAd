@@ -12,7 +12,7 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
 
 // Let's request the access token
 // $access_token = $twitteroauth->getAccessToken($_GET['oauth_verifier']);
-    $access_token = $twitteroauth->getAccessToken($_GET['oauth_token']);
+   $access_token = $twitteroauth->getAccessToken($_GET['oauth_token']);
 
 // Save it in a session var
     $_SESSION['access_token'] = $access_token;
@@ -27,9 +27,9 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
         // Something's wrong, go back to square 1  
         header('Location: login-twitter.php');
     } else {
-        $twitter_otoken=$_SESSION['oauth_token'];
-        $twitter_otoken_secret=$_SESSION['oauth_token_secret'];
-        $email='';
+	   $twitter_otoken=$_SESSION['oauth_token'];
+	   $twitter_otoken_secret=$_SESSION['oauth_token_secret'];
+	   $email='';
         $uid = $user_info->id;
         $username = $user_info->name;
         $user = new User();
