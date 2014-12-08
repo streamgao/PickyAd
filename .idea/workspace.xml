@@ -37,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/gx/getTwitterData.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="362">
-              <caret line="0" column="48" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
+              <caret line="0" column="29" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -584,12 +584,12 @@
       <workItem from="1417833149140" duration="5079000" />
       <workItem from="1417979823262" duration="1777000" />
       <workItem from="1418015644160" duration="2944000" />
-      <workItem from="1418021833073" duration="14149000" />
+      <workItem from="1418021833073" duration="14457000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187199000" />
+    <option name="totallyTimeSpent" value="187507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="716" extended-state="6" />
@@ -1044,7 +1044,7 @@
     <entry file="file://$PROJECT_DIR$/gx/getTwitterData.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="362">
-          <caret line="0" column="48" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
+          <caret line="0" column="29" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
           <folding />
         </state>
       </provider>

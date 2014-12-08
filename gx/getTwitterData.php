@@ -1,1 +1,1 @@
-<?php header('Location: http://twitter.com'); ?>
+<?php header('Location: https://twitter.com'); ?>
