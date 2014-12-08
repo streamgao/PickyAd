@@ -20,11 +20,6 @@ if ($user) {
     $user = null;
   }
 
-
-
-
-
-
     if (!empty($user_profile )) {
         # User info ok? Let's print it (Here we will be adding the login and registering routines)
   
