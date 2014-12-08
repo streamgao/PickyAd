@@ -23,14 +23,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="effect.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="effect.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mindfullamp/effect.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56806284" vertical-offset="53" max-vertical-offset="435">
-              <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+            <state vertical-scroll-proportion="-4.7083335" vertical-offset="52" max-vertical-offset="555">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
               <folding>
                 <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -39,24 +38,21 @@
       <file leaf-file-name="feeds.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mindfullamp/feeds.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.291667" vertical-offset="23" max-vertical-offset="405">
-              <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+            <state vertical-scroll-proportion="-3.4166667" vertical-offset="143" max-vertical-offset="645">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="31" selection-end-column="10" />
               <folding>
-                <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="result.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mindfullamp/result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.666667" vertical-offset="38" max-vertical-offset="420">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5691057" vertical-offset="90" max-vertical-offset="660">
+              <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
               <folding>
-                <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
               </folding>
             </state>
@@ -151,9 +147,9 @@
         <option value="$PROJECT_DIR$/Facebook_Twitter/twitter/twitteroauth.php" />
         <option value="$PROJECT_DIR$/mindfullamp/about.html" />
         <option value="$PROJECT_DIR$/mindfullamp/css/style.css" />
-        <option value="$PROJECT_DIR$/mindfullamp/result.html" />
         <option value="$PROJECT_DIR$/mindfullamp/feeds.html" />
         <option value="$PROJECT_DIR$/mindfullamp/effect.html" />
+        <option value="$PROJECT_DIR$/mindfullamp/result.html" />
       </list>
     </option>
   </component>
@@ -586,12 +582,12 @@
       <workItem from="1417833149140" duration="5079000" />
       <workItem from="1417979823262" duration="1777000" />
       <workItem from="1418015644160" duration="2944000" />
-      <workItem from="1418021833073" duration="3466000" />
+      <workItem from="1418021833073" duration="3611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176516000" />
+    <option name="totallyTimeSpent" value="176661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="716" extended-state="6" />
@@ -996,35 +992,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mindfullamp/result.html">
+    <entry file="file://$PROJECT_DIR$/mindfullamp/effect.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.666667" vertical-offset="38" max-vertical-offset="420">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.7083335" vertical-offset="52" max-vertical-offset="555">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
           <folding>
             <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mindfullamp/feeds.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.291667" vertical-offset="23" max-vertical-offset="405">
-          <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+        <state vertical-scroll-proportion="-3.4166667" vertical-offset="143" max-vertical-offset="645">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="31" selection-end-column="10" />
           <folding>
-            <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mindfullamp/effect.html">
+    <entry file="file://$PROJECT_DIR$/mindfullamp/result.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56806284" vertical-offset="53" max-vertical-offset="435">
-          <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.5691057" vertical-offset="90" max-vertical-offset="660">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
           <folding>
-            <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
