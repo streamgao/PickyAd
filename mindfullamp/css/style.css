@@ -84,6 +84,7 @@ form{
 /*------------- position ---------------*/
 .middleLeft{
     left: 40%;
+    position: absolute;
 }
 .backBlue{
     background:rgba(184, 209, 219, 0.7);
