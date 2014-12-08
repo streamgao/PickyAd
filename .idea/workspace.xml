@@ -23,11 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login-twitter.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login-twitter.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Facebook_Twitter/login-twitter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5714286" vertical-offset="140" max-vertical-offset="525">
+            <state vertical-scroll-proportion="-9.166667" vertical-offset="140" max-vertical-offset="525">
               <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getTwitterData.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gx/getTwitterData.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="362">
+              <caret line="0" column="48" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -109,7 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/facebooktest/server/login.html" />
         <option value="$PROJECT_DIR$/facebooktest/server/test.php" />
         <option value="$PROJECT_DIR$/facebook-sdk-v4/facebook-php-sdk-v4-4.0-dev/publicfeed.php" />
         <option value="$PROJECT_DIR$/facebooktest/Facebook_Twitter/login-twitter.php" />
@@ -160,6 +169,7 @@
         <option value="$PROJECT_DIR$/mindfullamp/css/wave.css" />
         <option value="$PROJECT_DIR$/Facebook_Twitter/getTwitterData.php" />
         <option value="$PROJECT_DIR$/Facebook_Twitter/login-twitter.php" />
+        <option value="$PROJECT_DIR$/gx/getTwitterData.php" />
       </list>
     </option>
   </component>
@@ -225,43 +235,7 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Facebook_Twitter" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PickyAd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PickyAd" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Facebook_Twitter" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="twitter" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PickyAd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PickyAd" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Facebook_Twitter" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="gx" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -610,12 +584,12 @@
       <workItem from="1417833149140" duration="5079000" />
       <workItem from="1417979823262" duration="1777000" />
       <workItem from="1418015644160" duration="2944000" />
-      <workItem from="1418021833073" duration="13876000" />
+      <workItem from="1418021833073" duration="14149000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186926000" />
+    <option name="totallyTimeSpent" value="187199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="716" extended-state="6" />
@@ -1061,8 +1035,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Facebook_Twitter/login-twitter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5714286" vertical-offset="140" max-vertical-offset="525">
+        <state vertical-scroll-proportion="-9.166667" vertical-offset="140" max-vertical-offset="525">
           <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gx/getTwitterData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="362">
+          <caret line="0" column="48" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
           <folding />
         </state>
       </provider>
