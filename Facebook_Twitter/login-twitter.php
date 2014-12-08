@@ -2,16 +2,11 @@
 require_once 'twitter/twitteroauth.php';
 require_once 'config/twconfig.php';
 
-//echo "why cannot go to https://twitter.com/oauth/authorize?oauth_token=";
-//echo ('why cannot go to');
-//echo ("whysa;ldkj");
-
 session_start();
 
 $twitteroauth = new TwitterOAuth(YOUR_CONSUMER_KEY, YOUR_CONSUMER_SECRET);
 // Requesting authentication tokens, the parameter is the URL we will be redirected to
 //var_dump($twitteroauth);
-//$request_token = $twitteroauth->getRequestToken('http://onlinewebapplication.com/Facebook2/getTwitterData.php');
 $request_token = $twitteroauth->getRequestToken('http://pickyad-env.elasticbeanstalk.com/Facebook_Twitter/getTwitterData.php');
 
 //var_dump($twitteroauth);die();
