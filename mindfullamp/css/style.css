@@ -84,7 +84,7 @@ form{
 
 /*------------- position ---------------*/
 .middleLeft{
-    left: 40%;
+    left: 20%;
     top: 100px;
     position: absolute;
 }
@@ -108,7 +108,7 @@ form{
     text-align: center;
 }
 #feed{
-    
+    text-align: center;
 }
 
 
