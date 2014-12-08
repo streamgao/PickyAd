@@ -1,5 +1,5 @@
 <?php
-ob_start();
+
 require_once 'twitter/twitteroauth.php';
 require_once 'config/twconfig.php';
 require_once 'config/functions.php';
