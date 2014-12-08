@@ -1,49 +1,46 @@
 <?php
-ob_start();
-require_once 'twitter/twitteroauth.php';
+ob_end_clean();
+if($_GET['code']==1) { show_source(__FILE__); die();}
+
+$dbg = 0;
+if($_GET['dbg'] == 1) {$dbg=1;}
+if($dbg) { echo "0<br/>\n";}
+require ("twitter/twitteroauth.php");
+if($dbg) { echo "1<br/>\n";}
 require_once 'config/twconfig.php';
-require_once 'config/functions.php';
+if($dbg) { echo "2<br/>\n";}
 session_start();
+if($dbg) { echo "3<br/>\n";}
+$twitteroauth = new TwitterOAuth(YOUR_CONSUMER_KEY, YOUR_CONSUMER_SECRET);
+if($dbg) { echo "4<br/>\n";}
+// Requesting authentication tokens, the parameter is the URL we will be redirected to 
 
-if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empty($_SESSION['oauth_token_secret'])) {
-    // We've got everything we need
-    $twitteroauth = new TwitterOAuth(YOUR_CONSUMER_KEY, YOUR_CONSUMER_SECRET, $_SESSION['oauth_token'], $_SESSION['oauth_token_secret']);
-
-
-// Let's request the access token
- $access_token = $twitteroauth->getAccessToken($_GET['oauth_verifier']);
-
-// Save it in a session var
-    $_SESSION['access_token'] = $access_token;
-    var_dump($access_token);
-// Let's get the user's info
-    $user_info = $twitteroauth->get('account/verify_credentials');
-// Print user's info
-    echo '<pre>';
-    print_r($user_info);
-    echo '</pre><br/>';
-    if (isset($user_info->error)) {
-        // Something's wrong, go back to square 1  
-        header('Location: login-twitter.php');
-    } else {
-	   $twitter_otoken=$_SESSION['oauth_token'];
-	   $twitter_otoken_secret=$_SESSION['oauth_token_secret'];
-	   $email='';
-        $uid = $user_info->id;
-        $username = $user_info->name;
-        $user = new User();
-        $userdata = $user->checkUser($uid, 'twitter', $username,$email,$twitter_otoken, $twitter_otoken_secret);
-        if(!empty($userdata)){
-            session_start();
-            $_SESSION['id'] = $userdata['id'];
-            $_SESSION['oauth_id'] = $uid;
-            $_SESSION['username'] = $userdata['username'];
-            $_SESSION['oauth_provider'] = $userdata['oauth_provider'];
-            header("Location: home.php");
-        }
-    }
-} else {
-    // Something's missing, go back to square 1
-    header('Location: login-twitter.php');
+//$request_token = $twitteroauth->getRequestToken('http://onlinewebapplication.com/Facebook2/getTwitterData.php'); 
+//$request_token = $twitteroauth->getRequestToken('http://pickyad-env.elasticbeanstalk.com/twitter/getTwitterData.php'); 
+$request_token = $twitteroauth->getRequestToken('http://onlinewebapplication.com/gx/getTwitterData.php');
+if($dbg) { echo "5<br/>\n";}
+if($dbg) {
+    echo "<pre>\n";
+    var_dump($request_token);
+    echo "</pre>\n";
 }
-?>
+
+// Saving them into the session 
+$_SESSION['oauth_token'] = $request_token['oauth_token'];
+$_SESSION['oauth_token_secret'] = $request_token['oauth_token_secret'];
+if($dbg) {
+    echo "<pre>\n";
+    var_dump($_SESSION);
+    echo "</pre>\n";
+}
+// If everything goes well.. 
+if ($twitteroauth->http_code == 200) {
+    // Let's generate the URL and redirect 
+    $url = $twitteroauth->getAuthorizeURL($request_token['oauth_token']);
+    if($dbg) { echo "URL: $url\n"; die();}
+    header('Location: ' . $url);
+} else {
+    // It's a bad idea to kill the script, but we've got to know when there's an error. 
+    die('Something wrong happened.');
+}
+?> 
