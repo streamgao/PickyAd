@@ -37,8 +37,6 @@ class TwitterOAuth {
   //public $retry = TRUE;
 
 
-
-
   /**
    * Set API URLS
    */
