@@ -83,9 +83,8 @@ form{
 
 
 /*------------- position ---------------*/
-.middleLeft{
+.fblogin{
     top: 150px;
-    left: -10%;
 }
 .backBlue{
     background:rgba(184, 209, 219, 0.7);
