@@ -11,8 +11,8 @@ if (!empty($_GET['oauth_verifier']) && !empty($_SESSION['oauth_token']) && !empt
 
 
 // Let's request the access token
-// $access_token = $twitteroauth->getAccessToken($_GET['oauth_verifier']);
-   $access_token = $twitteroauth->getAccessToken($_GET['oauth_token']);
+ $access_token = $twitteroauth->getAccessToken($_GET['oauth_verifier']);
+//   $access_token = $twitteroauth->getAccessToken($_GET['oauth_token']);
 
 // Save it in a session var
     $_SESSION['access_token'] = $access_token;
