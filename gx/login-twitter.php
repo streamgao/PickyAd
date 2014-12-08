@@ -34,7 +34,7 @@ if($dbg) {
 if ($twitteroauth->http_code == 200) {
     // Let's generate the URL and redirect
     $url = $twitteroauth->getAuthorizeURL($request_token['oauth_token']);
-    if($dbg) { echo "URL: $url\n"; }
+    if($dbg) { echo "URL: $url\n"; die();}
     header('Location: ' . $url);
 } else {
     // It's a bad idea to kill the script, but we've got to know when there's an error.
