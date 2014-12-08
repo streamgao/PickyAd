@@ -2,9 +2,6 @@
 require_once 'twitter/twitteroauth.php';
 require_once 'config/twconfig.php';
 
-echo "why cannot go to https://twitter.com/oauth/authorize?oauth_token=";
-echo ('why cannot go to');
-echo ("whysa;ldkj");
 
 $twitteroauth = new TwitterOAuth('YC6UqKwK4fcw8edeyPH56uDzh', 'PpsNoAhXle1Vpq1ppi9Pk9q043j7yNNAUYHfWUwEExTzYbx07r');
 objdump($twitteroauth);
